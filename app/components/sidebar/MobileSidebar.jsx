@@ -27,7 +27,7 @@ export function MobileSidebar() {
           <SheetContent side={side} className="z-[1001]">
             <div>
               <div className="pt-1">
-                <div className="w-full  pb-20 mb-20 pt-10  ">
+                <div className="w-full pt-10">
                   <div className="w-40 ">
                     {/* ============ LINKS AND ICONS =========== */}
                     {sidebarRouteLinks?.map((item, index) => (
@@ -65,7 +65,7 @@ export function MobileSidebar() {
                   </div>
                 </div>
 
-                <div className="border-t border-accent  pt-10 w-full">
+                <div className="border-t border-accent pt-1 w-full">
                   <div>
                     {/* ============ LINKS AND ICONS =========== */}
                     {sidebarContactLinks?.map((item, index) => (
