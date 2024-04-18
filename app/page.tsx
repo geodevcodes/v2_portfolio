@@ -35,7 +35,7 @@ export default function Home() {
       </section>
       {/*========= Recommended ====== */}
       <section className="mt-20">
-        <h5 className="my-3">Recommended</h5>
+        <h5 className="my-3">Recommended </h5>
         {/* ===== Card section ==== */}
         <div className="lg:flex gap-x-6 space-y-6 lg:space-y-0">
           <RecommendCard />
