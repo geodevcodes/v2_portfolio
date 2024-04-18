@@ -10,7 +10,7 @@ export default function Home() {
       {/* ====HERO SECTION ===== */}
       <section className="max-w-2xl xl:max-w-3xl">
         <p className="text-sm md:text-3xl font-semibold  lg:text-5xl xl:text-[42px] ">
-          Everything related to tech in one place.
+          Everything related to tech in one places.
         </p>
         <p className="text-muted-foreground my-6">
           Navigate the ever-evolving tech landscape effortlessly with the
