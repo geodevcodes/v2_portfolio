@@ -1,17 +1,13 @@
-// import { TbLogout } from "react-icons/tb";
-// import { HiX } from "react-icons/hi";
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { sidebarContactLinks, sidebarRouteLinks } from "@/lib/LinkData";
 import { ModeToggle } from "../modeToggle/ModeToggle";
 import Image from "next/image";
+import { LogOut } from "lucide-react";
 
 export default function SideBar() {
   const pathname = usePathname();
-
-  // Get pathnameUrl from URL
-  console.log(pathname, "this is pathname=====");
 
   return (
     <>
@@ -20,7 +16,7 @@ export default function SideBar() {
           <div className="justify-between px-3 pr-4 pb-6 hidden md:flex">
             <div className="flex gap-x-2">
               <Image
-                src="/9C70BDFF-970E-4C75-A6B2-2F86FAE02FF1_1_201_a.jpeg"
+                src="/rasheed-img.jpeg"
                 alt="profile image"
                 width={100}
                 height={100}
@@ -51,17 +47,17 @@ export default function SideBar() {
                       href={`${item.href}`}
                       className={`${
                         pathname === item.href
-                          ? "rounded-sm bg-accent dark:bg-accent w-full "
-                          : ""
+                          ? "rounded-sm bg-accent dark:bg-accent w-full flex"
+                          : "flex items-center"
                       }
                   flex items-center w-full hover:bg-accent dark:hover:bg-accent rounded-lg px-4 mx-3 py-2`}
                     >
-                      {/* <span>
-                  <item.icon
-                    size={20}
-                    className="h-6 w-6 group-hover:cursor-pointer"
-                  />
-                </span> */}
+                      <span>
+                        <item.icon
+                          size={16}
+                          className="h-4 w-4 group-hover:cursor-pointer mr-4 mb-1 text-primary"
+                        />
+                      </span>
                       <p
                         className={`${pathname === item.href ? "" : ""}
                      text-sm hover:cursor-pointer text-foreground
@@ -94,15 +90,15 @@ export default function SideBar() {
                       }
                   flex items-center gap-4 hover:cursor-pointer w-full hover:bg-accent dark:hover:bg-accent rounded-lg px-4 mx-3 py-2`}
                     >
-                      {/* <span>
-                  <item.icon
-                    size={20}
-                    className="h-6 w-6 group-hover:cursor-pointer"
-                  />
-                </span> */}
+                      <span>
+                        <item.icon
+                          size={16}
+                          className="h-4 w-4 group-hover:cursor-pointer mb-1 text-primary"
+                        />
+                      </span>
                       <p
                         className={`${pathname === item.href ? "" : ""}
-                     text-sm hover:cursor-pointer  text-foreground
+                     text-sm hover:cursor-pointer text-foreground
                   `}
                       >
                         {item.name}
@@ -117,7 +113,7 @@ export default function SideBar() {
           {/* ============Upload Record Button ========== */}
           <section className="border-t border-slate pt-6 px-4 mt-28 hidden md:block">
             <div className="bg-accent dark:bg-accent rounded-lg text-foreground flex items-center justify-center gap-4 p-2  cursor-pointer">
-              {/* <TbLogout size={24} /> */}
+              <LogOut size={16} />
               <p>Sign out</p>
             </div>
           </section>

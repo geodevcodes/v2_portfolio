@@ -2,17 +2,13 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function RecommendCard() {
+export default function ProjectsCard() {
   return (
     <div>
       <div className="border border-slate">
         <div>
-          <div className="relative w-full h-[180px] md:h-[250px] xl:h-[350px] 2xl:h-[400px]">
-            <Image
-              src="/sass.webp"
-              alt="ecommerce prototype image"
-              fill
-            />
+          <div className="relative w-full h-[180px] md:h-[200px] lg:h-[250px] xl:h-[300px]">
+            <Image src="/sass.webp" alt="ecommerce prototype image" fill />
           </div>
           <div className="p-4 lg:p-3">
             <p className="font-semibold  text-sm">
