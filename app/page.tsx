@@ -49,37 +49,39 @@ export default function Home() {
           <p className="text-muted-foreground mb-4">
             Software and tools I use on a regular basis.
           </p>
-          <div className="justify-between gap-y-10 grid md:grid-cols-2 lg:grid-cols-3">
-            <div className="h-fit flex gap-x-2 items-center">
+          <div className="justify-between gap-y-10 grid lg:grid-cols-3">
+            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
               <Image
-                src="/chrome.webp"
-                alt="nextjs image"
+                src="/paystack.png"
+                alt="Paystack image"
                 width={60}
                 height={60}
                 priority
-                className="object-cover"
+                className="object-cover rounded-lg"
               />
               <div>
-                <p className="font-semibold">Chrome</p>
-                <p className="text-sm text-muted-foreground">Framework</p>
+                <p className="font-semibold">Paystack</p>
+                <p className="text-sm text-muted-foreground">
+                  Payment Platform
+                </p>
               </div>
             </div>
 
-            <div className="h-fit flex gap-x-2 items-center">
+            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
               <Image
                 src="/figma.webp"
-                alt="nextjs image"
+                alt="figma image"
                 width={60}
                 height={60}
                 priority
                 className="object-cover"
               />
               <div>
-                <p className="font-semibold">Next.js</p>
-                <p className="text-sm text-muted-foreground">Framework</p>
+                <p className="font-semibold">Figma</p>
+                <p className="text-sm text-muted-foreground">Design Tool</p>
               </div>
             </div>
-            <div className="h-fit flex gap-x-2 items-center">
+            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
               <Image
                 src="/tailwind.webp"
                 alt="nextjs image"
@@ -90,10 +92,10 @@ export default function Home() {
               />
               <div>
                 <p className="font-semibold">Tailwind</p>
-                <p className="text-sm text-muted-foreground">Framework</p>
+                <p className="text-sm text-muted-foreground">Styling</p>
               </div>
             </div>
-            <div className="h-fit flex gap-x-2 items-center">
+            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
               <Image
                 src="/vscode.webp"
                 alt="nextjs image"
@@ -104,10 +106,12 @@ export default function Home() {
               />
               <div>
                 <p className="font-semibold">Vs Code</p>
-                <p className="text-sm text-muted-foreground">Framework</p>
+                <p className="text-sm text-muted-foreground">
+                  Coding Environment
+                </p>
               </div>
             </div>
-            <div className="h-fit flex gap-x-2 items-center">
+            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
               <Image
                 src="/nextjs.webp"
                 alt="nextjs image"
@@ -118,24 +122,32 @@ export default function Home() {
               />
               <div>
                 <p className="font-semibold">Next.js</p>
-                <p className="text-sm text-muted-foreground">Framework</p>
+                <p className="text-sm text-muted-foreground">React Framework</p>
               </div>
             </div>
 
-            <div className="h-fit flex gap-x-2 items-center">
+            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
               <Image
-                src="/nextjs.webp"
-                alt="nextjs image"
+                src="/vue.png"
+                alt="vuejs image"
                 width={60}
                 height={60}
                 priority
-                className="object-cover"
+                className="object-cover rounded-lg"
               />
               <div>
-                <p className="font-semibold">Next.js</p>
+                <p className="font-semibold">Vue.js</p>
                 <p className="text-sm text-muted-foreground">Framework</p>
               </div>
             </div>
+          </div>
+          <div className="h-fit border border-accent-primary mt-8  text-center rounded-md cursor-pointer ">
+            <Link
+              href="/stack"
+              className="block p-3 hover:bg-accent rounded-md"
+            >
+              View More
+            </Link>
           </div>
         </section>
       </section>

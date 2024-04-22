@@ -1,10 +1,4 @@
-// import { HomeIcon } from "@heroicons/react/24/outline";
-// import { IoStatsChart } from "react-icons/io5";
-// import { LuUsers2 } from "react-icons/lu";
-// import { PiFlagPennantBold } from "react-icons/pi";
-// import { GrPieChart } from "react-icons/gr";
-// import { SlSettings } from "react-icons/sl";
-// import { LiaBriefcaseSolid } from "react-icons/lia";
+import { Home, User, Layers3, GlobeLock, Github, Linkedin, Mail, CircleUser } from "lucide-react";
 
 
 
@@ -14,35 +8,35 @@ export const sidebarRouteLinks = [
       name: "Home",
       href: "/",
       key: "home",
-    //   icon: HomeIcon,
+      icon: Home,
       current: false,
     },
     {
-      name: "Courses",
-      href: "/courses",
-      key: "courses",
-    //   icon: LiaBriefcaseSolid,
+      name: "Projects",
+      href: "/projects",
+      key: "projects",
+      icon: GlobeLock,
       current: false,
     },
     {
         name: "About",
         href: "/about",
         key: "about",
-      //   icon: LuUsers2,
+        icon: User,
         current: false,
       },
       {
         name: "Stack",
         href: "/stack",
         key: "stack",
-      //   icon: LiaBriefcaseSolid,
+        icon: Layers3,
         current: false,
       },
     {
       name: "My Profile",
       href: "/profile",
       key: "my-profile",
-    //   icon: SlSettings,
+      icon: CircleUser,
       current: false,
     },
   ];
@@ -54,28 +48,22 @@ export const sidebarContactLinks = [
       name: "Contact",
       href: "/contact",
       key: "contact",
-    //   icon: HomeIcon,
+      icon: Mail,
       current: false,
     },
-    // {
-    //   name: "Twitter",
-    //   href: "https://www.twitter.com/geodevcodes",
-    //   key: "twitter",
-    //   icon: LiaBriefcaseSolid,
-    //   current: false,
-    // },
     {
         name: "Linkedin",
         href: "https://www.linkedin.com/in/olatunderasheed",
         key: "linkedin",
-      //   icon: LiaBriefcaseSolid,
+        icon: Linkedin,
         current: false,
       },
       {
         name: "Github",
         href: "https://www.github.com/olatunde1998",
         key: "youtube",
-      //   icon: LiaBriefcaseSolid,
+        icon: Github,
         current: false,
       },
   ];
+

@@ -67,7 +67,7 @@ export default function About() {
             width={200}
             height={200}
             priority
-            className="object-cover w-full  h-[500px] rounded-3xl"
+            className="object-cover w-full  md:h-[500px] lg:h-fit rounded-3xl"
           />{" "}
         </div>
       </section>

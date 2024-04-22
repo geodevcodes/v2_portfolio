@@ -18,39 +18,10 @@ export default function Stack() {
       <section className="h-fit border border-accent-primary mt-8 p-6">
         <h3 className="mb-4 font-bold text-xl">Development</h3>
         <div className="justify-between gap-y-10 grid md:grid-cols-2 lg:grid-cols-3">
-          <div className="h-fit flex gap-x-2 items-center">
-            <Image
-              src="/chrome.webp"
-              alt="nextjs image"
-              width={60}
-              height={60}
-              priority
-              className="object-cover"
-            />
-            <div>
-              <p className="font-semibold">Chrome</p>
-              <p className="text-sm text-muted-foreground">Framework</p>
-            </div>
-          </div>
-
-          <div className="h-fit flex gap-x-2 items-center">
-            <Image
-              src="/figma.webp"
-              alt="nextjs image"
-              width={60}
-              height={60}
-              priority
-              className="object-cover"
-            />
-            <div>
-              <p className="font-semibold">Next.js</p>
-              <p className="text-sm text-muted-foreground">Framework</p>
-            </div>
-          </div>
-          <div className="h-fit flex gap-x-2 items-center">
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
             <Image
               src="/tailwind.webp"
-              alt="nextjs image"
+              alt="Tailwindcss image"
               width={60}
               height={60}
               priority
@@ -58,67 +29,39 @@ export default function Stack() {
             />
             <div>
               <p className="font-semibold">Tailwind</p>
-              <p className="text-sm text-muted-foreground">Framework</p>
-            </div>
-          </div>
-          <div className="h-fit flex gap-x-2 items-center">
-            <Image
-              src="/vscode.webp"
-              alt="nextjs image"
-              width={60}
-              height={60}
-              priority
-              className="object-cover"
-            />
-            <div>
-              <p className="font-semibold">Vs Code</p>
-              <p className="text-sm text-muted-foreground">Framework</p>
-            </div>
-          </div>
-          <div className="h-fit flex gap-x-2 items-center">
-            <Image
-              src="/nextjs.webp"
-              alt="nextjs image"
-              width={60}
-              height={60}
-              priority
-              className="object-cover"
-            />
-            <div>
-              <p className="font-semibold">Next.js</p>
-              <p className="text-sm text-muted-foreground">Framework</p>
+              <p className="text-sm text-muted-foreground">Styling</p>
             </div>
           </div>
 
-          <div className="h-fit flex gap-x-2 items-center">
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
             <Image
-              src="/nextjs.webp"
-              alt="nextjs image"
+              src="/shadcn.png"
+              alt="Shadcn image"
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover rounded-lg"
             />
             <div>
-              <p className="font-semibold">Next.js</p>
-              <p className="text-sm text-muted-foreground">Framework</p>
+              <p className="font-semibold">Shadcn</p>
+              <p className="text-sm text-muted-foreground">Component Library</p>
             </div>
           </div>
-          <div className="h-fit flex gap-x-2 items-center">
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
             <Image
-              src="/nextjs.webp"
-              alt="nextjs image"
+              src="/materialui.png"
+              alt="Material UI image"
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover rounded-lg"
             />
             <div>
-              <p className="font-semibold">Next.js</p>
-              <p className="text-sm text-muted-foreground">Framework</p>
+              <p className="font-semibold">Material UI</p>
+              <p className="text-sm text-muted-foreground">Component Library</p>
             </div>
           </div>
-          <div className="h-fit flex gap-x-2 items-center">
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
             <Image
               src="/nextjs.webp"
               alt="nextjs image"
@@ -129,7 +72,108 @@ export default function Stack() {
             />
             <div>
               <p className="font-semibold">Next.js</p>
-              <p className="text-sm text-muted-foreground">Framework</p>
+              <p className="text-sm text-muted-foreground">React Framework</p>
+            </div>
+          </div>
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
+            <Image
+              src="/vue.png"
+              alt="vuejs image"
+              width={60}
+              height={60}
+              priority
+              className="object-cover"
+            />
+            <div>
+              <p className="font-semibold">Vue.js</p>
+              <p className="text-sm text-muted-foreground">
+                JavaScript Library
+              </p>
+            </div>
+          </div>
+
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
+            <Image
+              src="/react-native.png"
+              alt="React Native image"
+              width={70}
+              height={60}
+              priority
+              className="object-cover rounded-lg"
+            />
+            <div>
+              <p className="font-semibold">React-Native</p>
+              <p className="text-sm text-muted-foreground">Mobile App</p>
+            </div>
+          </div>
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
+            <Image
+              src="/vercel.webp"
+              alt="vercel image"
+              width={60}
+              height={60}
+              priority
+              className="object-cover"
+            />
+            <div>
+              <p className="font-semibold">Vercel</p>
+              <p className="text-sm text-muted-foreground">Hosting Provider</p>
+            </div>
+          </div>
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
+            <Image
+              src="/firebase.jpeg"
+              alt="Firebase image"
+              width={60}
+              height={60}
+              priority
+              className="object-cover rounded-lg"
+            />
+            <div>
+              <p className="font-semibold">Firebase</p>
+              <p className="text-sm text-muted-foreground">Hosting Provider</p>
+            </div>
+          </div>
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
+            <Image
+              src="/aws.png"
+              alt="AWS image"
+              width={60}
+              height={60}
+              priority
+              className="object-cover rounded-lg"
+            />
+            <div>
+              <p className="font-semibold">AWS</p>
+              <p className="text-sm text-muted-foreground">Hosting Provider</p>
+            </div>
+          </div>
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
+            <Image
+              src="/figma.webp"
+              alt="Figma image"
+              width={60}
+              height={60}
+              priority
+              className="object-cover rounded-lg"
+            />
+            <div>
+              <p className="font-semibold">Figma</p>
+              <p className="text-sm text-muted-foreground">Design Tool</p>
+            </div>
+          </div>
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
+            <Image
+              src="/paystack.png"
+              alt="PayStack image"
+              width={60}
+              height={60}
+              priority
+              className="object-cover rounded-lg"
+            />
+            <div>
+              <p className="font-semibold">Paystack</p>
+              <p className="text-sm text-muted-foreground">Payment Platform</p>
             </div>
           </div>
         </div>
@@ -139,25 +183,25 @@ export default function Stack() {
       <section className="h-fit border border-accent-primary mt-8 p-6">
         <h3 className="mb-4 font-bold text-xl">Productivity</h3>
         <div className="justify-between gap-y-10 grid md:grid-cols-2 lg:grid-cols-3">
-          <div className="h-fit flex gap-x-2 items-center">
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
             <Image
               src="/applemusic.webp"
-              alt="nextjs image"
+              alt="Apple Music image"
               width={60}
               height={60}
               priority
               className="object-cover"
             />
             <div>
-              <p className="font-semibold">Chrome</p>
-              <p className="text-sm text-muted-foreground">Framework</p>
+              <p className="font-semibold">Apple Music</p>
+              <p className="text-sm text-muted-foreground">Music</p>
             </div>
           </div>
 
-          <div className="h-fit flex gap-x-2 items-center">
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
             <Image
               src="/grammerly.webp"
-              alt="nextjs image"
+              alt="Grammerly image"
               width={60}
               height={60}
               priority
@@ -168,10 +212,10 @@ export default function Stack() {
               <p className="text-sm text-muted-foreground">Grammer</p>
             </div>
           </div>
-          <div className="h-fit flex gap-x-2 items-center">
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
             <Image
               src="/calender.webp"
-              alt="nextjs image"
+              alt="Google Calender image"
               width={60}
               height={60}
               priority
@@ -182,31 +226,31 @@ export default function Stack() {
               <p className="text-sm text-muted-foreground">Calender</p>
             </div>
           </div>
-          <div className="h-fit flex gap-x-2 items-center">
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
             <Image
-              src="/applenotes.webp"
-              alt="nextjs image"
+              src="/chrome.webp"
+              alt="Google chrome image"
               width={60}
               height={60}
               priority
               className="object-cover"
             />
             <div>
-              <p className="font-semibold">Apple Notes</p>
-              <p className="text-sm text-muted-foreground">Notes</p>
+              <p className="font-semibold">Chrome</p>
+              <p className="text-sm text-muted-foreground">Browser</p>
             </div>
           </div>
-          <div className="h-fit flex gap-x-2 items-center">
+          <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
             <Image
               src="/chatgpt.webp"
-              alt="nextjs image"
+              alt="Chatgpt image"
               width={60}
               height={60}
               priority
               className="object-cover"
             />
             <div>
-              <p className="font-semibold">chatGPT</p>
+              <p className="font-semibold">ChatGPT</p>
               <p className="text-sm text-muted-foreground">Ai</p>
             </div>
           </div>
