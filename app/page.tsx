@@ -3,6 +3,7 @@ import { PersonStanding, Video } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import RecommendCard from "./components/card/RecommendCard";
+import { projectLinks } from "@/lib/LinkData";
 
 export default function Home() {
   return (
@@ -27,8 +28,8 @@ export default function Home() {
             asChild
             className="bg-muted text-foreground  hover:bg-muted dark:bg-accent dark:text-secondary-foreground"
           >
-            <Link href="/courses">
-              <Video className="mr-2 h-4 w-4" /> Courses
+            <Link href="/projects">
+              <Video className="mr-2 h-4 w-4" /> Projects
             </Link>
           </Button>
         </div>
@@ -38,8 +39,17 @@ export default function Home() {
         <h5 className="my-3">Recommended </h5>
         {/* ===== Card section ==== */}
         <div className="lg:flex gap-x-6 space-y-6 lg:space-y-0">
-          <RecommendCard />
-          <RecommendCard />
+          {projectLinks &&
+            projectLinks
+              .filter((item, idx) => idx === 0 || idx === 1)
+              .map((item, idx) => (
+                <div key={idx}>
+                  <RecommendCard
+                    urlLink={item.href}
+                    cardImageUrl={item.imageUrl}
+                  />
+                </div>
+              ))}
         </div>
       </section>
       {/* ====My Stack section ===== */}
