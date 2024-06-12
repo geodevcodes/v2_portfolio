@@ -1,4 +1,4 @@
-import { Home, User, Layers3, GlobeLock, Github, Linkedin, Mail, CircleUser } from "lucide-react";
+import { Home, User, Layers3, GlobeLock, Github, Linkedin, Mail, Settings } from "lucide-react";
 
 
 // SideBar Route Links 
@@ -32,10 +32,10 @@ export const sidebarRouteLinks = [
         current: false,
       },
     {
-      name: "My Profile",
+      name: "Settings",
       href: "/profile",
       key: "my-profile",
-      icon: CircleUser,
+      icon: Settings,
       current: false,
     },
   ];
@@ -44,10 +44,17 @@ export const sidebarRouteLinks = [
   // SideBar Contact  Route Links 
 export const sidebarContactLinks = [
     {
-      name: "Contact",
+      name: "Email",
+      href: "mailto:olatunde336@gmail.com",
+      key: "email",
+      icon: Mail,
+      current: false,
+    },
+    {
+      name: "Location",
       href: "/contact",
       key: "contact",
-      icon: Mail,
+      icon: GlobeLock,
       current: false,
     },
     {
