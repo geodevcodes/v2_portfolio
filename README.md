@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+<h1>geodevcodes web application</h1>
+<h6><i>I'm Rasheed Olatunde</i></h6>
+<hr />
+</div>
 
-## Getting Started
+Hellooooooooooo, 👋 
 
-First, run the development server:
+Here are some details about my portfolio: 👎
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.  [Repository of my portfolio](https://github.com/olatunde1998/geodevcodes-microfrontend)
+2.  [Publicly hosted live URL of the portfolio](https://geodevcodes.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Technologies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [NextJs,](https://nextjs.org/) [NextAuth](https://next-auth.js.org/)
+- [Shadcn UI](https://ui.shadcn.com/)
+- [React TanStack Query,](https://tanstack.com/query/latest)
+- [TailwindCss](https://tailwindcss.com/)
+- [React Hook-form](https://react-hook-form.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Prototype
 
-## Learn More
+![Minion](public/prototype.png)
 
-To learn more about Next.js, take a look at the following resources:
+# How to Contribute
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository
+   `git clone https://github.com/olatunde1998/geodevcodes-microfrontend.git`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Change directory into the `cloned folder ` and run the setup script
+   `cd geodevcodes-microfrontend`
 
-## Deploy on Vercel
+3. Open your terminal and type this command `yarn install ` to add the react dependency to the app in the development mode.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. After the Successful installation of the dependency type/copy this command `yarn dev` to run the app in your local environment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Copy this link [http://localhost:3000/](http://localhost:3000/) and paste it to your web browser(Chrome, safari, mozilla firefox et.c) to view it.
+
+# Deployment
+
+Vercel was used to deploy the app.
+
+- [Vercel](https://vercel.com/dashboard)
+
+# License
+
+The MIT License - Copyright (c) 2024 - Present, geodevcodes / Storage Service.
+
+# Author
+
+Rasheed Olatunde (Software Developer)
