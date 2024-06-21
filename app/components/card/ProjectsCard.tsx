@@ -15,16 +15,18 @@ export default function ProjectsCard({
     <div>
       <div className="border border-slate rounded-md">
         <div>
-          <div className="relative rounded-t-md h-[200px] md:h-[200px] lg:h-[250px] xl:h-[300px]">
+          <div className="relative rounded-t-md h-[150px] md:h-[200px] 2xl:h-[450px]">
             <Image
               src={cardImageUrl}
               alt="ecommerce prototype image"
               fill
-              className="rounded-t-md object-cover w-full h-[180px]"
+              priority
+              sizes="(max-width: 768px) 100vw, 700px"
+              className="rounded-t-md object-cover"
             />
           </div>
-          <div className="p-4 lg:p-3">
-            <p className="font-semibold  text-sm">
+          <div className="p-3 lg:p-3">
+            <p className="font-semibold  text-sm line-clamp-2">
               Create a SaaS Application with Next.js.14, Stripe, Kinde, Prisma,
               Supabase and...
             </p>
