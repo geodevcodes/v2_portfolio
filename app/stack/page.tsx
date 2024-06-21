@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function Stack() {
   return (
-    <main className="min-h-screen md:px-6 lg:p-8">
-      <div className="w-full font-mono text-sm ">
+    <main className="min-h-screen px-4 p-2 md:p-8">
+      <div className="w-full font-sans text-md ">
         <p className="text-2xl md:text-5xl font-bold mb-2">My Stack</p>
         <p className="text-muted-foreground">
           Software and tools I use on a regular basis.

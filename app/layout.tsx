@@ -7,6 +7,7 @@ import SideBar from "./components/sidebar/Sidebar";
 import SessionProviderPage from "./providers/session-provider";
 import { getServerSession } from "next-auth";
 import { authConfig } from "./api/auth/[...nextauth]/option";
+import Footer from "./components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const session = await getServerSession(authConfig);
-  
+
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -34,9 +35,10 @@ export default async function RootLayout({
           >
             <MobileNavbar />
             <section className="w-full relative flex">
-              <SideBar  session={session}/>
-              <main className="w-full p-2 pt-20 md:pt-2 max-w-[1150px] px-4 mx-auto xl:max-w-full xl:overflow-x-auto md:ml-[240px] xl:ml-[240px]">
+              <SideBar session={session} />
+              <main className="w-full pt-20 md:pt-2 max-w-[1150px] mx-auto xl:max-w-full xl:overflow-x-auto md:ml-[240px] xl:ml-[240px]">
                 {children}
+                <Footer />
               </main>
             </section>
           </ThemeProvider>

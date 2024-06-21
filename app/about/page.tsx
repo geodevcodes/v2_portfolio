@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between  md:px-6 lg:p-8">
+    <main className="px-4 p-2 pb-8 min-h-screen md:px-6 lg:p-8">
       <section className="flex flex-col-reverse lg:flex-row lg:flex lg:justify-between lg:space-x-5 w-full">
-        <div className="font-mono text-sm lg:w-[65%]">
+        <div className="font-sans text-md lg:w-[65%]">
           <p className="text-2xl md:text-3xl text-center mt-6 lg:text-left lg:mt-0 lg:text-4xl font-bold mb-2">
             Hey I&apos;m Rasheed Olatunde <span>✌🏻</span>
           </p>

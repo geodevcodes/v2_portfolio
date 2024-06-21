@@ -7,13 +7,13 @@ import { projectLinks } from "@/lib/LinkData";
 
 export default function Home() {
   return (
-    <main className="md:p-6 font-mono min-h-screen ">
+    <main className="px-4 p-2 md:p-8 font-sans min-h-screen ">
       {/* ====HERO SECTION ===== */}
-      <section className="max-w-2xl xl:max-w-3xl">
-        <p className="text-3xl font-semibold  lg:text-5xl xl:text-[42px] ">
+      <section className="">
+        <p className="text-3xl font-semibold lg:text-5xl xl:text-[52px] max-w-2xl xl:max-w-lg">
           Everything related to tech in one places.
         </p>
-        <p className="text-muted-foreground my-6">
+        <p className="text-muted-foreground my-6 max-w-xl">
           Navigate the ever-evolving tech landscape effortlessly with the
           perfect hub to stay informed.
         </p>

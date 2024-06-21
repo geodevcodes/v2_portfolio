@@ -15,12 +15,17 @@ export default function RecommendCard({
       <div className="border border-slate rounded-md">
         <div>
           <div className="relative rounded-lg w-full h-[180px] md:h-[250px] xl:h-[350px] 2xl:h-[400px]">
-            <Image src={cardImageUrl} alt="ecommerce prototype image" fill className="rounded-t-md" />
+            <Image
+              src={cardImageUrl}
+              alt="ecommerce prototype image"
+              fill
+              className="rounded-t-md"
+            />
           </div>
           <div className="p-4 lg:p-3">
-            <p className="font-semibold  text-sm">
+            <p className="font-semibold text-sm line-clamp-1 md:max-w-sm">
               Create a SaaS Application with Next.js.14, Stripe, Kinde, Prisma,
-              Supabase and...
+              Supabase and ...
             </p>
             <div className="lg:flex justify-between gap-2 w-full">
               <p className="text-muted-foreground text-sm">
