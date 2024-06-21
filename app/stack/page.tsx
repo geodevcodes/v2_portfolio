@@ -25,7 +25,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Tailwind</p>
@@ -40,7 +40,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Shadcn</p>
@@ -54,7 +54,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Material UI</p>
@@ -68,7 +68,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Next.js</p>
@@ -82,7 +82,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Vue.js</p>
@@ -99,7 +99,7 @@ export default function Stack() {
               width={70}
               height={60}
               priority
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">React-Native</p>
@@ -113,7 +113,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Vercel</p>
@@ -127,7 +127,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Firebase</p>
@@ -141,7 +141,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">AWS</p>
@@ -155,7 +155,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Figma</p>
@@ -169,7 +169,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Paystack</p>
@@ -190,7 +190,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Apple Music</p>
@@ -205,7 +205,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Grammerly</p>
@@ -219,7 +219,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Google Calender</p>
@@ -233,7 +233,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">Chrome</p>
@@ -247,7 +247,7 @@ export default function Stack() {
               width={60}
               height={60}
               priority
-              className="object-cover"
+              className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
               <p className="font-semibold">ChatGPT</p>
