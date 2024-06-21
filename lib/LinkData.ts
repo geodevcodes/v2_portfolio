@@ -132,3 +132,31 @@ export const projectLinks = [
     },
 ];
 
+
+// Footer Links
+export const footerLinks = [
+  { id:1,
+    name: "Terms of Service",
+    href: "/terms",
+    key: "terms",
+  },
+  {
+    id: 2,
+    name: "Privacy Policy",
+    href: "/privacy",
+    key: "privacy",
+  },
+  {
+    id:3,
+    name: "Contact",
+    href: "mailto:olatunde336@gmail.com",
+    key: "contact",
+  },
+  {
+    id:4,
+    name: "About",
+    href: "/about",
+    key: "about",
+  }
+  ];
+
