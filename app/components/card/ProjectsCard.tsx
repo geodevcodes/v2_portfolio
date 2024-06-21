@@ -33,7 +33,7 @@ export default function ProjectsCard({
             <div className="w-full">
               <p className="text-muted-foreground text-sm">
                 Today we are going to create a Digital Marketplace using Next.js
-                14, Stripe Connect,
+                14, Stripe Connect
               </p>
               <div>
                 <Button asChild className="w-full mt-4">
