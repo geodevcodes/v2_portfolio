@@ -10,7 +10,7 @@ export default function Home() {
     <main className="md:p-6 font-mono min-h-screen ">
       {/* ====HERO SECTION ===== */}
       <section className="max-w-2xl xl:max-w-3xl">
-        <p className="text-sm md:text-3xl font-semibold  lg:text-5xl xl:text-[42px] ">
+        <p className="text-3xl font-semibold  lg:text-5xl xl:text-[42px] ">
           Everything related to tech in one places.
         </p>
         <p className="text-muted-foreground my-6">
@@ -36,14 +36,14 @@ export default function Home() {
       </section>
       {/*========= Recommended ====== */}
       <section className="mt-20">
-        <h5 className="my-3">Recommended </h5>
+        <h5 className="my-3">Recommended</h5>
         {/* ===== Card section ==== */}
         <div className="lg:flex gap-x-6 space-y-6 lg:space-y-0">
           {projectLinks &&
             projectLinks
               .filter((item, idx) => idx === 0 || idx === 1)
               .map((item, idx) => (
-                <div key={idx}>
+                <div key={idx} className="">
                   <RecommendCard
                     urlLink={item.href}
                     cardImageUrl={item.imageUrl}
@@ -67,7 +67,7 @@ export default function Home() {
                 width={60}
                 height={60}
                 priority
-                className="object-cover rounded-lg"
+                className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
               <div>
                 <p className="font-semibold">Paystack</p>
@@ -84,7 +84,7 @@ export default function Home() {
                 width={60}
                 height={60}
                 priority
-                className="object-cover"
+                className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
               <div>
                 <p className="font-semibold">Figma</p>
@@ -98,7 +98,7 @@ export default function Home() {
                 width={60}
                 height={60}
                 priority
-                className="object-cover"
+                className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
               <div>
                 <p className="font-semibold">Tailwind</p>
@@ -112,7 +112,7 @@ export default function Home() {
                 width={60}
                 height={60}
                 priority
-                className="object-cover"
+                className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
               <div>
                 <p className="font-semibold">Vs Code</p>
@@ -128,7 +128,7 @@ export default function Home() {
                 width={60}
                 height={60}
                 priority
-                className="object-cover"
+                className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
               <div>
                 <p className="font-semibold">Next.js</p>
@@ -143,7 +143,7 @@ export default function Home() {
                 width={60}
                 height={60}
                 priority
-                className="object-cover rounded-lg"
+                className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
               <div>
                 <p className="font-semibold">Vue.js</p>
