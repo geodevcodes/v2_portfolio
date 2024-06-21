@@ -1,4 +1,4 @@
-import { Home, User, Layers3, GlobeLock, Github, Linkedin, Mail, Settings } from "lucide-react";
+import { Home, User, Layers3, GlobeLock, Github, Linkedin, Mail, Settings, ReceiptIndianRupee } from "lucide-react";
 
 
 // SideBar Route Links 
@@ -50,11 +50,18 @@ export const sidebarContactLinks = [
       icon: Mail,
       current: false,
     },
+    // {
+    //   name: "Location",
+    //   href: "/contact",
+    //   key: "contact",
+    //   icon: GlobeLock,
+    //   current: false,
+    // },
     {
-      name: "Location",
-      href: "/contact",
+      name: "Resume",
+      href: "https://docs.google.com/document/d/1Fjw3pDT47_9YiRT5JzQibfWbfDyMNRLTZttOeBeULpo/edit?usp=sharing",
       key: "contact",
-      icon: GlobeLock,
+      icon: ReceiptIndianRupee,
       current: false,
     },
     {
