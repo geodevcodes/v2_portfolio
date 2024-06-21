@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="lg:flex justify-between items-center">
         <p className="font-normal text-xs lg:text-sm">
           © {dateString} geodevcodes
-          <span className="hidden xl:inline-block">(Rasheed Olatunde)</span>.
+          <span className="hidden ml-2 xl:inline-block">(Rasheed Olatunde)</span>.
           All rights reserved.
         </p>
         <div className="flex flex-col space-x-0  space-y-3 mt-4  lg:flex-row justify-between lg:space-x-3 lg:space-y-0 lg:mt-0 text-muted-foreground">
