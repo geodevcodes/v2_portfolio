@@ -20,7 +20,7 @@ export function MobileSidebar() {
     <div className="">
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="outline">
+          <Button variant="outline" size="icon">
             <Menu />
           </Button>
         </SheetTrigger>
