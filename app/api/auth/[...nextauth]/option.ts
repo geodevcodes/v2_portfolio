@@ -30,7 +30,7 @@ export const authConfig: NextAuthOptions = {
   },
   pages: {
     signIn: "/",
-    error: '/',
+    error: '/not-found',
   },
 };
 
