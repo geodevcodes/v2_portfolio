@@ -30,6 +30,7 @@ export const authConfig: NextAuthOptions = {
   },
   pages: {
     signIn: "/",
+    error: '/',
   },
 };
 
