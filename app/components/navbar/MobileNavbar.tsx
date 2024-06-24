@@ -15,7 +15,7 @@ export default function MobileNavbar() {
         <Link href="/" className="font-bold ">
           <span className="text-primary text-md">Rasheed Olatunde</span>
         </Link>
-        <div className="flex justify-between gap-x-2 w-28">
+        <div className="flex justify-between gap-x-2">
           <ModeToggle />
           <MobileSidebar />
         </div>
