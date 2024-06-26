@@ -6,7 +6,7 @@ export default function Footer() {
   const getYear = new Date();
   const dateString = getYear.getFullYear();
   return (
-    <footer className="text-sm bg-background border-t border-slate pt-8 px-6 pb-[36px] border-accent">
+    <footer className="text-sm bg-background border-t border-slate pt-7 px-6 pb-[36px] border-accent">
       <div className="lg:flex justify-between items-center">
         <p className="font-normal text-xs lg:text-sm">
           © {dateString} geodevcodes
