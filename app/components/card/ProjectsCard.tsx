@@ -26,10 +26,13 @@ export default function ProjectsCard({
             />
           </div>
           <div className="p-3 lg:p-3">
-            <p className="font-semibold  text-sm line-clamp-2">
+            <Link
+              href={urlLink}
+              className="font-semibold  text-sm line-clamp-2 hover:underline"
+            >
               Create a SaaS Application with Next.js.14, Stripe, Kinde, Prisma,
               Supabase and...
-            </p>
+            </Link>
             <div className="w-full">
               <p className="text-muted-foreground text-sm">
                 Today we are going to create a Digital Marketplace using Next.js
