@@ -3,12 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectCardData {
+  projectId: string;
   cardImageUrl: string;
-  urlLink: string;
+  projectUrl: string;
+  projectTitle: string;
+  subTitle: string;
 }
 export default function RecommendCard({
+  projectId,
   cardImageUrl,
-  urlLink,
+  projectTitle,
+  subTitle
 }: ProjectCardData) {
   return (
     <div>
@@ -24,18 +29,16 @@ export default function RecommendCard({
           </div>
           <div className="p-4 lg:p-3">
             <p className="font-semibold text-sm line-clamp-1 md:max-w-sm">
-              Create a SaaS Application with Next.js.14, Stripe, Kinde, Prisma,
-              Supabase and ...
+             {projectTitle}
             </p>
             <div className="lg:flex justify-between gap-2 w-full">
-              <p className="text-muted-foreground text-sm">
-                Build a SaaS Application using Next.js 14, Stripe, Kinde,
-                Prisma, Supabase, and Tailwind! Learn step...
+              <p className="text-muted-foreground text-sm line-clamp-1">
+               {subTitle}
               </p>
               <div>
                 <Button asChild className="w-full mt-4 lg:mt-0">
                   <Link
-                    href={urlLink}
+                    href={`/projects/${projectId}`}
                     rel="noopener noreferrer"
                     target="_blank"
                   >
