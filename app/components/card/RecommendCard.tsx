@@ -13,7 +13,7 @@ export default function RecommendCard({
   projectId,
   cardImageUrl,
   projectTitle,
-  subTitle
+  subTitle,
 }: ProjectCardData) {
   return (
     <div>
@@ -29,21 +29,15 @@ export default function RecommendCard({
           </div>
           <div className="p-4 lg:p-3">
             <p className="font-semibold text-sm line-clamp-1 md:max-w-sm">
-             {projectTitle}
+              {projectTitle}
             </p>
             <div className="lg:flex justify-between gap-2 w-full">
               <p className="text-muted-foreground text-sm line-clamp-1">
-               {subTitle}
+                {subTitle}
               </p>
               <div>
                 <Button asChild className="w-full mt-4 lg:mt-0">
-                  <Link
-                    href={`/projects/${projectId}`}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    Watch
-                  </Link>
+                  <Link href={`/projects/${projectId}`}>Watch</Link>
                 </Button>
               </div>
             </div>

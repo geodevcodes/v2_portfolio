@@ -42,12 +42,7 @@ export default function ProjectsCard({
               </p>
               <div>
                 <Button asChild className="w-full mt-4">
-                  <Link
-                    href={`/projects/${projectId}`}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="text-white"
-                  >
+                  <Link href={`/projects/${projectId}`} className="text-white">
                     View Now
                   </Link>
                 </Button>
