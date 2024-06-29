@@ -36,17 +36,20 @@ export default function Home() {
       </section>
       {/*========= Recommended ====== */}
       <section className="mt-20">
-        <h5 className="my-3">Recommended</h5>
+        <h5 className="my-3">Recent</h5>
         {/* ===== Card section ==== */}
-        <div className="lg:flex gap-x-6 space-y-6 lg:space-y-0">
+        <div className="lg:flex xl:grid xl:grid-cols-2 gap-x-6 space-y-6 lg:space-y-0">
           {projectLinks &&
             projectLinks
               .filter((item, idx) => idx === 0 || idx === 1)
               .map((item, idx) => (
                 <div key={idx} className="">
                   <RecommendCard
-                    urlLink={item.href}
+                    projectId={item.id}
+                    projectUrl={item.projectUrl}
                     cardImageUrl={item.imageUrl}
+                    projectTitle={item.projectTitle}
+                    subTitle={item.subTitle}
                   />
                 </div>
               ))}
