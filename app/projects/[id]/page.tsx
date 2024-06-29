@@ -71,7 +71,7 @@ export default function ProjectsDetailsPage({ params }: { params: any }) {
               <p>🔑 OAuth (Google and GitHub)</p>
               <p>💽 Supabase Database</p>
               <p>💨 Prisma Orm</p>
-              <p>🥧 Styling with tailwindcss and shadcn UI</p>
+              <p>🎨 Styling with tailwindcss and shadcn UI</p>
               <p>✅ Guestbook Feature</p>
               <p>💵 Store Projects in Sanity</p>
               <p>🐐 Bento Layout</p>
