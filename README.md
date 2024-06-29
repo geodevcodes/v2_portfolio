@@ -6,7 +6,7 @@
 
 Hellooooooooooo, 👋 
 
-Here are some details about my portfolio: 👎
+Here are some details about my Website: 👎
 
 1.  [Repository of my portfolio](https://github.com/olatunde1998/geodevcodes-microfrontend)
 2.  [Publicly hosted live URL of the portfolio](https://geodevcodes.vercel.app/)
