@@ -3,13 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectCardData {
+  projectId: string;
   cardImageUrl: string;
-  urlLink: string;
+  projectTitle: string;
+  subTitle: string;
 }
 
 export default function ProjectsCard({
+  projectId,
   cardImageUrl,
-  urlLink,
+  projectTitle,
+  subTitle,
 }: ProjectCardData) {
   return (
     <div>
@@ -27,21 +31,19 @@ export default function ProjectsCard({
           </div>
           <div className="p-3 lg:p-3">
             <Link
-              href={urlLink}
+              href={`/projects/${projectId}`}
               className="font-semibold  text-sm line-clamp-2 hover:underline"
             >
-              Create a SaaS Application with Next.js.14, Stripe, Kinde, Prisma,
-              Supabase and...
+              {projectTitle}
             </Link>
             <div className="w-full">
-              <p className="text-muted-foreground text-sm">
-                Today we are going to create a Digital Marketplace using Next.js
-                14, Stripe Connect
+              <p className="text-muted-foreground text-sm  line-clamp-2">
+                {subTitle}
               </p>
               <div>
                 <Button asChild className="w-full mt-4">
                   <Link
-                    href={urlLink}
+                    href={`/projects/${projectId}`}
                     rel="noopener noreferrer"
                     target="_blank"
                     className="text-white"
