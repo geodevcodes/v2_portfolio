@@ -4,7 +4,8 @@ import { usePathname } from "next/navigation";
 import { sidebarContactLinks, sidebarRouteLinks } from "@/lib/LinkData";
 import { ModeToggle } from "../modeToggle/ModeToggle";
 import Image from "next/image";
-import { Github, LogOut, X } from "lucide-react";
+import { LogOut, X } from "lucide-react";
+import { FaGoogle } from "react-icons/fa";
 
 import {
   AlertDialog,
@@ -148,7 +149,7 @@ export default function SideBar({ session }: any) {
               <div className="bg-primary rounded-lg text-foreground flex items-center justify-center gap-4 p-2  cursor-pointer">
                 <AlertDialog>
                   <AlertDialogTrigger className="flex items-center text-white text-sm">
-                    <Github className="mr-2" size={16} /> Login with Github
+                    <FaGoogle className="mr-2" size={16} /> Login with Google
                   </AlertDialogTrigger>
                   <AlertDialogContent>
                     <AlertDialogTitle className="flex justify-between">
@@ -165,7 +166,8 @@ export default function SideBar({ session }: any) {
                       className="w-full mt-3 text-white"
                       onClick={() => signIn("google")}
                     >
-                      <Github className="mr-4" /> Login with Github
+                      <FaGoogle className="mr-4" size={16} />
+                      Login with Google
                     </AlertDialogAction>
                     <AlertDialogDescription>
                       By creating an account, you agree to our Terms of Service
