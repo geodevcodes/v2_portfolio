@@ -43,35 +43,35 @@ export const sidebarRouteLinks = [
 
   // SideBar Contact  Route Links 
 export const sidebarContactLinks = [
-    {
-      name: "Email",
-      href: "mailto:olatunde336@gmail.com",
-      key: "email",
-      icon: Mail,
-      current: false,
-    },
-    {
-      name: "Resume",
-      href: "https://docs.google.com/document/d/1Fjw3pDT47_9YiRT5JzQibfWbfDyMNRLTZttOeBeULpo/edit?usp=sharing",
-      key: "contact",
-      icon: ReceiptIndianRupee,
-      current: false,
-    },
-    {
-        name: "Linkedin",
-        href: "https://www.linkedin.com/in/olatunderasheed",
-        key: "linkedin",
-        icon: Linkedin,
-        current: false,
-      },
-      {
-        name: "Github",
-        href: "https://www.github.com/olatunde1998",
-        key: "youtube",
-        icon: Github,
-        current: false,
-      },
-  ];
+  {
+    name: "Email",
+    href: "mailto:olatunde336@gmail.com",
+    key: "email",
+    icon: Mail,
+    current: false,
+  },
+  {
+    name: "Resume",
+    href: "https://docs.google.com/document/d/1HG7RN7PFtuzhx1CuvgpJh-4LZ4D1Fs0clnvXVJV3074/edit?usp=sharing",
+    key: "contact",
+    icon: ReceiptIndianRupee,
+    current: false,
+  },
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/olatunderasheed",
+    key: "linkedin",
+    icon: Linkedin,
+    current: false,
+  },
+  {
+    name: "Github",
+    href: "https://www.github.com/olatunde1998",
+    key: "youtube",
+    icon: Github,
+    current: false,
+  },
+];
 
 
 // Project Data  Links

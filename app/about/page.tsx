@@ -16,9 +16,10 @@ export default function About() {
           </p>
           <div className="max-w-[700px]">
             <p className="text-foreground leading-8 ">
-              I&apos;m a Frontend developer who juggles building User
-              Interfaces. I mainly work with ReactJs, Next.js, Vue.js, but
-              occasionally, I like to play with Python.
+              I&apos;m a Software Engineer who juggles building User Interfaces.
+              I mainly work with Next.js, AI integration, ReactJs, Redux
+              toolkit, Nodejs, Express, MongoDB, AI Prompting but occasionally, I like to play with
+              Python.
             </p>
             <p className=" mt-10 leading-8">
               When I&apos;m not working, I find peace in exploring the world and
