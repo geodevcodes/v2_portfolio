@@ -1,10 +1,7 @@
-import { NextAuthOptions, User, getServerSession } from "next-auth";
-import { useSession } from "next-auth/react";
-import { redirect, useRouter } from "next/navigation";
+import { NextAuthOptions, getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
 
 import GoogleProvider from "next-auth/providers/google";
-// import GithubProvider from "next-auth/providers/github";
-
 
 export const authConfig: NextAuthOptions = {
   providers: [
@@ -17,10 +14,9 @@ export const authConfig: NextAuthOptions = {
   session: {
     strategy: "jwt",
     maxAge: 18000,
-    // maxAge: 30,
   },
   callbacks: {
-    async redirect({baseUrl }) {
+    async redirect({ baseUrl }) {
       return baseUrl;
     },
     async session({ session, token }) {
@@ -30,7 +26,7 @@ export const authConfig: NextAuthOptions = {
   },
   pages: {
     signIn: "/",
-    error: '/not-found',
+    error: "/not-found",
   },
 };
 
