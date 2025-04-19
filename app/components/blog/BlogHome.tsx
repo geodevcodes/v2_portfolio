@@ -23,15 +23,15 @@ export default function BlogHome() {
 
   return (
     <>
-      <main className="flex min-h-screen flex-col px-4 p-2 md:p-6 font-sans text-md">
+      <main className="fle min-h-screen flex-col px-4 p-2 md:p-6 font-sans text-md">
         <div className="pb-20">
-          <div className="border-b border-slate md:flex items-center justify-between">
+          <div className="md:border-b border-slate md:flex items-center justify-between">
             <p className="text-sm">
               <span className="text-3xl">./</span>{" "}
               <span className="text-2xl">Blog</span> Insights for your job
               search journey
             </p>
-            <div onClick={() => setShowCreateBlog((prev) => !prev)}>
+            <div className="hidden md:invisible md:block" onClick={() => setShowCreateBlog((prev) => !prev)}>
               {showCreateBlog ? (
                 <div className="my-4 flex p-2 md:p-3 justify-center items-center gap-[8px] rounded-[8px] text-white w-full md:w-[150px] cursor-pointer  px-3.5 py-4 font-light shadow-sm bg-primary">
                   <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
