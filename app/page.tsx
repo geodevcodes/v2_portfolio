@@ -69,6 +69,7 @@ export default function Home() {
                 alt="Paystack image"
                 width={60}
                 height={60}
+                sizes="(max-width: 768px) 100vw, 700px"
                 priority
                 className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
@@ -86,6 +87,7 @@ export default function Home() {
                 alt="figma image"
                 width={60}
                 height={60}
+                sizes="(max-width: 768px) 100vw, 700px"
                 priority
                 className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
@@ -97,9 +99,10 @@ export default function Home() {
             <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
               <Image
                 src="/tailwind.webp"
-                alt="nextjs image"
+                alt="tailwind image"
                 width={60}
                 height={60}
+                sizes="(max-width: 768px) 100vw, 700px"
                 priority
                 className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
@@ -111,9 +114,10 @@ export default function Home() {
             <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
               <Image
                 src="/vscode.webp"
-                alt="nextjs image"
+                alt="vscode image"
                 width={60}
                 height={60}
+                sizes="(max-width: 768px) 100vw, 700px"
                 priority
                 className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
@@ -130,6 +134,7 @@ export default function Home() {
                 alt="nextjs image"
                 width={60}
                 height={60}
+                sizes="(max-width: 768px) 100vw, 700px"
                 priority
                 className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
@@ -145,6 +150,7 @@ export default function Home() {
                 alt="vuejs image"
                 width={60}
                 height={60}
+                sizes="(max-width: 768px) 100vw, 700px"
                 priority
                 className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
               />
