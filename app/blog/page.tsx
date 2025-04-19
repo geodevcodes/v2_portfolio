@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 };
 export default async function BlogPage() {
   return (
-    <div>
+    <>
       <BlogHome />
-    </div>
+    </>
   );
 }
