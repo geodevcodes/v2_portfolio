@@ -25,7 +25,7 @@ export default function Projects() {
   });
 
   return (
-    <main className="px-4 p-2 md:p-8 min-h-screen mb-6">
+    <main className="px-4 p-2 md:p-8 min-h-screen mb-6 w-full max-w-7xl">
       <div className="md:flex justify-between items-center pl-3 md:pb-7 mb-8 md:mb-10 border-b border-slate">
         <p className="text-2xl md:text-3xl mb-5 md:mb-0 lg:text-left lg:text-4xl font-bold">
           Projects
