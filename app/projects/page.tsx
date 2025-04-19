@@ -3,9 +3,9 @@ import { projectLinks } from "@/lib/LinkData";
 import ProjectsCard from "../components/card/ProjectsCard";
 import { Skeleton } from "../components/skeleton/Skeleton";
 import { useQuery } from "@tanstack/react-query";
-import { Button } from "@/components/ui/button";
-import { MonitorCheck, Smartphone, } from "lucide-react";
-import Link from "next/link";
+// import { Button } from "@/components/ui/button";
+// import { MonitorCheck, Smartphone, } from "lucide-react";
+// import Link from "next/link";
 
 interface ProjectLink {
   id: string;
