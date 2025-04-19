@@ -95,17 +95,18 @@ export const projectLinks = [
     id: "1",
     imageUrl: "/project-7.png",
     projectTitle:
-      "Next.js 14 Tezza Survey Engine using NextJs, Next-Auth, NodeJs, Redux Toolkit and Tailwind.css",
+      "Survey Engine using NextJs, Next-Auth, NodeJs, Redux Toolkit and Tailwind.css",
     subTitle:
-      "🚀  Outstanding Survey Engine Application, In this app you can create and customize your Surveys and send to your Customer/Client with Survey Engine app using Next.js? Build with popular tools like NextJs, React-Redux, NodeJs for managing our database, Next-Auth for authentication, React-TanStack Query for efficient data Fetching, and spicing things up with Tailwind.css for some awesome styling.",
+      "🚀  Outstanding Survey Engine Application, In this app you can create and customize your Surveys or build your survey with AI automation and send to your Customer/Client with Survey Engine app? Build with popular tools like NextJs, React-Redux, NodeJs for managing our database, Next-Auth for authentication, React-TanStack Query for efficient data Fetching, and spicing things up with Tailwind.css for some awesome styling.",
     stack: [
-      "JavaScript",
+      "AI Integration",
+      "Typescript",
       "NextJS",
       "React-Redux",
       "AWS Amplify",
       "Tailwind",
       "Shadcn/UI",
-      "NodeJs Backend",
+      "NestJs Backend",
       "Prisma",
     ],
     repositoryUrl: "https://github.com/olatunde1998/survey-engine",
@@ -113,8 +114,8 @@ export const projectLinks = [
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 NextAuth Authentication",
-      "📧 Passwordless Auth",
       "💨 Prisma Orm",
+      "💨 Payment Service with Flutterwave",
       "🎨 Styling with tailwindcss",
       "✅ React TanStack Query",
       "💵 React-TanStack Table",
@@ -145,7 +146,7 @@ export const projectLinks = [
       "Unit Testing",
     ],
     repositoryUrl: "https://github.com/olatunde1998/geomatic-connect",
-    projectUrl: "https://geomatic-connect.vercel.app/",
+    projectUrl: "https://www.geomaticconnect.work/",
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 NextAuth Authentication",
