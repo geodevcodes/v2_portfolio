@@ -10,16 +10,17 @@ export default function ProjectsDetailsPage({ params }: { params: any }) {
   const project = projectArray.find((item) => item?.id === projectId);
 
   return (
-    <div className="px-4 p-2 mb-4 md:p-8 lg:mb-0  font-sans min-h-screen ">
+    <div className="px-4 p-2 mb-4 md:p-8 lg:mb-0  font-sans min-h-screen max-w-7xl">
       <div className="font-sans text-sm space-y-10 lg:space-x-6 lg:space-y-0 lg:grid lg:grid-cols-2">
         <div className="col-span-2/3 space-y-6">
-          <div className="relative h-[150px] md:h-[200px] xl:h-[350px] 2xl:h-[720px]">
+          <div className="">
             <Image
               src={(project?.imageUrl as string) ?? undefined}
               alt="project image"
-              fill
+              width={200}
+              height={200}
               sizes="(max-width: 768px) 100vw, 700px"
-              className="object-cover rounded-md"
+              className="object-cover rounded-md w-full h-[200px] md:h-[250px] xl:h-[350px]"
             />
           </div>
           <div className="p-5 border border-accent-primary rounded-md">
