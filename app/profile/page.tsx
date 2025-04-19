@@ -13,7 +13,7 @@ export default async function Profile() {
   // const profilePicture = session?.user?.picture
 
   return (
-    <main className="min-h-screen px-4 p-2 md:p-8 font-sans text-md">
+    <main className="min-h-screen px-4 p-2 md:p-8 font-sans text-md max-w-7xl">
       <div className="w-full font-sans text-md ">
         <p className="text-2xl md:text-5xl font-bold mb-2">Settings</p>
         <p className="text-muted-foreground">
