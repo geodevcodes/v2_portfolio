@@ -12,8 +12,8 @@ import Footer from "./components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "geodevcodes Micro-frontend",
-  description: "geodevcodes Micro-frontend Application",
+  title: "geodevcodes | Rasheed Olatunde",
+  description: "geodevcodes",
 };
 
 export default async function RootLayout({

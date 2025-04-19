@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Stack | geodevcodes",
-  description: "geodevcodes Micro-frontend Application",
+  description: "geodevcodes",
 };
 
 export default function Stack() {
