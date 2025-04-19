@@ -19,14 +19,15 @@ export default function ProjectsCard({
     <div>
       <div className="border border-slate rounded-md">
         <div>
-          <div className="relative rounded-t-md h-[150px] md:h-[200px] 2xl:h-[450px]">
+          <div className="rounded-t-md w-full h-full">
             <Image
               src={cardImageUrl}
-              alt="ecommerce prototype image"
-              fill
+              alt="project banner image"
+              width={200}
+              height={200}
               priority
               sizes="(max-width: 768px) 100vw, 700px"
-              className="rounded-t-md object-cover"
+              className="rounded-t-md w-full object-cover h-[180px] md:h-[250px]"
             />
           </div>
           <div className="p-3 lg:p-3">
