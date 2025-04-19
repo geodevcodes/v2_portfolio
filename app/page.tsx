@@ -7,7 +7,7 @@ import { projectLinks } from "@/lib/LinkData";
 
 export default function Home() {
   return (
-    <main className="px-4 p-2 md:p-8 font-sans min-h-screen ">
+    <main className="px-4 p-2 md:p-8 font-sans min-h-screen max-w-7xl">
       {/* ====HERO SECTION ===== */}
       <section className="">
         <p className="text-3xl font-semibold lg:text-5xl xl:text-[52px] max-w-2xl xl:max-w-lg">
