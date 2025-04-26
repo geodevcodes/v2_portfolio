@@ -1,8 +1,8 @@
-import { type ClassValue, clsx } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
 // FUNCTION TO FORMAT DATE
@@ -49,3 +49,31 @@ export function getShortTitle(title: string) {
   const words = title.trim().split(" ");
   return words.slice(0, 5).join(" "); // Fallback: first 5 words
 }
+
+// REACT QUILL Functions
+//Custom Tool Bar
+export const modules = {
+  toolbar: [
+    [{ header: [1, 2, false] }],
+    ["bold", "italic", "underline", "strike", "blockquote"],
+    [{ list: "ordered" }, { list: "bullet" }],
+    ["link", "color", "image"],
+    [{ "code-block": true }],
+    ["clean"],
+  ],
+};
+export const formats = [
+  "header",
+  "bold",
+  "italic",
+  "underline",
+  "strike",
+  "blockquote",
+  "list",
+  "bullet",
+  "link",
+  "indent",
+  "image",
+  "code-block",
+  "color",
+];
