@@ -4,7 +4,7 @@ import axios from "axios";
 export const CreateBlogRequest = async (body: any) => {
   try {
     const response = await axios.post(
-      `${process.env.NEXT_PUBLIC_BASEURL}/api/blogs`,
+      `${process.env.NEXT_PUBLIC_BASEURL}/api/v1/blogs`,
       body,
       {
         headers: {
@@ -26,7 +26,7 @@ export const CreateBlogRequest = async (body: any) => {
 export const GetBlogsRequest = async (pageNumber = 1, limit: number) => {
   try {
     const response = await axios.get(
-      `${process.env.NEXT_PUBLIC_BASEURL}/api/blogs`,
+      `${process.env.NEXT_PUBLIC_BASEURL}/api/v1/blogs`,
       {
         maxBodyLength: Infinity,
         params: { pageNumber, limit },
@@ -48,7 +48,7 @@ export const GetBlogsRequest = async (pageNumber = 1, limit: number) => {
 export const GetBlogRequest = async (blogSlug: any) => {
   try {
     const response = await axios.get(
-      `${process.env.NEXT_PUBLIC_BASEURL}/api/blogs/${blogSlug}`,
+      `${process.env.NEXT_PUBLIC_BASEURL}/api/v1/blogs/${blogSlug}`,
       {
         maxBodyLength: Infinity,
         headers: {
@@ -68,7 +68,7 @@ export const GetBlogRequest = async (blogSlug: any) => {
 export const UpdateBlogRequest = async (blogId: any, token: any, body: any) => {
   try {
     const response = await axios.put(
-      `${process.env.NEXT_PUBLIC_BASEURL}/api/blogs/${blogId}`,
+      `${process.env.NEXT_PUBLIC_BASEURL}/api/v1/blogs/${blogId}`,
       body,
       {
         headers: {
@@ -91,7 +91,7 @@ export const UpdateBlogRequest = async (blogId: any, token: any, body: any) => {
 export const DeleteBlogRequest = async (blogId: any, token: any) => {
   try {
     const response = await axios.delete(
-      `${process.env.NEXT_PUBLIC_BASEURL}/api/blogs/${blogId}`,
+      `${process.env.NEXT_PUBLIC_BASEURL}/api/v1/blogs/${blogId}`,
       {
         maxBodyLength: Infinity,
         headers: {
