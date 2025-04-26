@@ -41,13 +41,13 @@ export const sidebarRouteLinks = [
     icon: Layers3,
     current: false,
   },
-  {
-    name: "Blog",
-    href: "/blog",
-    key: "blog",
-    icon: PencilLine,
-    current: false,
-  },
+  // {
+  //   name: "Blog",
+  //   href: "/blog",
+  //   key: "blog",
+  //   icon: PencilLine,
+  //   current: false,
+  // },
 ];
 
 // SideBar Contact  Route Links
