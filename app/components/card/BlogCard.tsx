@@ -45,7 +45,6 @@ export function BlogCard({
             width={500}
             height={500}
             priority
-            placeholder="blur"
             alt="Blog Image"
             className="rounded-2xl"
           />
