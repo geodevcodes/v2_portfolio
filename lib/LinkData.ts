@@ -128,7 +128,7 @@ export const projectLinks = [
   },
   {
     id: "2",
-    imageUrl: "/geomatics-connect.png",
+    imageUrl: "/geomatic-connect.png",
     projectTitle:
       "Create a Saas Application [Geomatics Connect] with Next.js.14, NextAuth, MongoDB, ExpressJs",
     subTitle:
