@@ -164,7 +164,7 @@ export default function SideBar({ session }: any) {
 
                     <AlertDialogAction
                       className="w-full mt-3 text-white"
-                      onClick={() => signIn("google")}
+                      onClick={() => signIn("google", { callbackUrl: "/" })}
                     >
                       <FaGoogle className="mr-4" size={16} />
                       Login with Google
