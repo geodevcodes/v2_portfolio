@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
-
-import { getServerSession } from "next-auth";
-import { authConfig } from "../api/auth/[...nextauth]/option";
+import { auth } from "@/auth";
 
 export default async function Profile() {
-  const session = await getServerSession(authConfig);
-
-  console.log(session, "this is session ==")
-
-  const fullName = session?.user?.name
-  const email = session?.user?.email
-  // const profilePicture = session?.user?.picture
-
+  const session = await auth();
+  const fullName = session?.user?.name;
+  const email = session?.user?.email;
+  const profilePicture = session?.user?.image;
   return (
     <main className="min-h-screen px-4 p-2 md:p-8 font-sans text-md max-w-7xl">
       <div className="w-full font-sans text-md ">
