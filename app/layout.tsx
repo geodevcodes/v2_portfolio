@@ -5,9 +5,8 @@ import { ThemeProvider } from "./providers/theme-provider";
 import MobileNavbar from "./components/navbar/MobileNavbar";
 import SideBar from "./components/sidebar/Sidebar";
 import SessionProviderPage from "./providers/session-provider";
-import { getServerSession } from "next-auth";
-import { authConfig } from "./api/auth/[...nextauth]/option";
 import Footer from "./components/footer/Footer";
+import { auth } from "@/auth";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +20,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = await getServerSession(authConfig);
+  const session = await auth();
 
   return (
     <html lang="en">
