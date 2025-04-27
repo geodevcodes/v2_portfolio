@@ -40,7 +40,7 @@ export default function RecommendCard({
               </p>
               <div>
                 <Button asChild className="w-full mt-4 lg:mt-0">
-                  <Link href={`/projects/${projectId}`}>View More...</Link>
+                  <Link href={`/projects/${projectId}`}>View More</Link>
                 </Button>
               </div>
             </div>
