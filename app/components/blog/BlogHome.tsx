@@ -3,21 +3,42 @@ import { BlogCard, BlogSmallCard } from "@/app/components/card/BlogCard";
 import { GetBlogsRequest } from "@/app/services/blog.request";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowLeft, Plus } from "lucide-react";
+import { useEffect, useState } from "react";
+import { FaGoogle } from "react-icons/fa";
 import { formatDate } from "@/lib/utils";
 import CreateBlog from "./CreateBlog";
-import { useState } from "react";
 import Link from "next/link";
+import { X } from "lucide-react";
 
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
-export default function BlogHome() {
+export default function BlogHome({ session }: any) {
+  const email = session?.user?.email;
   const [showCreateBlog, setShowCreateBlog] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [openDialog, setOpenDialog] = useState(false);
   const [limit] = useState(6);
+  const router = useRouter();
 
   const { data: blogsData } = useQuery({
     queryKey: ["getBlogsApi", currentPage],
     queryFn: () => GetBlogsRequest(currentPage, limit),
   });
+
+  useEffect(() => {
+    if (!email) {
+      setOpenDialog(true);
+    }
+  }, [email]);
 
   return (
     <>
@@ -85,6 +106,31 @@ export default function BlogHome() {
           )}
         </div>
       </main>
+      <AlertDialog open={openDialog} onOpenChange={setOpenDialog}>
+        <AlertDialogContent>
+          <AlertDialogTitle className="flex justify-between">
+            Login
+            <AlertDialogCancel onClick={() => router.push("/")}>
+              <X />
+            </AlertDialogCancel>
+          </AlertDialogTitle>
+          <AlertDialogDescription>
+            Please Login to access the blog
+          </AlertDialogDescription>
+
+          <AlertDialogAction
+            className="w-full mt-3 text-white"
+            onClick={() => signIn("google", { callbackUrl: "/blog" })}
+          >
+            <FaGoogle className="mr-4" size={16} />
+            Login with Google
+          </AlertDialogAction>
+          <AlertDialogDescription>
+            By creating an account, you agree to our Terms of Service and
+            Privacy Policy.
+          </AlertDialogDescription>
+        </AlertDialogContent>
+      </AlertDialog>
     </>
   );
 }
