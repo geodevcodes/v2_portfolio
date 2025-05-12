@@ -1,8 +1,17 @@
 import { formatDateShort, formats, generateSlug, modules } from "@/lib/utils";
 import { CreateBlogRequest } from "@/app/services/blog.request";
-import { LoaderCircle, Plus, Share2, Trash, Upload, X } from "lucide-react";
+import {
+  LoaderCircle,
+  Plus,
+  Share2,
+  Sparkles,
+  Trash,
+  Upload,
+  X,
+} from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
+import { AIGenerateBlog } from "./AIGenerateBlog";
 import { Modal } from "../modals/Modal";
 import { toast } from "react-toastify";
 import parse from "html-react-parser";
@@ -26,6 +35,7 @@ export default function CreateBlog({
 }) {
   const [showPreview, setShowPreview] = useState(false);
   const [isCreating, setIsCreating] = useState(false);
+  const [showAIGenerator, setShowAIGenerator] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [userImage, setUserImage] = useState<string | undefined>(undefined);
   const [blogData, setBlogData] = useState<BlogData>({
@@ -71,6 +81,13 @@ export default function CreateBlog({
       });
     }
   }, []);
+
+  // Add this useEffect to your CreateBlog component to update Quill when blogData changes
+  useEffect(() => {
+    if (quillInstance.current && blogData.content) {
+      quillInstance.current.root.innerHTML = blogData.content;
+    }
+  }, [blogData.content]);
 
   // Image upload handler
   const imageHandler = () => {
@@ -229,9 +246,16 @@ export default function CreateBlog({
         <div className="grid grid-cols-1 md:grid-cols-2 py-4 px-3 gap-4">
           {/* ========Blog Editor======== */}
           <div className="w-full max-w-3xl p-5  border border-[#cbd5e1] dark:border-muted rounded-lg mx-auto">
-            <h2 className="text-lg lg:text-2xl font-bold border-b border-[#cbd5e1] dark:border-muted pb-2 mb-5 ">
-              Blog Editor
-            </h2>
+            <div className="flex items-center justify-between pb-2 mb-5 border-b border-gray-400">
+              <h2 className="text-lg lg:text-2xl font-bold"> Blog Editor</h2>
+              <button
+                onClick={() => setShowAIGenerator(!showAIGenerator)}
+                className="flex items-center gap-2 px-4 py-2 text-white rounded font-light shadow-sm bg-primary"
+              >
+                Build with AI
+                <Sparkles className="w-4 h-4" />
+              </button>
+            </div>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -457,6 +481,14 @@ export default function CreateBlog({
           </div>
         </div>
       </div>
+      <Modal show={showAIGenerator} onClose={() => setShowAIGenerator(false)}>
+        <div className="w-full max-w-3xl p-5 dark:border-muted bg-background rounded-lg mx-auto mb-4">
+          <AIGenerateBlog
+            setBlogData={setBlogData}
+            setShowAIGenerator={setShowAIGenerator}
+          />
+        </div>
+      </Modal>
       <Modal show={showPreview} onClose={() => setShowPreview(false)}>
         <div className="w-full md:w-[672px] lg:w-[768px] p-7 border border-gray-200 dark:border-muted bg-accent rounded-lg">
           <h2 className="flex justify-between text-2xl lg:text-3xl font-bold border-b border-gray-400 pb-2 mb-5 ">
