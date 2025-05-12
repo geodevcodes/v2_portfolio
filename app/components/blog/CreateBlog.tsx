@@ -490,12 +490,12 @@ export default function CreateBlog({
         </div>
       </Modal>
       <Modal show={showPreview} onClose={() => setShowPreview(false)}>
-        <div className="w-full md:w-[672px] lg:w-[768px] p-7 border border-gray-200 dark:border-muted bg-accent rounded-lg">
-          <h2 className="flex justify-between text-2xl lg:text-3xl font-bold border-b border-gray-400 pb-2 mb-5 ">
+        <div className="w-full md:w-[672px] lg:w-[768px] p-7 border border-gray-200 dark:border-muted dark:bg-background bg-accent rounded-lg">
+          <h2 className="flex justify-between text-2xl lg:text-3xl font-bold border-b border-gray-400 dark:border-muted pb-2 mb-5 ">
             Blog View
             <X
               onClick={() => setShowPreview(false)}
-              className="hover:bg-slate-100 cursor-pointer h-fit w-fit p-1.5 rounded-md"
+              className="hover:bg-slate-100 dark:hover:bg-accent cursor-pointer h-fit w-fit p-1.5 rounded-md"
             />
           </h2>
           <div className="flex justify-between items-center">
@@ -505,7 +505,7 @@ export default function CreateBlog({
               <p className="underline text-blue-400"> {blogData?.authorName}</p>
             </div>
             <div className="cursor-pointer">
-              <p className="flex items-center cursor-pointer gap-2 border text-sm border-slate-200 bg-white rounded-2xl px-3 py-1">
+              <p className="flex items-center cursor-pointer gap-2 border text-sm border-slate-200 bg-white dark:bg-accent rounded-2xl px-3 py-1">
                 <Share2 className="size-4" />
                 Share
               </p>
