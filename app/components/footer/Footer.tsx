@@ -7,7 +7,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 z-[100000] flex justify-between w-full border-t border-slate bg-background text-[#8CA5B5]">
+    <footer className="fixed bottom-0 z-[100] flex justify-between w-full border-t border-slate bg-background text-[#8CA5B5]">
       <div className="flex items-center justify-center border-l border-transparent px-4 py-3">
         <span className="m-0">find me in:</span>
       </div>
