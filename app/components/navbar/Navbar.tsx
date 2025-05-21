@@ -81,7 +81,7 @@ export default function Navbar() {
                 "border-b md:border-b-0",
                 index === arr.length - 2 && "md:border-r",
                 index === arr.length - 1
-                  ? "md:border-none ml-0 md:ml-auto"
+                  ? "md:border-none ml-0 md:ml-auto md:mr-6"
                   : "",
                 isActive(path) && "relative dark:text-white"
               )}
