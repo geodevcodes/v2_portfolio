@@ -71,7 +71,7 @@ export default function Navbar() {
             { path: "/", label: "_hello" },
             { path: "/about", label: "_about-me" },
             { path: "/projects", label: "_projects" },
-            { path: "#", label: "_blogify" },
+            { path: "/blog", label: "_blogify" },
           ].map(({ path, label }, index, arr) => (
             <li
               key={path}
