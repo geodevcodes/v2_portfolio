@@ -138,8 +138,8 @@ export const projectLinks = [
       "Shadcn/UI",
       "MongoDB",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/geodevcodes-blog",
-    projectUrl: "https://geodevcodes-blog.vercel.app/",
+    repositoryUrl: "https://github.com/olatunde1998/geodevcodes-microfrontend",
+    projectUrl: "https://geodevcodes.vercel.app/",
     category: [
       "Typescript",
       "NextJs",
