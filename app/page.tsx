@@ -7,8 +7,8 @@ export default function Home() {
         className="bg-right bg-no-repeat bg-contain h-full bg-background flex items-center max-w-[1300px] ml-auto md:h-screen"
       >
         <div className="py-40 pl-4 md:p-0 md:m-auto w-3/4 md:w-11/12">
-          <div className="text-[#e5e9f0]">
-            <span className="md:text-sm">Hi all. I am</span>
+          <div className="dark:text-[#e5e9f0]">
+            <span className="md:text-sm">Hey there, I am</span>
             <h1 className="text-5xl lg:text-[3em] my-0.5 -mt-1.5">Rasheed Olatunde</h1>
             <h2 className="text-[#4d5bce] text-2xl">
               &gt; Software developer
