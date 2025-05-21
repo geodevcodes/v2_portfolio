@@ -22,7 +22,7 @@ export default function Navbar() {
       )}
     >
       <div className="flex items-center justify-between w-full md:w-[25%] md:flex- border-b border-slate md:border-none">
-        <Link href="/" className="p-4 text-whit text-[#8CA5B5] dark:text-white">
+        <Link href="/" className="p-4 text-[#8CA5B5] dark:text-primary">
           geodevcodes
         </Link>
 
