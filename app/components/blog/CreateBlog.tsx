@@ -281,7 +281,7 @@ export default function CreateBlog({
                       name="authorName"
                       id="authorName"
                       autoComplete="given-name"
-                      className="block w-full rounded-md border border-[#cbd5e1] dark:border-muted py-2 px-4 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border border-[#cbd5e1] dark:border-muted dark:bg-background py-2 px-4 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
                       placeholder="Type Author Name here..."
                     />
                   </div>
@@ -354,7 +354,7 @@ export default function CreateBlog({
                       name="title"
                       id="title"
                       autoComplete="given-name"
-                      className="block w-full rounded-md border border-[#cbd5e1] dark:border-muted py-2 px-4  shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border border-[#cbd5e1] dark:border-muted dark:bg-background py-2 px-4  shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
                       placeholder="Type the Course title"
                     />
                   </div>
@@ -375,7 +375,7 @@ export default function CreateBlog({
                       id="slug"
                       autoComplete="slug"
                       readOnly
-                      className="block w-full rounded-md cursor-not-allowed border border-[#cbd5e1] dark:border-muted py-2 px-4 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md cursor-not-allowed border border-[#cbd5e1] dark:border-muted dark:bg-background py-2 px-4 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
                       placeholder="blug--slug"
                     />
                   </div>
@@ -396,7 +396,7 @@ export default function CreateBlog({
                       setBlogData({ ...blogData, subTitle: e.target.value })
                     }
                     value={blogData.subTitle}
-                    className="block p-2.5 w-full text-sm rounded-lg border border-gray-300 dark:border-muted"
+                    className="block p-2.5 w-full text-sm rounded-lg border border-gray-300 dark:border-muted dark:bg-background"
                     placeholder="Write your thoughts here..."
                   ></textarea>
                 </div>
