@@ -164,10 +164,10 @@ export const projectLinks = [
   },
   {
     id: "4",
-    imageUrl: "/project-2.png",
-    projectTitle: "AI Powered Blog Application (Blogify)",
+    imageUrl: "/must.png",
+    projectTitle: "Must Culture Share: Internationalization with i18n",
     subTitle:
-      "🚀 Build a stunning blog with Next.js 14! 🌐 Learn React, Sanity.io, Tailwind.css, and Shadcn/UI in this tutorial. 🛠️ Perfect for developers of all levels. Like, subscribe, and let's go! 💻",
+      "🚀 Developed the Must Culture landing page with full internationalization, supporting five languages: English, Korean, Chinese, German, and Arabic",
     stack: [
       "TypeScript",
       "NextJS",
@@ -178,14 +178,11 @@ export const projectLinks = [
       "Shadcn/UI",
       "Prisma",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/geodevcodes-blog",
-    projectUrl: "https://geodevcodes-blog.vercel.app/",
-    category: ["Typescript", "NextJs", "AI Integration", "Web Application"],
+    repositoryUrl: "https://github.com/olatunde1998/must",
+    projectUrl: "https://must-geodevcodes.vercel.app/ko",
+    category: ["Typescript", "NextJs", "Web Application"],
     projectFeatures: [
       "🌐 Next.js App Router",
-      "🔐 Kinde Authentication",
-      "📧 Passwordless Auth",
-      "🔑 OAuth (Google and GitHub)",
       "🎨 Styling with tailwindcss and shadcn UI",
       "✅ Github Pull Request Template",
       "💵 Github Workflow",
@@ -236,9 +233,9 @@ export const projectLinks = [
     id: "6",
     imageUrl: "/lms-2.png",
     projectTitle:
-      "Create a Learning Management Application with Next.js.14, NextAuth, Firebase",
+      "Learning Management System with Next.js.14, NextAuth",
     subTitle:
-      "🚀 Create a modern Portfolio Website with Next.js.14, Tailwind, Firebase Database and Firebase-Auth! Learn step-by-step and elevate your development skills.",
+      "🚀 Create a modern Learning Management System For software developers  with Next.js.14, Tailwind,  Learn step-by-step and elevate your development skills.",
     stack: [
       "TypeScript",
       "NextJS",
