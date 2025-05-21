@@ -1,175 +1,42 @@
-import { Button } from "@/components/ui/button";
-import { PersonStanding, Video } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import RecommendCard from "./components/card/RecommendCard";
-import { projectLinks } from "@/lib/LinkData";
 
 export default function Home() {
   return (
-    <main className="px-4 p-2 md:p-8 font-sans min-h-screen max-w-7xl">
-      {/* ====HERO SECTION ===== */}
-      <section className="">
-        <p className="text-3xl font-semibold lg:text-5xl xl:text-[52px] max-w-2xl xl:max-w-lg">
-          Everything related to tech in one places.
-        </p>
-        <p className="text-muted-foreground my-6 max-w-xl">
-          Navigate the ever-evolving tech landscape effortlessly with the
-          perfect hub to stay informed.
-        </p>
-        <div className="flex gap-x-6">
-          <Button asChild>
-            <Link href="/about">
-              <PersonStanding className="mr-2 h-4 w-4" />
-              About Me
-            </Link>
-          </Button>
-          <Button
-            asChild
-            className="bg-muted text-foreground  hover:bg-muted dark:bg-accent dark:text-secondary-foreground"
-          >
-            <Link href="/projects">
-              <Video className="mr-2 h-4 w-4" /> Projects
-            </Link>
-          </Button>
-        </div>
-      </section>
-      {/*========= Recommended ====== */}
-      <section className="mt-8">
-        <h5 className="my-3">Recent</h5>
-        {/* ===== Card section ==== */}
-        <div className="lg:flex xl:grid xl:grid-cols-2 gap-x-6 space-y-6 lg:space-y-0">
-          {projectLinks &&
-            projectLinks
-              .filter((item, idx) => idx === 0 || idx === 1)
-              .map((item, idx) => (
-                <div key={idx} className="">
-                  <RecommendCard
-                    projectId={item.id}
-                    projectUrl={item.projectUrl}
-                    cardImageUrl={item.imageUrl}
-                    projectTitle={item.projectTitle}
-                    subTitle={item.subTitle}
-                  />
-                </div>
-              ))}
-        </div>
-      </section>
-      {/* ====My Stack section ===== */}
-      <section>
-        <section className="h-fit border border-accent-primary mt-8 p-6">
-          <h3 className="font-bold text-xl">My Stack</h3>
-          <p className="text-muted-foreground mb-4">
-            Software and tools I use on a regular basis.
-          </p>
-          <div className="justify-between gap-y-10 grid lg:grid-cols-3">
-            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md">
-              <Image
-                src="/paystack.png"
-                alt="Paystack image"
-                width={60}
-                height={60}
-                sizes="(max-width: 768px) 100vw, 700px"
-                priority
-                className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
-              />
-              <div>
-                <p className="font-semibold">Paystack</p>
-                <p className="text-sm text-muted-foreground">
-                  Payment Platform
-                </p>
-              </div>
-            </div>
-
-            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
-              <Image
-                src="/figma.webp"
-                alt="figma image"
-                width={60}
-                height={60}
-                sizes="(max-width: 768px) 100vw, 700px"
-                priority
-                className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
-              />
-              <div>
-                <p className="font-semibold">Figma</p>
-                <p className="text-sm text-muted-foreground">Design Tool</p>
-              </div>
-            </div>
-            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
-              <Image
-                src="/tailwind.webp"
-                alt="tailwind image"
-                width={60}
-                height={60}
-                sizes="(max-width: 768px) 100vw, 700px"
-                priority
-                className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
-              />
-              <div>
-                <p className="font-semibold">Tailwind</p>
-                <p className="text-sm text-muted-foreground">Styling</p>
-              </div>
-            </div>
-            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
-              <Image
-                src="/vscode.webp"
-                alt="vscode image"
-                width={60}
-                height={60}
-                sizes="(max-width: 768px) 100vw, 700px"
-                priority
-                className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
-              />
-              <div>
-                <p className="font-semibold">Vs Code</p>
-                <p className="text-sm text-muted-foreground">
-                  Coding Environment
-                </p>
-              </div>
-            </div>
-            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
-              <Image
-                src="/nextjs.webp"
-                alt="nextjs image"
-                width={60}
-                height={60}
-                sizes="(max-width: 768px) 100vw, 700px"
-                priority
-                className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
-              />
-              <div>
-                <p className="font-semibold">Next.js</p>
-                <p className="text-sm text-muted-foreground">React Framework</p>
-              </div>
-            </div>
-
-            <div className="h-fit flex gap-x-2 items-center hover:bg-accent p-3 rounded-md ">
-              <Image
-                src="/vue.png"
-                alt="vuejs image"
-                width={60}
-                height={60}
-                sizes="(max-width: 768px) 100vw, 700px"
-                priority
-                className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
-              />
-              <div>
-                <p className="font-semibold">Vue.js</p>
-                <p className="text-sm text-muted-foreground">Framework</p>
-              </div>
-            </div>
+    <>
+      <main
+        style={{ backgroundImage: "url('/bg-blur.svg')" }}
+        className="bg-right bg-no-repeat bg-contain h-full bg-background flex items-center max-w-[1300px] ml-auto md:h-screen"
+      >
+        <div className="py-40 pl-4 md:p-0 md:m-auto w-3/4 md:w-11/12">
+          <div className="text-[#e5e9f0]">
+            <span className="md:text-sm">Hi all. I am</span>
+            <h1 className="text-5xl lg:text-[3em] my-0.5 -mt-1.5">Rasheed Olatunde</h1>
+            <h2 className="text-[#4d5bce] text-2xl">
+              &gt; Software developer
+            </h2>
           </div>
-          <div className="h-fit border border-accent-primary mt-8  text-center rounded-md cursor-pointer ">
-            <Link
-              href="/stack"
-              className="block p-3 hover:bg-accent rounded-md"
-            >
-              View More
-            </Link>
+
+          <div className=" mt-20">
+            <span className="text-textColor md:text-sm">
+              {`//`} find my profile on Github:
+            </span>
+            <p className="text-white md:text-sm">
+              <span className="text-[#4d5bce]">const</span>{" "}
+              <span className="text-[#43d9ad]">githubLink</span> ={" "}
+              <span className="text-[#e99287]">
+                &quot;
+                <a
+                  target="_blank"
+                  href="https://github.com/qudusayo"
+                  rel="noreferrer"
+                >
+                  https://github.com/olatunde1998
+                </a>
+                &quot;
+              </span>
+            </p>
           </div>
-        </section>
-      </section>
-    </main>
+        </div>
+      </main>
+    </>
   );
 }
