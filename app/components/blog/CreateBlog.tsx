@@ -246,7 +246,7 @@ export default function CreateBlog({
         <div className="grid grid-cols-1 md:grid-cols-2 py-4 px-3 gap-4">
           {/* ========Blog Editor======== */}
           <div className="w-full max-w-3xl p-5  border border-[#cbd5e1] dark:border-muted rounded-lg mx-auto">
-            <div className="flex items-center justify-between pb-2 mb-5 border-b border-gray-400">
+            <div className="flex items-center justify-between pb-2 mb-5 border-b border-slate">
               <h2 className="text-lg lg:text-2xl font-bold"> Blog Editor</h2>
               <button
                 onClick={() => setShowAIGenerator(!showAIGenerator)}
