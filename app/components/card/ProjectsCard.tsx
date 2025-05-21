@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { VscGithubAlt } from "react-icons/vsc";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,6 +8,7 @@ interface ProjectCardData {
   cardImageUrl: string;
   projectTitle: string;
   subTitle: string;
+  githubUrl: string;
 }
 
 export default function ProjectsCard({
@@ -14,23 +16,23 @@ export default function ProjectsCard({
   cardImageUrl,
   projectTitle,
   subTitle,
+  githubUrl,
 }: ProjectCardData) {
   return (
     <div>
       <div className="border border-slate rounded-md">
-        <div>
-          <div className="rounded-t-md w-full h-full">
+        <div className="p-3">
+          <div className="relative rounded-t-md w-full h-[180px] md:h-[230px]">
             <Image
               src={cardImageUrl}
               alt="project banner image"
-              width={200}
-              height={200}
+              fill
               priority
-              sizes="(max-width: 768px) 100vw, 700px"
-              className="rounded-t-md w-full object-cover h-[180px] md:h-[250px]"
+              sizes="(max-width: 500px) 100vw, 700px"
+              className="rounded-t-md w-full object-con h-[180px md:h-[250px"
             />
           </div>
-          <div className="p-3 lg:p-3">
+          <div className="pt-3">
             <Link
               href={`/projects/${projectId}`}
               className="font-semibold  text-sm line-clamp-2 hover:underline"
@@ -41,12 +43,22 @@ export default function ProjectsCard({
               <p className="text-muted-foreground text-sm  line-clamp-2">
                 {subTitle}
               </p>
-              <div>
-                <Button asChild className="w-full mt-4">
+              <div className="flex items-center justify-between">
+                <Button asChild className="w-fit mt-4 bg-[#1c2b3a]">
                   <Link href={`/projects/${projectId}`} className="text-white">
-                    View Now
+                    View Project
                   </Link>
                 </Button>
+                {githubUrl ? (
+                  <a
+                    aria-label="github link"
+                    href={githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <VscGithubAlt fill="#607B96" size={25} />
+                  </a>
+                ) : null}
               </div>
             </div>
           </div>

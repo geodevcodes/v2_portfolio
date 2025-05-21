@@ -418,10 +418,7 @@ export default function CreateBlog({
               >
                 {isCreating ? (
                   <>
-                    <LoaderCircle
-                      style={{ animationDuration: "0.4s" }}
-                      className="size-4 animate-spin mx-auto"
-                    />
+                    <LoaderCircle className="size-4 animate-spin duration-500 mx-auto" />
                     Uploading...
                   </>
                 ) : (

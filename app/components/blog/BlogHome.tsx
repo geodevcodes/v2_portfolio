@@ -7,8 +7,8 @@ import { useEffect, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { formatDate } from "@/lib/utils";
 import CreateBlog from "./CreateBlog";
-import Link from "next/link";
 import { X } from "lucide-react";
+import Link from "next/link";
 
 import {
   AlertDialog,
@@ -51,7 +51,7 @@ export default function BlogHome({ session }: any) {
               search journey
             </p>
             <div
-              className="hidden md:invisible md:block"
+              className="hidden md:invisibl md:block"
               onClick={() => setShowCreateBlog((prev) => !prev)}
             >
               {showCreateBlog ? (
@@ -73,7 +73,7 @@ export default function BlogHome({ session }: any) {
           </div>
 
           {showCreateBlog ? (
-            <div className="mt-8 rounded-2xl bg-whit border border-slate-200 dark:border-muted">
+            <div className="mt-8 rounded-2xl border border-slate-200 dark:border-muted">
               <CreateBlog setShowCreateBlog={setShowCreateBlog} />
             </div>
           ) : (
