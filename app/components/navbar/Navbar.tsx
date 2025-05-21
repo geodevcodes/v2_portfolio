@@ -17,11 +17,11 @@ export default function Navbar() {
   return (
     <div
       className={clsx(
-        "flex border-b border-slate bg-background text-[#8CA5B5] fixed  w-full z-50",
+        "flex border-b border-slate bg-background text-[#8CA5B5] fixed w-full z-50",
         visibility && "h-full flex-col overflow-y-scroll md:h-auto"
       )}
     >
-      <div className="flex items-center justify-between w-full md:w-[25%] md:flex- border-b border-slate md:border-none">
+      <div className="flex items-center justify-between px-3 w-full md:w-[25%] border-b border-slate md:border-none">
         <Link href="/" className="p-4 text-[#8CA5B5] dark:text-primary">
           geodevcodes
         </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="flex-1 p-0 md:flex md:p-0">
+      <div className="flex-1 p-0 md:flex">
         <ul
           className={clsx(
             "list-none flex flex-col md:flex-row w-full md:w-full overflow-y-auto",

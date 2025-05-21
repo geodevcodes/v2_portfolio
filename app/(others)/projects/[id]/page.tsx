@@ -10,7 +10,7 @@ export default function ProjectsDetailsPage({ params }: { params: any }) {
   const project = projectArray.find((item) => item?.id === projectId);
 
   return (
-    <div className="px-4 p-2 mb-4 md:p-8 md:pt-20 lg:mb-0  font-sans min-h-screen max-w-7xl">
+    <div className="px-4 p-2 mb-4 pb-20 md:p-8 md:pt-20 lg:mb-0  font-sans min-h-screen max-w-7xl">
       <div className="font-sans text-sm space-y-10 lg:space-x-6 lg:space-y-0 lg:grid lg:grid-cols-2">
         <div className="col-span-2/3 space-y-6">
           <div className="">

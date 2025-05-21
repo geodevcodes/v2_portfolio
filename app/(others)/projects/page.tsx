@@ -52,7 +52,7 @@ export default function Projects() {
     : projectLinksData;
 
   return (
-    <main className="px-4 p-2 md:p-8 md:pt-16 min-h-screen mb-6 w-full max-w-7xl">
+    <main className="px-4 p-2 pb-20 md:p-8 md:pt-16 min-h-screen mb-6 w-full max-w-7xl">
       <div className="pl-3 pb-3 md:pb-6 mb-8 md:mb-4 border-b border-slate">
         <div className="flex items-center justify-between">
           <p className="text-2xl md:text-3xl  lg:text-left lg:text-4xl font-bold">
