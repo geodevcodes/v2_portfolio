@@ -1,27 +1,22 @@
-import type { Metadata } from "next";
+"use client";
+import SessionProviderPage from "@/app/providers/session-provider";
+import { ThemeProvider } from "@/app/providers/theme-provider";
+import SideBar from "@/app/components/sidebar/Sidebar";
+import Navbar from "@/app/components/navbar/Navbar";
+import Footer from "@/app/components/footer/Footer";
+import { usePathname } from "next/navigation";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./providers/theme-provider";
-import MobileNavbar from "./components/navbar/MobileNavbar";
-import SideBar from "./components/sidebar/Sidebar";
-import SessionProviderPage from "./providers/session-provider";
-import Footer from "./components/footer/Footer";
-import { auth } from "@/auth";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "geodevcodes | Rasheed Olatunde",
-  description: "geodevcodes",
-};
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = await auth();
-
+  const pathname = usePathname();
+  const showSidebar = pathname !== "/";
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -32,14 +27,14 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <MobileNavbar />
-            <section className="w-full relative flex">
-              <SideBar session={session} />
-              <main className="w-full pt-20 md:pt-2 max-w-[1150px] overflow-hidden mx-auto xl:max-w-full xl:overflow-x-auto md:ml-[240px] xl:ml-[240px]">
+            <div className="flex flex-col h-full">
+              <Navbar />
+              <section className="relative md:overflow-auto">
+                {showSidebar && <SideBar />}
                 {children}
-                <Footer />
-              </main>
-            </section>
+              </section>
+              <Footer />
+            </div>
           </ThemeProvider>
         </SessionProviderPage>
       </body>
