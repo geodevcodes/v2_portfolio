@@ -10,7 +10,7 @@ export default async function BlogDetailsPage({ params }: { params: any }) {
   }
   return (
     <>
-      <main className="px-4 p-2 mb-4 md:p-8 lg:mb-0  font-sans min-h-screen">
+      <main className="px-4 p-2 mb-4 md:p-8 lg:mb-0 md:pt-16  font-sans min-h-screen">
         <BlogDetails blogSlug={blogSlug} />
       </main>
     </>
