@@ -42,7 +42,7 @@ export default function BlogHome({ session }: any) {
 
   return (
     <>
-      <main className="fle min-h-screen flex-col px-4 p-2 md:p-6 font-sans text-md">
+      <main className="min-h-screen flex-col px-4 p-2 md:pt-16 font-sans text-md">
         <div className="pb-20">
           <div className="md:border-b border-slate md:flex items-center justify-between">
             <p className="text-sm">
