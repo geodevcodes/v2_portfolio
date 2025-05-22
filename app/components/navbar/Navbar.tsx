@@ -1,4 +1,5 @@
 "use client";
+import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitcher";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -80,16 +81,15 @@ export default function Navbar() {
                 "md:border-l first:md:border-l-0",
                 "border-b md:border-b-0",
                 index === arr.length - 2 && "md:border-r",
-                index === arr.length - 1
-                  ? "md:border-none ml-0 md:ml-auto md:mr-6"
-                  : "",
+                index === arr.length - 1 &&
+                  "md:border-none ml-0 md:ml-auto md:mr-20 flex items-center",
                 isActive(path) && "relative dark:text-white"
               )}
             >
               <Link
                 href={path}
                 className={clsx(
-                  "block w-full p-4",
+                  "flex items-center gap-1 w-full p-4",
                   isActive(path)
                     ? "text-[#8CA5B5] dark:text-white"
                     : "md:text-[#8CA5B5]"
@@ -97,12 +97,14 @@ export default function Navbar() {
               >
                 {label}
               </Link>
-
               {isActive(path) && (
                 <span className="hidden md:block absolute bottom-0 left-0 w-full border-b-[3px] border-primary" />
               )}
             </li>
           ))}
+          <li className="flex items-center md:mr-6 px-4">
+            <LanguageSwitcher />
+          </li>
         </ul>
       </div>
     </div>

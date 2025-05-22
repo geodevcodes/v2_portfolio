@@ -2,8 +2,9 @@
 import { ModeToggle } from "@/app/components/modeToggle/ModeToggle";
 import { sidebarRouteLinks } from "@/lib/LinkData";
 import { usePathname } from "next/navigation";
-import { LogOut, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { FaGoogle } from "react-icons/fa";
+import { LogOut, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,6 +22,7 @@ import { redirect } from "next/navigation";
 
 export default function SideBar({ session }: any) {
   const pathname = usePathname();
+  const t = useTranslations("Profile");
 
   const filteredSidebarRouteLinks = sidebarRouteLinks.filter((item) => {
     if (item.key === "my-profile") {
@@ -46,7 +48,7 @@ export default function SideBar({ session }: any) {
                 />
 
                 <div>
-                  <p className="text-sm font-semibold">Rasheed Olatunde</p>
+                  <p className="text-sm font-semibold"> {t("name")}</p>
                   <Link href="/about" className="text-sm text-primary">
                     View Profile
                   </Link>
