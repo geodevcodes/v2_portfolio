@@ -54,10 +54,10 @@ export default function Projects() {
     : projectLinksData;
 
   return (
-    <main className="px-4 p-2 pb-20 md:p-8 md:pt-16 min-h-screen mb-6 w-full max-w-7xl">
+    <main className="px-4 pb-20 md:p-8 md:pt-16 min-h-screen mb-6 w-full max-w-7xl">
       <div className="pl-3 pb-3 md:pb-6 mb-8 md:mb-4 border-b border-slate">
-        <div className="flex items-center justify-between">
-          <p className="text-2xl md:text-3xl  lg:text-left lg:text-4xl font-bold">
+        <div className="flex items-center justify-between px-2.5">
+          <p className="text-2xl md:text-3xl lg:text-left lg:text-4xl font-bold">
             {t("title")}
           </p>
           <div className="flex gap-x-6 ">
@@ -67,7 +67,7 @@ export default function Projects() {
               onClick={() => setShowFilters((prev) => !prev)}
             >
               <Link href="#" className="flex items-center justify-center">
-                <Filter className=" h-5 w-5 mr-4" />
+                <Filter className="h-5 w-5 mr-4" />
                 <span className="text-base"> {t("buttonName")}</span>
               </Link>
             </Button>
