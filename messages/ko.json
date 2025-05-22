@@ -1,0 +1,50 @@
+{
+  "SideBarLinks": {
+    "home": {
+      "key": "home",
+      "name": "홈",
+      "href": "/",
+      "icon": "Home"
+    },
+    "projects": {
+      "key": "projects",
+      "name": "프로젝트",
+      "href": "projects",
+      "icon": "GlobeLock"
+    },
+    "about": {
+      "key": "about",
+      "name": "소개",
+      "href": "about",
+      "icon": "User"
+    },
+    "stack": {
+      "key": "stack",
+      "name": "기술 스택",
+      "href": "stack",
+      "icon": "Layers3"
+    }
+  },
+  "Profile": {
+    "name": "라시드 올라툰데입니다"
+  },
+  "HelloPage": {
+    "greetings": "안녕하세요, 저는",
+    "name": "라시드 올라툰데입니다",
+    "jobTitle": "소프트웨어 개발자",
+    "profileHandler": "// Github에서 내 프로필을 찾아보세요:"
+  },
+  "AboutPage": {
+    "greetings": "안녕하세요, 저는 라시드 올라툰데입니다 ✌🏻",
+    "contentOne": "저는 사용자 인터페이스를 구축하는 소프트웨어 엔지니어입니다. 주로 Next.js, AI 통합, ReactJs, Redux toolkit, Nodejs, Express, MongoDB, AI 프롬프트를 사용하며, 가끔은 Python도 다룹니다.",
+    "contentTwo": "일하지 않을 때는 세계를 탐험하거나 스키 같은 활동을 통해 휴식을 취합니다. 여행과 야외활동은 제 삶에 완벽한 균형을 제공하며, 일상의 스트레스로부터 상쾌한 휴식을 줍니다."
+  },
+  "ProjectPage": {
+    "title": "프로젝트",
+    "buttonName": "필터"
+  },
+  "StackPage": {
+    "title": "나의 스택",
+    "content": "정기적으로 사용하는 소프트웨어와 도구들입니다."
+  }
+}

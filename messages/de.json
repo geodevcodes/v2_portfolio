@@ -1,0 +1,50 @@
+{
+  "SideBarLinks": {
+    "home": {
+      "key": "home",
+      "name": "Startseite",
+      "href": "/",
+      "icon": "Home"
+    },
+    "projects": {
+      "key": "projects",
+      "name": "Projekte",
+      "href": "projects",
+      "icon": "GlobeLock"
+    },
+    "about": {
+      "key": "about",
+      "name": "Über mich",
+      "href": "about",
+      "icon": "User"
+    },
+    "stack": {
+      "key": "stack",
+      "name": "Technologien",
+      "href": "stack",
+      "icon": "Layers3"
+    }
+  },
+  "Profile": {
+    "name": "Rasheed Olatunde"
+  },
+  "HelloPage": {
+    "greetings": "Hey, ich bin",
+    "name": "Rasheed Olatunde",
+    "jobTitle": "Softwareentwickler",
+    "profileHandler": "// finde mein Profil auf Github:"
+  },
+  "AboutPage": {
+    "greetings": "Hey, ich bin Rasheed Olatunde ✌🏻",
+    "contentOne": "Ich bin ein Softwareentwickler, der Benutzeroberflächen erstellt. Hauptsächlich arbeite ich mit Next.js, KI-Integration, ReactJs, Redux Toolkit, Nodejs, Express, MongoDB und KI-Prompting, aber gelegentlich spiele ich auch mit Python.",
+    "contentTwo": "Wenn ich nicht arbeite, finde ich Frieden darin, die Welt zu erkunden und durch Aktivitäten wie Skifahren zu entspannen. Reisen und die Natur zu genießen bringt perfekte Balance in mein Leben und bietet eine erfrischende Pause vom Alltag."
+  },
+  "ProjectPage": {
+    "title": "Projekte",
+    "buttonName": "Filtern"
+  },
+  "StackPage": {
+    "title": "Mein Stack",
+    "content": "Software und Tools, die ich regelmäßig verwende."
+  }
+}

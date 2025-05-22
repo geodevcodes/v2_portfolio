@@ -1,0 +1,50 @@
+{
+  "SideBarLinks": {
+    "home": {
+      "key": "home",
+      "name": "Home",
+      "href": "/",
+      "icon": "Home"
+    },
+    "projects": {
+      "key": "projects",
+      "name": "Projects",
+      "href": "projects",
+      "icon": "GlobeLock"
+    },
+    "about": {
+      "key": "about",
+      "name": "About",
+      "href": "about",
+      "icon": "User"
+    },
+    "stack": {
+      "key": "stack",
+      "name": "Stack",
+      "href": "stack",
+      "icon": "Layers3"
+    }
+  },
+  "Profile": {
+    "name": "Rasheed Olatunde"
+  },
+  "HelloPage": {
+    "greetings": "Hey there, I am",
+    "name": "Rasheed Olatunde",
+    "jobTitle": "Software developer",
+    "profileHandler": "// find my profile on Github:"
+  },
+  "AboutPage": {
+    "greetings": "Hey I'm Rasheed Olatunde ✌🏻",
+    "contentOne": "I'm a Software Engineer who juggles building User Interfaces. I mainly work with Next.js, AI integration, ReactJs, Redux toolkit, Nodejs, Express, MongoDB, AI Prompting but occasionally, I like to play with Python.",
+    "contentTwo": "When I'm not working, I find peace in exploring the world and unwinding through activities like skiing. Traveling and embracing the outdoors bring a perfect balance to my life, providing a refreshing break from the anomalies in business."
+  },
+  "ProjectPage": {
+    "title": "Projects",
+    "buttonName": "Filter"
+  },
+  "StackPage": {
+    "title": "My Stack",
+    "content": "Software and tools I use on a regular basis."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "SideBarLinks": {
+    "home": {
+      "key": "home",
+      "name": "Accueil",
+      "href": "/",
+      "icon": "Home"
+    },
+    "projects": {
+      "key": "projects",
+      "name": "Projets",
+      "href": "projects",
+      "icon": "GlobeLock"
+    },
+    "about": {
+      "key": "about",
+      "name": "À propos",
+      "href": "about",
+      "icon": "User"
+    },
+    "stack": {
+      "key": "stack",
+      "name": "Stack technologique",
+      "href": "stack",
+      "icon": "Layers3"
+    }
+  },
+  "Profile": {
+    "name": "Rasheed Olatunde"
+  },
+  "HelloPage": {
+    "greetings": "Salut, je suis",
+    "name": "Rasheed Olatunde",
+    "jobTitle": "Développeur logiciel",
+    "profileHandler": "// retrouve mon profil sur Github :"
+  },
+  "AboutPage": {
+    "greetings": "Salut, je suis Rasheed Olatunde ✌🏻",
+    "contentOne": "Je suis ingénieur logiciel, spécialisé dans la création d'interfaces utilisateur. Je travaille principalement avec Next.js, l'intégration de l'IA, ReactJs, Redux toolkit, Nodejs, Express, MongoDB, et le prompting IA. De temps en temps, je m'amuse avec Python.",
+    "contentTwo": "Quand je ne travaille pas, j’aime explorer le monde et me détendre avec des activités comme le ski. Voyager et profiter de la nature apportent un équilibre parfait à ma vie et une pause rafraîchissante face aux exigences du travail."
+  },
+  "ProjectPage": {
+    "title": "Projets",
+    "buttonName": "Filtrer"
+  },
+  "StackPage": {
+    "title": "Ma Stack",
+    "content": "Logiciels et outils que j'utilise régulièrement."
+  }
+}
