@@ -43,9 +43,9 @@ export default function ProjectsDetailsPage({ params }: { params: any }) {
         </div>
         <div className="col-span-1/3 space-y-6">
           <div className="border border-accent-primary rounded-md p-5">
-            <h3 className="text-xl font-semibold">What you will learn</h3>
+            <h3 className="text-xl font-semibold">Tools & Technologies</h3>
             <p className="text-muted-foreground">
-              Learn More about what you will learn in this free video
+              Tools & Frameworks That Made It Happen. Check it out!
             </p>
             <div className="mt-6 space-y-2.5 text-[16px]">
               {project?.projectFeatures?.map((item, idx) => (
