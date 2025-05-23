@@ -1,4 +1,12 @@
 import { Home, User, Layers3, GlobeLock } from "lucide-react";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiReact,
+  SiPwa,
+  SiNodedotjs,
+  SiOpensourceinitiative,
+} from "react-icons/si";
 
 // SideBar Route Links
 export const sidebarRouteLinks = [
@@ -42,7 +50,7 @@ export const projectLinks = [
       "🚀  Outstanding AI Powered Survey Engine Application, In this app you can create and customize your Surveys or build your survey with AI automation and send to your Customer/Client with Survey Engine app? Build with popular tools like NextJs, React-Redux, NodeJs for managing our database, Next-Auth for authentication, React-TanStack Query for efficient data Fetching, and spicing things up with Tailwind.css for some awesome styling.",
     stack: [
       "AI Integration",
-      "Typescript",
+      "TypeScript",
       "NextJS",
       "React-Redux",
       "AWS Amplify",
@@ -53,7 +61,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/survey-engine",
     projectUrl: "https://app.thesurveyengine.com/en",
-    category: ["Typescript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
+    category: ["TypeScript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 NextAuth Authentication",
@@ -88,7 +96,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/geomatic-connect",
     projectUrl: "https://www.geomaticconnect.work/",
-    category: ["Typescript", "NextJs", "AI", "Web App", "PWA"],
+    category: ["TypeScript", "NextJs", "AI", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 NextAuth Authentication",
@@ -120,7 +128,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/geodevcodes-microfrontend",
     projectUrl: "https://geodevcodes.vercel.app/",
-    category: ["Typescript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
+    category: ["TypeScript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 Kinde Authentication",
@@ -153,7 +161,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/must",
     projectUrl: "https://must-geodevcodes.vercel.app/ko",
-    category: ["Typescript", "NextJs", "Web Application"],
+    category: ["TypeScript", "NextJs", "Web Application"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🎨 Styling with tailwindcss and shadcn UI",
@@ -182,7 +190,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/scoutbeta-solutions",
     projectUrl: "https://scoutbeta.vercel.app/",
-    category: ["Typescript", "NextJs", "Zustand", "Web App", "PWA"],
+    category: ["TypeScript", "NextJs", "Zustand", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 NextAuth Authentication",
@@ -216,7 +224,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/online-learning-app",
     projectUrl: "https://online-learning-application.vercel.app/",
-    category: ["Typescript", "NextJs", "Web App", "PWA"],
+    category: ["TypeScript", "NextJs", "Web App", "PWA", "ReactJs"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 Firebase Authentication",
@@ -241,7 +249,7 @@ export const projectLinks = [
     stack: ["TypeScript", "NextJS", "Vercel", "Tailwind", "NodeJs"],
     repositoryUrl: "https://github.com/olatunde1998/getlinked-tech",
     projectUrl: "https://getlinked-tech.vercel.app/",
-    category: ["Typescript", "NextJs", "Web Application"],
+    category: ["Typescript", "NextJs", "Web Application", "ReactJs"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "💽 NodeJs Database",
@@ -256,13 +264,13 @@ export const projectLinks = [
   {
     id: "8",
     imageUrl: "/project-4.png",
-    projectTitle: "Create a Modern Care-Finder App using Next.js 14, Firebase,",
+    projectTitle: "Modern Care-Finder App using Next.js 14, Firebase-Auth",
     subTitle:
       "🚀 Today we are going to create a Care-Finder App using Next.js 14, Firebase-Auth, Prisma, Firebase, and Tailwind! Learn step-by-step and elevate your development skills.",
     stack: ["TypeScript", "NextJS", "Vercel", "Tailwind", "Firebase", "Prisma"],
     repositoryUrl: "https://github.com/olatunde1998/carefinder-app",
     projectUrl: "https://carefinder-app.vercel.app/",
-    category: ["Typescript", "NextJs", "Web App"],
+    category: ["TypeScript", "NextJs", "Web App", "ReactJs"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "📧 Passwordless Auth",
@@ -282,9 +290,9 @@ export const projectLinks = [
     id: "9",
     imageUrl: "/project-6.jpeg",
     projectTitle:
-      "Next.js 14 E-Commerce Website with Stripe, and Sanity.io | Full Stack Project",
+      "E-Commerce Website with Stripe, and Sanity.io | Full Stack Project",
     subTitle:
-      "🚀 Build a modern and performant full stack Next.js 14 Ecommerce Website complete with secure Stripe payment integration, efficient content management through Sanity.io and beautiful styling using Tailwindcss and Shadcn UI for accessible components.",
+      "🚀 Full-Stack Ecommerce Website complete with secure Stripe payment integration, efficient content management through Sanity.io and beautiful styling using Tailwindcss and Shadcn UI for accessible components.",
     stack: [
       "TypeScript",
       "NextJS",
@@ -297,7 +305,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/geodevcodes-ecommerce",
     projectUrl: "https://geodevcodes-ecommerce.vercel.app/",
-    category: ["Typescript", "NextJs", "Web App"],
+    category: ["TypeScript", "NextJs", "Web App", "ReactJs"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 Kinde Authentication",
@@ -311,5 +319,35 @@ export const projectLinks = [
       "💽 OutStanding ReadMe",
       "😶‍🌫️ Deployment to Vercel",
     ],
+  },
+];
+
+// Project Category Options
+
+export const categoryOptions = [
+  {
+    label: "AI",
+    value: "AI",
+    icon: SiOpensourceinitiative,
+  },
+  {
+    label: "NextJs",
+    value: "NextJs",
+    icon: SiNextdotjs,
+  },
+  {
+    label: "PWA",
+    value: "PWA",
+    icon: SiPwa,
+  },
+  {
+    label: "TypeScript",
+    value: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
+    label: "ReactJs",
+    value: "ReactJs",
+    icon: SiReact,
   },
 ];
