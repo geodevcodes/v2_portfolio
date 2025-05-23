@@ -30,13 +30,6 @@ export const sidebarRouteLinks = [
     icon: Layers3,
     current: false,
   },
-  // {
-  //   name: "Blog",
-  //   href: "/blog",
-  //   key: "blog",
-  //   icon: PencilLine,
-  //   current: false,
-  // },
 ];
 
 // Project Data  Links
@@ -46,7 +39,7 @@ export const projectLinks = [
     imageUrl: "/project-7.png",
     projectTitle: "AI Powered Survey Engine",
     subTitle:
-      "🚀  Outstanding Survey Engine Application, In this app you can create and customize your Surveys or build your survey with AI automation and send to your Customer/Client with Survey Engine app? Build with popular tools like NextJs, React-Redux, NodeJs for managing our database, Next-Auth for authentication, React-TanStack Query for efficient data Fetching, and spicing things up with Tailwind.css for some awesome styling.",
+      "🚀  Outstanding AI Powered Survey Engine Application, In this app you can create and customize your Surveys or build your survey with AI automation and send to your Customer/Client with Survey Engine app? Build with popular tools like NextJs, React-Redux, NodeJs for managing our database, Next-Auth for authentication, React-TanStack Query for efficient data Fetching, and spicing things up with Tailwind.css for some awesome styling.",
     stack: [
       "AI Integration",
       "Typescript",
@@ -60,14 +53,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/survey-engine",
     projectUrl: "https://app.thesurveyengine.com/en",
-    category: [
-      "Typescript",
-      "NextJs",
-      "React-Redux",
-      "AI Integration",
-      "Web Application",
-      "Progressive Web App",
-    ],
+    category: ["Typescript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 NextAuth Authentication",
@@ -102,13 +88,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/geomatic-connect",
     projectUrl: "https://www.geomaticconnect.work/",
-    category: [
-      "Typescript",
-      "NextJs",
-      "AI Integration",
-      "Web Application",
-      "Progressive Web App",
-    ],
+    category: ["Typescript", "NextJs", "AI", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 NextAuth Authentication",
@@ -140,14 +120,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/geodevcodes-microfrontend",
     projectUrl: "https://geodevcodes.vercel.app/",
-    category: [
-      "Typescript",
-      "NextJs",
-      "React-Redux",
-      "AI Integration",
-      "Web Application",
-      "Progressive Web App",
-    ],
+    category: ["Typescript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 Kinde Authentication",
@@ -205,17 +178,11 @@ export const projectLinks = [
       "Vercel",
       "Tailwind",
       "Shadcn/UI",
-      "Prisma",
+      "Zustand",
     ],
     repositoryUrl: "https://github.com/scoutbeta-solutions",
     projectUrl: "https://scoutbeta.vercel.app/",
-    category: [
-      "Typescript",
-      "NextJs",
-      "React-Redux",
-      "Web Application",
-      "Progressive Web App",
-    ],
+    category: ["Typescript", "NextJs", "Zustand", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 NextAuth Authentication",
@@ -232,8 +199,7 @@ export const projectLinks = [
   {
     id: "6",
     imageUrl: "/lms-2.png",
-    projectTitle:
-      "Learning Management System with Next.js.14, NextAuth",
+    projectTitle: "Learning Management System with Next.js.14, NextAuth",
     subTitle:
       "🚀 Create a modern Learning Management System For software developers  with Next.js.14, Tailwind,  Learn step-by-step and elevate your development skills.",
     stack: [
@@ -250,12 +216,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/online-learning-app",
     projectUrl: "https://online-learning-application.vercel.app/",
-    category: [
-      "Typescript",
-      "NextJs",
-      "Web Application",
-      "Progressive Web App",
-    ],
+    category: ["Typescript", "NextJs", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 Firebase Authentication",
@@ -301,7 +262,7 @@ export const projectLinks = [
     stack: ["TypeScript", "NextJS", "Vercel", "Tailwind", "Firebase", "Prisma"],
     repositoryUrl: "https://github.com/olatunde1998/carefinder-app",
     projectUrl: "https://carefinder-app.vercel.app/",
-    category: ["Typescript", "NextJs", "Web Application"],
+    category: ["Typescript", "NextJs", "Web App"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "📧 Passwordless Auth",
@@ -336,7 +297,7 @@ export const projectLinks = [
     ],
     repositoryUrl: "https://github.com/olatunde1998/geodevcodes-ecommerce",
     projectUrl: "https://geodevcodes-ecommerce.vercel.app/",
-    category: ["Typescript", "NextJs", "Web Application"],
+    category: ["Typescript", "NextJs", "Web App"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 Kinde Authentication",
@@ -352,4 +313,3 @@ export const projectLinks = [
     ],
   },
 ];
-
