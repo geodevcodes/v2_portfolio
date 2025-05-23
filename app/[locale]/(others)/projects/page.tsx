@@ -1,10 +1,10 @@
 "use client";
+import { categoryOptions, projectLinks } from "@/lib/LinkData";
 import ProjectsCard from "@/app/components/card/ProjectsCard";
 import { Skeleton } from "@/app/components/skeleton/Skeleton";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
-import { projectLinks } from "@/lib/LinkData";
 import { useTranslations } from "next-intl";
 import { Filter } from "lucide-react";
 import { useState } from "react";
@@ -31,12 +31,6 @@ export default function Projects() {
     queryFn: () => Promise.resolve(projectLinks),
   });
 
-  const categoryOptions = [
-    "AI Integration",
-    "Web Application",
-    "Progressive Web App",
-  ];
-
   const handleCheckboxChange = (category: string) => {
     setSelectedCategories((prev) =>
       prev.includes(category)
@@ -55,23 +49,21 @@ export default function Projects() {
 
   return (
     <main className="px-4 pb-20 md:p-8 md:pt-16 min-h-screen mb-6 w-full max-w-7xl">
-      <div className="pl-3 pb-3 md:pb-6 mb-8 md:mb-4 border-b border-slate">
-        <div className="flex items-center justify-between px-2.5">
+      <div className="pb-2 md:pb-4 mb-4 border-b border-slate">
+        <div className="flex items-center justify-between px-2.5 md:px-0">
           <p className="text-2xl md:text-3xl lg:text-left lg:text-4xl font-bold">
             {t("title")}
           </p>
-          <div className="flex gap-x-6 ">
-            <Button
-              asChild
-              className="w-[120px]"
-              onClick={() => setShowFilters((prev) => !prev)}
-            >
-              <Link href="#" className="flex items-center justify-center">
-                <Filter className="h-5 w-5 mr-4" />
-                <span className="text-base"> {t("buttonName")}</span>
-              </Link>
-            </Button>
-          </div>
+          <Button
+            asChild
+            className="w-[100px]"
+            onClick={() => setShowFilters((prev) => !prev)}
+          >
+            <Link href="#" className="flex items-center justify-center">
+              <Filter className="size-4 mr-2" />
+              <span className="text-base font-light"> {t("buttonName")}</span>
+            </Link>
+          </Button>
         </div>
         <AnimatePresence>
           {showFilters && (
@@ -80,25 +72,29 @@ export default function Projects() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
-              className="flex flex-col gap-3 mb-4 md:-mb-4 md:flex-row md:gap-4 md:mt-4"
+              className="grid grid-cols-3 lg:flex border-t border-slate py-3 gap-3 px-2.5 my-1.5 md:-mb-4 md:gap-4 md:mt-4"
             >
-              {categoryOptions.map((category) => (
-                <label
-                  key={category}
-                  className={`${
-                    !selectedCategories.includes(category) && "text-[#8CA5B5]"
-                  } flex items-center gap-2 text-sm `}
-                >
-                  <input
-                    type="checkbox"
-                    value={category}
-                    checked={selectedCategories.includes(category)}
-                    onChange={() => handleCheckboxChange(category)}
-                    className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer"
-                  />
-                  {category}
-                </label>
-              ))}
+              {categoryOptions.map(({ label, value, icon }) => {
+                const IconComponent = icon;
+                return (
+                  <label
+                    key={value}
+                    className={`${
+                      !selectedCategories.includes(value) && "text-[#8CA5B5]"
+                    } flex items-center  gap-2 text-sm `}
+                  >
+                    <input
+                      type="checkbox"
+                      value={value}
+                      checked={selectedCategories.includes(value)}
+                      onChange={() => handleCheckboxChange(value)}
+                      className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer"
+                    />
+                    <IconComponent className="text-lg" />
+                    {label}
+                  </label>
+                );
+              })}
             </motion.div>
           )}
         </AnimatePresence>
