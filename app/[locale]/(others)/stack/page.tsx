@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Stack() {
   const t = useTranslations("StackPage");
   return (
-    <main className="min-h-screen px-4 p-2 md:p-8 lg:pt-20">
+    <main className="min-h-screen px-4 p-2 pb-32 md:p-8 md:py-16 lg:pt-20">
       <div className="w-full font-sans text-md ">
         <p className="text-2xl md:text-5xl font-bold mb-2">{t("title")}</p>
         <p className="text-muted-foreground">{t("content")}</p>
