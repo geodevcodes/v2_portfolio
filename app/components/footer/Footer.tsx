@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
       <div className="flex items-center justify-center border-l border-slate md:border-r-0">
         <a
-          aria-label="Qudusayo twitter profile"
+          aria-label="geodevcodes twitter profile"
           href="https://twitter.com/geodevcodes"
           target="_blank"
           rel="noreferrer"
@@ -49,8 +49,6 @@ export default function Footer() {
         <a
           aria-label="Designed by geodevcodes"
           href="#"
-          target="_blank"
-          rel="noreferrer"
           title="Designed by geodevcodes"
           className="flex items-center justify-center"
         >
