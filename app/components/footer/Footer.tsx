@@ -1,4 +1,4 @@
-import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitcher";
+// import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitcher";
 import {
   RiGithubFill,
   RiLinkedinFill,
@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   return (
     <footer className="fixed bottom-0 z-[10] flex justify-between w-full border-t border-slate bg-background text-[#8CA5B5]">
-      <div className="hidden md:flex items-center justify-center border-l border-transparent px-4 py-3">
+      <div className="flex items-center justify-center border-l border-transparent px-4 py-3">
         <span className="m-0">find me in:</span>
       </div>
       <div className="flex items-center justify-center border-l border-slate">
@@ -46,7 +46,7 @@ export default function Footer() {
         </a>
       </div>
       <div className="ml-auto flex items-center justify-center border-l border-slate px-4 py-3">
-        {/* <a
+        <a
           aria-label="Designed by geodevcodes"
           href="#"
           target="_blank"
@@ -56,8 +56,8 @@ export default function Footer() {
         >
           <span className="mr-2 hidden sm:inline">Designed by geodevcodes</span>
           <RiDribbbleFill fill="#607B96" size={25} />
-        </a> */}
-        <div className="flex items-center justify-center">
+        </a>
+        {/* <div className="flex items-center justify-center">
           <span className="mr-2 hidden sm:inline">Designed by geodevcodes</span>
           <div className="hidden md:block">
             <RiDribbbleFill fill="#607B96" size={25} />
@@ -65,7 +65,7 @@ export default function Footer() {
           <div className="md:hidden mb-8">
             <LanguageSwitcher />
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
