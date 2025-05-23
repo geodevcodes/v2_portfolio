@@ -1,5 +1,6 @@
 "use client";
 import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitcher";
+import { ModeToggle } from "@/app/components/modeToggle/ModeToggle";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -28,27 +29,32 @@ export default function Navbar() {
         </Link>
 
         {/* Hamburger */}
-        <div className="relative z-[2000] px-4 md:hidden">
-          <label htmlFor="checkbox" className="flex flex-col">
+        <div className="relative z-[2000] px-4 md:hidden flex items-center gap-4">
+          <ModeToggle />
+          <label
+            htmlFor="checkbox"
+            className="flex flex-col bg-primary-background border border-slate p-2 rounded-lg"
+          >
             <span
               className={clsx(
-                "h-[3px] w-[30px] bg-[#8CA5B5] my-[2.5px] transition-all",
+                "h-[3px] w-[24px] bg-[#8CA5B5] my-[2.5px] transition-all",
                 visibility && "rotate-[135deg] relative top-2"
               )}
             ></span>
             <span
               className={clsx(
-                "h-[3px] w-[30px] bg-[#8CA5B5] my-[2.5px] transition-all",
+                "h-[3px] w-[24px] bg-[#8CA5B5] my-[2.5px] transition-all",
                 visibility && "rotate-[45deg] relative"
               )}
             ></span>
             <span
               className={clsx(
-                "h-[3px] w-[30px] bg-[#8CA5B5] my-[2.5px] transition-all",
+                "h-[3px] w-[24px] bg-[#8CA5B5] my-[2.5px] transition-all",
                 visibility && "rotate-[45deg] relative -top-2"
               )}
             ></span>
           </label>
+
           <input
             id="checkbox"
             type="checkbox"
