@@ -4,7 +4,6 @@ import {
   SiTypescript,
   SiReact,
   SiPwa,
-  SiNodedotjs,
   SiOpensourceinitiative,
 } from "react-icons/si";
 
@@ -78,6 +77,45 @@ export const projectLinks = [
   },
   {
     id: "2",
+    imageUrl: "/aora.png",
+    projectTitle: "Aora Mobile APP",
+    subTitle:
+      "🚀  Built with React Native for seamless user experiences, Animatable for captivating animations, and integrated with the dependable backend systems of Appwrite, this app showcases impressive design and functionality, enabling seamless sharing of AI videos within the community.",
+    stack: [
+      "AI Integration",
+      "TypeScript",
+      "NextJS",
+      "React-Redux",
+      "AWS Amplify",
+      "Tailwindcss",
+      "Shadcn/UI",
+      "Appwrite",
+    ],
+    repositoryUrl: "https://github.com/olatunde1998/rn-aora",
+    projectUrl: "https://expo.dev/artifacts/eas/qUhLQYymPhGmxce2LLbz5c.apk",
+    category: [
+      "TypeScript",
+      "ReactNative",
+      "Expo",
+      "AI",
+      "ReactJs",
+      "ReactNative",
+    ],
+    projectFeatures: [
+      "🌐 React Native (Expo)",
+      "🔐 Appwrite",
+      "🎨 Styling with tailwindcss",
+      "✅ React TanStack Query",
+      "💵 React-TanStack Table",
+      "🐐 React-Redux",
+      "✅ Github Pull Request Template",
+      "💵 Github Workflow",
+      "😶‍🌫️ Deployment to Expo EAS",
+      "💽 OutStanding ReadMe",
+    ],
+  },
+  {
+    id: "3",
     imageUrl: "/geomatic-connect.png",
     projectTitle: "Geomatics Connect | Job Board Application",
     subTitle:
@@ -113,7 +151,38 @@ export const projectLinks = [
     ],
   },
   {
-    id: "3",
+    id: "4",
+    imageUrl: "/airide.png",
+    projectTitle: "AIRIDE Mobile APP",
+    subTitle:
+      "🚀  Built with React Native for handling the user interface, Google Maps for rendering maps with directions, paystack for handling payments, and styled with TailwindCSS, AI Ride is a perfect mobile app",
+    stack: [
+      "TypeScript",
+      "ReactNative",
+      "Expo",
+      "AI",
+      "Google Maps",
+      "Zustand",
+      "AWS Amplify",
+      "Tailwindcss",
+    ],
+    repositoryUrl: "https://github.com/olatunde1998/rn-aiRide",
+    projectUrl: "https://expo.dev/artifacts/eas/vxr5E8gf1q25nq9HqYBF6u.apk",
+    category: ["TypeScript", "ReactNative", "Expo", "ReactJs", "ReactNative"],
+    projectFeatures: [
+      "🌐 React Native (Expo)",
+      "🔐 NestJs Backend",
+      "🎨 Styling with tailwindcss",
+      "✅ React TanStack Query",
+      "🐐 React-Redux",
+      "✅ Github Pull Request Template",
+      "💵 Github Workflow",
+      "😶‍🌫️ Deployment to Expo EAS",
+      "💽 OutStanding ReadMe",
+    ],
+  },
+  {
+    id: "5",
     imageUrl: "/portfolio.png",
     projectTitle: "My Portfolio Website",
     subTitle: "🚀   AI Powered Portfolio with Blogify",
@@ -144,7 +213,36 @@ export const projectLinks = [
     ],
   },
   {
-    id: "4",
+    id: "6",
+    imageUrl: "/real-estate.png",
+    projectTitle: "RealEstate Mobile APP",
+    subTitle:
+      "🚀  Build a full-stack Real Estate application with React Native (Expo), featuring Google authentication, dynamic property listings, and user profiles. Designed with modern tools like Expo SDK 52, Tailwind CSS, and TypeScript for a seamless and scalable experience",
+    stack: [
+      "TypeScript",
+      "ReactNative",
+      "Expo",
+      "Google Maps",
+      "Expo EAS",
+      "Tailwindcss",
+    ],
+    repositoryUrl: "https://github.com/olatunde1998/rn-realestate",
+    projectUrl: "https://expo.dev/artifacts/eas/eTvG9HP2uxDtr7KsLrW42Q.apk",
+    category: ["TypeScript", "ReactNative", "Expo", "ReactJs", "ReactNative"],
+    projectFeatures: [
+      "🌐 React Native (Expo)",
+      "🔐 NestJs Backend",
+      "🎨 Styling with tailwindcss",
+      "✅ React TanStack Query",
+      "🐐 React-Context API",
+      "✅ Github Pull Request Template",
+      "💵 Github Workflow",
+      "😶‍🌫️ Deployment to Expo EAS",
+      "💽 OutStanding ReadMe",
+    ],
+  },
+  {
+    id: "7",
     imageUrl: "/must.png",
     projectTitle: "Must Culture Share: Internationalization with i18n",
     subTitle:
@@ -174,7 +272,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "5",
+    id: "8",
     imageUrl: "/scoutbeta.png",
     projectTitle: "ScoutBeta: Marketplace for Space and Location Scouting",
     subTitle:
@@ -205,7 +303,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "6",
+    id: "9",
     imageUrl: "/lms-2.png",
     projectTitle: "Learning Management System with Next.js.14, NextAuth",
     subTitle:
@@ -240,7 +338,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "7",
+    id: "10",
     imageUrl: "/project-3.png",
     projectTitle:
       "NextJS 14 | Single Page application in getLinked-tech Hackathon 1.0",
@@ -262,7 +360,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "8",
+    id: "11",
     imageUrl: "/project-4.png",
     projectTitle: "Modern Care-Finder App using Next.js 14, Firebase-Auth",
     subTitle:
@@ -287,7 +385,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "9",
+    id: "12",
     imageUrl: "/project-6.jpeg",
     projectTitle:
       "E-Commerce Website with Stripe, and Sanity.io | Full Stack Project",
