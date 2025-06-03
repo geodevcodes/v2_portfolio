@@ -21,7 +21,7 @@ Here are some details about my Website: 👎
 
 # Prototype
 
-![Minion](public/prototype.png)
+![Minion](public/portfolio.png)
 
 # How to Contribute
 
