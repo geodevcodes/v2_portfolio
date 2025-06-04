@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <div
       className={clsx(
-        "flex border-b border-slate bg-background text-[#8CA5B5] fixed w-full z-50",
+        "flex md:border-b md:border-slate bg-background text-[#8CA5B5] fixed w-full z-50",
         visibility && "h-full flex-col overflow-y-scroll md:h-auto"
       )}
     >
