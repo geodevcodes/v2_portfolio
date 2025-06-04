@@ -36,7 +36,7 @@ export default function Navbar() {
         </Link>
 
         {/* =====Hamburger===== */}
-        <div className="relative z-[2000] px-4 md:hidden flex items-center gap-4">
+        <div className="relative z-[2000] left-3 md:left-0 px-4 md:hidden flex items-center gap-4">
           <ModeToggle />
           <label
             htmlFor="checkbox"
