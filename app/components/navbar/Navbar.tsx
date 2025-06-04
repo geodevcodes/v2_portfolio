@@ -3,6 +3,7 @@ import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitche
 import { ModeToggle } from "@/app/components/modeToggle/ModeToggle";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 
@@ -23,12 +24,18 @@ export default function Navbar() {
         visibility && "h-full flex-col overflow-y-scroll md:h-auto"
       )}
     >
-      <div className="flex items-center justify-between px-3 w-full md:w-[25%] border-b border-slate md:border-none">
+      <div className="flex items-center justify-between px-3 w-full md:w-[25%] border-b border-slate md:border-none py-2.5">
         <Link href="/" className="p-4 text-[#8CA5B5] dark:text-primary">
-          geodevcodes
+          <Image
+            src="/geodevcodes.png"
+            width={100}
+            height={100}
+            alt="geodevcodes logo"
+            className="h-14 w-14 absolute left-3 top-2 md:left-6 lg:top-0"
+          />
         </Link>
 
-        {/* Hamburger */}
+        {/* =====Hamburger===== */}
         <div className="relative z-[2000] px-4 md:hidden flex items-center gap-4">
           <ModeToggle />
           <label
