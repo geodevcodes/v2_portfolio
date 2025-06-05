@@ -7,7 +7,11 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 
-export default function Navbar() {
+interface NavbarProps {
+  locale: string;
+}
+
+export default function Navbar({ locale }: NavbarProps) {
   const route = usePathname();
   const [visibility, setVisibility] = useState(false);
 
@@ -82,10 +86,10 @@ export default function Navbar() {
           )}
         >
           {[
-            { path: "/", label: "_hello" },
-            { path: "/about", label: "_about-me" },
-            { path: "/projects", label: "_projects" },
-            { path: "/blog", label: "_blogify" },
+            { path: `/${locale}`, label: "_hello" },
+            { path: `/${locale}/about`, label: "_about-me" },
+            { path: `/${locale}/projects`, label: "_projects" },
+            { path: `/${locale}/blog`, label: "_blogify" },
           ].map(({ path, label }, index, arr) => (
             <li
               key={path}
