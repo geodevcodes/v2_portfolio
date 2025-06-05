@@ -26,9 +26,9 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-//   const direction = getLangDir(locale);
+  //   const direction = getLangDir(locale);
   return (
-    <html lang={locale} >
+    <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           <SessionProviderPage>
@@ -39,7 +39,7 @@ export default async function RootLayout({
               disableTransitionOnChange
             >
               <div className="flex flex-col h-full">
-                <Navbar />
+                <Navbar locale={locale} />
                 <section className="relative md:overflow-auto">
                   {children}
                 </section>
