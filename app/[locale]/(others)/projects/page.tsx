@@ -24,7 +24,7 @@ interface ProjectLink {
 
 export default function Projects() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [showFilters, setShowFilters] = useState(false);
+  const [showFilters, setShowFilters] = useState(true);
   const t = useTranslations("ProjectPage");
   const { data: projectLinksData, isLoading } = useQuery<ProjectLink[]>({
     queryKey: ["getProjectApi"],
@@ -48,9 +48,9 @@ export default function Projects() {
     : projectLinksData;
 
   return (
-    <main className="px-4 pb-20 md:p-8 md:pt-16 min-h-screen mb-6 w-full max-w-7xl">
-      <div className="pb-2 md:pb-4 mb-4 border-b border-slate">
-        <div className="flex items-center justify-between px-2.5 md:px-0">
+    <main className="px-4 pb-20 md:p-8 md:pt-16 min-h-screen mb-6 w-full max-w-7xl bg-background">
+      <div className="fixed w-[95%] md:w-[60%] lg:min-w-[70%] xl:min-w-[79%] z-[1000] -mt-[17px] md:-mt-[15px] pb-2 md:pb-4 mb-4  border-b border-slate bg-background">
+        <div className="flex items-center justify-between pt-2 md:pt-4 px-2.5 md:px-0">
           <p className="text-2xl md:text-3xl lg:text-left lg:text-4xl font-bold">
             {t("title")}
           </p>
@@ -99,7 +99,11 @@ export default function Projects() {
           )}
         </AnimatePresence>
       </div>
-      <div className="w-full items-center font-sans gap-6 space-y-6 lg:space-y-0 text-sm p-2 justify-between gap-y-10 lg:grid lg:grid-cols-2 xl:grid-cols-3">
+      <div
+        className={`${
+          showFilters && "pt-40 lg:pt-32"
+        } w-full items-center font-sans pt-20 gap-6 space-y-6 lg:space-y-0 text-sm p-2 justify-between gap-y-10 lg:grid lg:grid-cols-2 xl:grid-cols-3`}
+      >
         {isLoading
           ? Array.from({ length: 6 }).map((_, idx) => (
               <div key={idx}>
