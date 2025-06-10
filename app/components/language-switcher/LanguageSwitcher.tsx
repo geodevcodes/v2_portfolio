@@ -69,7 +69,7 @@ export default function LanguageSwitcher() {
       </button>
 
       {showDropdown && (
-        <ul className="absolute z-10 -left-20 top-10 bg-white dark:bg-background border border-slate max-h-64 overflow-y-auto rounded-lg mt-1 w-[180px] shadow-lg">
+        <ul className="absolute z-[1000] -left-20 top-10 bg-white dark:bg-background border border-slate max-h-64 overflow-y-auto rounded-lg mt-1 w-[180px] shadow-lg">
           {locales.map((locale) => (
             <li
               key={locale.value}
