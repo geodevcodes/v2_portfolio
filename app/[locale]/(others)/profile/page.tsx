@@ -1,3 +1,4 @@
+"use client";
 import { GetUserProfileRequest } from "@/app/services/users.request";
 import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
