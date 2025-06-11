@@ -1,17 +1,18 @@
 "use client";
+import { UserListSkeleton } from "@/app/components/skeleton/UserListSkeleton";
 import { useEffect, useRef, useState, useCallback } from "react";
-import { Skeleton } from "@/app/components/skeleton/Skeleton";
 import { ArrowDown, Check, File, Filter } from "lucide-react";
 import { createColumnHelper } from "@tanstack/react-table";
 import { Table } from "@/app/components/tables/Table";
 import { useRouter } from "next/navigation";
 import { formatDate } from "@/lib/utils";
+import Image from "next/image";
 
 interface UsersData {
   _id: string;
   fullName?: string;
   email: string;
-  state: string;
+  avatarImage: string;
   createdAt?: any;
   lastLogin?: any;
   role?: string;
@@ -108,13 +109,6 @@ export default function UsersList({
     []
   );
 
-  // Navigate to the dynamic page
-  const handleRowClick = (id: string) => {
-    if (id) {
-      router.push(`/admin-dashboard/${id}`); // Adjust the path if your dynamic page is under a different route
-    }
-  };
-
   // create columnHelper
   const columnHelper = createColumnHelper<UsersData>();
   // Table columns
@@ -146,13 +140,22 @@ export default function UsersList({
     }),
     columnHelper.accessor("fullName", {
       cell: (info) => (
-        <span
-          onClick={() => handleRowClick(info?.row?.original?._id)}
-          className="flex items-center gap-2"
-        >
-          <span className="w-fit h-fit p-2 rounded-full bg-slate-200 flex items-center justify-center">
-            <File size={14} />
-          </span>
+        <span className="flex items-center gap-2">
+          {info?.row?.original?.avatarImage ? (
+            <span className="w-fit h-fit rounded-full bg-slate-200 flex items-center justify-center">
+              <Image
+                src={info?.row?.original?.avatarImage}
+                width={100}
+                height={100}
+                alt={`${info?.row?.original?.fullName} profile image`}
+                className="w-8 h-8 rounded-full"
+              />
+            </span>
+          ) : (
+            <span className="w-fit h-fit p-2 rounded-full bg-slate-200 flex items-center justify-center">
+              <File size={14} />
+            </span>
+          )}
           <span className="whitespace-normal break-words overflow-hidden text-ellipsis max-w-[130px]">
             {info?.row?.original?.fullName}
           </span>
@@ -163,11 +166,7 @@ export default function UsersList({
       ),
     }),
     columnHelper.accessor("createdAt", {
-      cell: (info) => (
-        <span onClick={() => handleRowClick(info?.row?.original?._id)}>
-          {formatDate(info?.row?.original?.createdAt)}
-        </span>
-      ),
+      cell: (info) => <span>{formatDate(info?.row?.original?.createdAt)}</span>,
       header: () => (
         <span className="flex items-center text-[#101828] dark:text-accent-foreground">
           Created date
@@ -190,7 +189,6 @@ export default function UsersList({
               : "bg-[#EDEDF1] text-[#6C748B] w-fit px-3"
           } text-center p-1 rounded-2xl flex items-center space-x-2 justify-center
           `}
-          onClick={() => handleRowClick(info?.row?.original?._id)}
         >
           <Check size={10} />
           <p className="capitalize">
@@ -203,11 +201,7 @@ export default function UsersList({
       ),
     }),
     columnHelper.accessor("lastLogin", {
-      cell: (info) => (
-        <span onClick={() => handleRowClick(info?.row?.original?._id)}>
-          {formatDate(info?.row?.original?.lastLogin)}
-        </span>
-      ),
+      cell: (info) => <span>{formatDate(info?.row?.original?.lastLogin)}</span>,
       header: () => (
         <span className="flex items-center text-[#101828] dark:text-accent-foreground">
           Last Login
@@ -215,11 +209,7 @@ export default function UsersList({
       ),
     }),
     columnHelper.accessor("email", {
-      cell: (info) => (
-        <span onClick={() => handleRowClick(info?.row?.original?._id)}>
-          {info?.row?.original?.email}
-        </span>
-      ),
+      cell: (info) => <span>{info?.row?.original?.email}</span>,
       header: () => (
         <span className="text-[#101828] dark:text-accent-foreground">
           Email
@@ -241,7 +231,6 @@ export default function UsersList({
                 : "bg-[#f3392f] text-[#FFFFFF] px-3 w-fit"
             } text-center p-1 rounded-2xl 
             `}
-          onClick={() => handleRowClick(info?.row?.original?._id)}
         >
           <p className="capitalize">
             {info?.row?.original?.active ? "Active" : "Inactive"}
@@ -300,7 +289,7 @@ export default function UsersList({
         {/* ===== USER LIST AND SKELETON GOES HERE === */}
         {isLoading ? (
           <div className="mt-6 ">
-            <Skeleton />
+            <UserListSkeleton />
           </div>
         ) : userData?.data?.length === 0 && debouncedSearch ? (
           <div className="text-base text-center border-t-[1.3px] border-slate-200 mt-10 pt-20 md:pt-32 max-w- bg-white rounded-lg p-6">
