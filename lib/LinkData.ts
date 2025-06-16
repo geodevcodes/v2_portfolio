@@ -152,6 +152,41 @@ export const projectLinks = [
   },
   {
     id: "4",
+    imageUrl: "/prepwise.png",
+    projectTitle: "Prepwise AI",
+    subTitle:
+      "🚀  Prepwise: A job interview preparation platform powered by Vapi AI Voice agents. Leverages Vercel ai-sdk, Vapi voice agent, Prisma, MongoDB for database and utilized Tailwindcss for astonishing User Interfaces.",
+    stack: [
+      "TypeScript",
+      "NextJS",
+      "NextAuth",
+      "React-Query",
+      "Vercel ai-sdk",
+      "Tailwindcss",
+      "Prisma",
+      "MongoDB",
+      "Vapi AI",
+      "Unit Testing",
+    ],
+    repositoryUrl: "https://github.com/olatunde1998/prepwise",
+    projectUrl: "https://prepwise-azure.vercel.app/",
+    category: ["TypeScript", "NextJs", "AI", "Web App"],
+    projectFeatures: [
+      "🌐 Next.js App Router",
+      "🔐 NextAuth Authentication",
+      "📧 Email/Password Auth",
+      "💽 MongoDB Database",
+      "🔐 Prisma ORM",
+      "🎨 Styling with tailwindcss",
+      "✅ Github Pull Request Template",
+      "💵 Github Workflow",
+      "🐐 Unit Testing",
+      "😶‍🌫️ Deployment to Vercel",
+      "💽 OutStanding ReadMe",
+    ],
+  },
+  {
+    id: "5",
     imageUrl: "/airide.png",
     projectTitle: "AIRIDE Mobile APP",
     subTitle:
@@ -182,7 +217,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     imageUrl: "/portfolio.png",
     projectTitle: "My Portfolio Website",
     subTitle: "🚀   AI Powered Portfolio with Blogify",
@@ -213,7 +248,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "6",
+    id: "7",
     imageUrl: "/real-estate.png",
     projectTitle: "RealEstate Mobile APP",
     subTitle:
@@ -242,7 +277,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "7",
+    id: "8",
     imageUrl: "/must.png",
     projectTitle: "Must Culture Share: Internationalization with i18n",
     subTitle:
@@ -272,7 +307,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "8",
+    id: "9",
     imageUrl: "/scoutbeta.png",
     projectTitle: "ScoutBeta: Marketplace for Space and Location Scouting",
     subTitle:
@@ -303,7 +338,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "9",
+    id: "10",
     imageUrl: "/lms-2.png",
     projectTitle: "Learning Management System with Next.js.14, NextAuth",
     subTitle:
@@ -338,7 +373,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "10",
+    id: "11",
     imageUrl: "/project-3.png",
     projectTitle:
       "NextJS 14 | Single Page application in getLinked-tech Hackathon 1.0",
@@ -360,7 +395,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "11",
+    id: "12",
     imageUrl: "/project-4.png",
     projectTitle: "Modern Care-Finder App using Next.js 14, Firebase-Auth",
     subTitle:
@@ -385,7 +420,7 @@ export const projectLinks = [
     ],
   },
   {
-    id: "12",
+    id: "13",
     imageUrl: "/project-6.jpeg",
     projectTitle:
       "E-Commerce Website with Stripe, and Sanity.io | Full Stack Project",
