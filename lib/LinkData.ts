@@ -117,7 +117,7 @@ export const projectLinks = [
   {
     id: "3",
     imageUrl: "/geomatic-connect.png",
-    projectTitle: "Geomatics Connect | Job Board Application",
+    projectTitle: "Geomatics Connect | Job Board Platform",
     subTitle:
       "🚀 Create a modern Saas Application [Geomatics Connect] with Next.js.14, Tailwind, MongoDB Database and NextAuth! Seamless connection between Geomatics Students and Companies.",
     stack: [
@@ -396,31 +396,6 @@ export const projectLinks = [
   },
   {
     id: "12",
-    imageUrl: "/project-4.png",
-    projectTitle: "Modern Care-Finder App using Next.js 14, Firebase-Auth",
-    subTitle:
-      "🚀 Today we are going to create a Care-Finder App using Next.js 14, Firebase-Auth, Prisma, Firebase, and Tailwind! Learn step-by-step and elevate your development skills.",
-    stack: ["TypeScript", "NextJS", "Vercel", "Tailwind", "Firebase", "Prisma"],
-    repositoryUrl: "https://github.com/olatunde1998/carefinder-app",
-    projectUrl: "https://carefinder-app.vercel.app/",
-    category: ["TypeScript", "NextJs", "Web App", "ReactJs"],
-    projectFeatures: [
-      "🌐 Next.js App Router",
-      "📧 Passwordless Auth",
-      "🔑 OAuth (Google and GitHub)",
-      "💽 Firebase Database",
-      "💨 React TanStack Query",
-      "🎨 Styling with tailwindcss",
-      "✅ React TanStack Table",
-      "💵 Store Projects in Firebase",
-      "✅ Github Pull Request Template",
-      "💵 Github Workflow",
-      "😶‍🌫️ Deployment to Vercel & AWS Amplify",
-      "💽 OutStanding ReadMe",
-    ],
-  },
-  {
-    id: "13",
     imageUrl: "/project-6.jpeg",
     projectTitle:
       "E-Commerce Website with Stripe, and Sanity.io | Full Stack Project",
@@ -453,10 +428,35 @@ export const projectLinks = [
       "😶‍🌫️ Deployment to Vercel",
     ],
   },
+  // {
+  //   id: "12",
+  //   imageUrl: "/project-4.png",
+  //   projectTitle: "Modern Care-Finder App using Next.js 14, Firebase-Auth",
+  //   subTitle:
+  //     "🚀 Today we are going to create a Care-Finder App using Next.js 14, Firebase-Auth, Prisma, Firebase, and Tailwind! Learn step-by-step and elevate your development skills.",
+  //   stack: ["TypeScript", "NextJS", "Vercel", "Tailwind", "Firebase", "Prisma"],
+  //   repositoryUrl: "https://github.com/olatunde1998/carefinder-app",
+  //   projectUrl: "https://carefinder-app.vercel.app/",
+  //   category: ["TypeScript", "NextJs", "Web App", "ReactJs"],
+  //   projectFeatures: [
+  //     "🌐 Next.js App Router",
+  //     "📧 Passwordless Auth",
+  //     "🔑 OAuth (Google and GitHub)",
+  //     "💽 Firebase Database",
+  //     "💨 React TanStack Query",
+  //     "🎨 Styling with tailwindcss",
+  //     "✅ React TanStack Table",
+  //     "💵 Store Projects in Firebase",
+  //     "✅ Github Pull Request Template",
+  //     "💵 Github Workflow",
+  //     "😶‍🌫️ Deployment to Vercel & AWS Amplify",
+  //     "💽 OutStanding ReadMe",
+  //   ],
+  // },
 ];
 
-// Project Category Options
 
+// Project Category Options
 export const categoryOptions = [
   {
     label: "AI",
