@@ -2,7 +2,6 @@ import { projectLinks } from "@/lib/LinkData";
 import { FaGithub } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function ProjectsDetailsPage({ params }: { params: any }) {
   const projectId = params.id;
@@ -56,20 +55,24 @@ export default function ProjectsDetailsPage({ params }: { params: any }) {
             </div>
           </div>
           <div className="flex-1 grid grid-cols-2 space-x-4">
-            <Link
+            <a
               href={project?.repositoryUrl as string}
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-accent-primary rounded-md p-6 h-[115px] text-center"
             >
               <FaGithub size={36} className="mx-auto" />
               <p className="text-lg mt-2.5">Github</p>
-            </Link>
-            <Link
+            </a>
+            <a
               href={project?.projectUrl as string}
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-accent-primary rounded-md p-6 h-[115px] text-center"
             >
               <BiWorld size={36} className="text-red-600 mx-auto" />
               <p className="text-lg mt-2.5">Live Link</p>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
