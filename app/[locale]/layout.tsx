@@ -1,3 +1,4 @@
+import { Conversation } from "@/app/components/chatbot/Conversation";
 import SessionProviderPage from "@/app/providers/session-provider";
 import { ThemeProvider } from "@/app/providers/theme-provider";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -44,6 +45,7 @@ export default async function RootLayout({
                   {children}
                 </section>
                 <Footer />
+                <Conversation />
               </div>
             </ThemeProvider>
           </SessionProviderPage>
