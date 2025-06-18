@@ -27,7 +27,7 @@ export function Conversation() {
       await navigator.mediaDevices.getUserMedia({ audio: true });
 
       await conversation.startSession({
-        agentId: "agent_01jxyrc4yvesxtc5wh5yen75hn",
+        agentId: `${process.env.NEXT_PUBLIC_ELEVENLAB_AGENT_ID}`,
       });
     } catch (error) {
       console.error("Failed to start conversation:", error);
