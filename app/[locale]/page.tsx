@@ -106,6 +106,18 @@ export default function Home() {
           </motion.div>
         </div>
         <div className="hidden lg:block lg:w-[1000px] p-2">
+          <div className="relative rounded-md p-[2px] bg-gradient-to-r from-cyan-400 via-blue-500 to-fuchsia-500 shadow-[0_0_30px_rgba(0,255,255,0.3)]">
+            <pre className="relative rounded-md dark:bg-zinc-900 bg-gray-800 p-4 overflow-x-auto text-sm leading-relaxed text-white">
+              <code
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(highlightedCode),
+                }}
+              ></code>
+            </pre>
+            <div className="absolute inset-0 rounded-md blur-md opacity-40 z-[-1] bg-gradient-to-r from-cyan-400 via-blue-500 to-fuchsia-500"></div>
+          </div>
+        </div>
+        {/* <div className="hidden lg:block lg:w-[1000px] p-2">
           <pre className="relative rounded-md dark:bg-zinc-900 bg-gray-600 p-4 overflow-x-auto text-sm leading-relaxed shadow-[0_0_30px_rgba(0,255,255,0.2)] before:absolute before:inset-0 before:rounded-md before:-z-10 before:blur-md before:opacity-50 before:bg-gradient-to-r before:from-cyan-400 before:via-blue-500 before:to-fuchsia-500">
             <code
               dangerouslySetInnerHTML={{
@@ -113,7 +125,7 @@ export default function Home() {
               }}
             ></code>
           </pre>
-        </div>
+        </div> */}
       </div>
     </main>
   );
