@@ -8,10 +8,16 @@ import { getMessages } from "next-intl/server";
 import { routing } from "../../i18n/routing";
 import { notFound } from "next/navigation";
 import { Inter } from "next/font/google";
-// import { getLangDir } from "rtl-detect";
+import localFont from "next/font/local";
 import "../globals.css";
+// import { getLangDir } from "rtl-detect";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const proudly = localFont({
+  src: "../../fonts/proudly/Proudly.ttf",
+  display: "swap",
+});
 
 export default async function RootLayout({
   children,
