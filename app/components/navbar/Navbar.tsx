@@ -1,11 +1,12 @@
 "use client";
 import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitcher";
 import { ModeToggle } from "@/app/components/modeToggle/ModeToggle";
+import { proudly } from "@/app/[locale]/layout";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
+// import Image from "next/image";
 
 interface NavbarProps {
   locale: string;
@@ -30,13 +31,18 @@ export default function Navbar({ locale }: NavbarProps) {
     >
       <div className="flex items-center justify-between px-3 w-full md:w-[25%] border-b border-slate md:border-none py-2.5">
         <Link href="/" className="p-4 text-[#8CA5B5] dark:text-primary">
-          <Image
+          <span
+            className={`${proudly.className} h-14 text-2xl lg:text-4xl font-medium items-center flex absolute left-3 top-2 md:left-6 lg:top-0`}
+          >
+            Rasheed Olatunde
+          </span>
+          {/* <Image
             src="/geodevcodes.png"
             width={100}
             height={100}
             alt="geodevcodes logo"
             className="h-14 w-14 absolute left-3 top-2 md:left-6 lg:top-0"
-          />
+          /> */}
         </Link>
 
         {/* =====Hamburger===== */}
