@@ -49,7 +49,7 @@ export default function Projects() {
 
   return (
     <main className="px-4 pb-20 md:p-8 md:pt-16 min-h-screen mb-6 w-full max-w-7xl bg-background">
-      <div className="fixed w-[95%] md:w-[60%] lg:min-w-[70%] xl:min-w-[79%] z-[10] -mt-[17px] md:-mt-[15px] pb-2 md:pb-4 mb-4  border-b border-slate bg-background">
+      <div className="fixed w-[95%] md:w-[60%] lg:min-w-[70%] xl:min-w-[79%] z-[10] -mt-[18px] md:-mt-[15px] pb-2 md:pb-4 mb-4  border-b border-slate bg-background">
         <div className="flex items-center justify-between pt-2 md:pt-4 px-2.5 md:px-0">
           <p className="text-2xl md:text-3xl lg:text-left lg:text-4xl font-bold">
             {t("title")}
