@@ -44,9 +44,9 @@ export const projectLinks = [
   {
     id: "1",
     imageUrl: "/project-7.png",
-    projectTitle: "AI Powered Survey Engine",
+    projectTitle: "AI Powered Incite360",
     subTitle:
-      "🚀  Outstanding AI Powered Survey Engine Application, In this app you can create and customize your Surveys or build your survey with AI automation and send to your Customer/Client with Survey Engine app? Build with popular tools like NextJs, React-Redux, NodeJs for managing our database, Next-Auth for authentication, React-TanStack Query for efficient data Fetching, and spicing things up with Tailwind.css for some awesome styling.",
+      "🚀  Outstanding AI Powered Incite360 Application, In this app you can create and customize your Surveys or build your survey with AI automation and send to your Customer/Client with Survey Engine app? Build with popular tools like NextJs, React-Redux, NodeJs for managing our database, Next-Auth for authentication, React-TanStack Query for efficient data Fetching, and spicing things up with Tailwind.css for some awesome styling.",
     stack: [
       "AI Integration",
       "TypeScript",
@@ -59,7 +59,7 @@ export const projectLinks = [
       "Prisma",
     ],
     repositoryUrl: "https://github.com/olatunde1998/survey-engine",
-    projectUrl: "https://app.thesurveyengine.com/en",
+    projectUrl: "https://app.theincite360.com/en",
     category: ["TypeScript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
     projectFeatures: [
       "🌐 Next.js App Router",
