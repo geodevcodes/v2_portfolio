@@ -46,7 +46,7 @@ export const projectLinks = [
     imageUrl: "/project-7.png",
     projectTitle: "AI Powered Incite360",
     subTitle:
-      "🚀  Outstanding AI Powered Incite360 Application, In this app you can create and customize your Surveys or build your survey with AI automation and send to your Customer/Client with Survey Engine app? Build with popular tools like NextJs, React-Redux, NodeJs for managing our database, Next-Auth for authentication, React-TanStack Query for efficient data Fetching, and spicing things up with Tailwind.css for some awesome styling.",
+      "🚀  AI Powered Incite360 Application: an AI survey platform for creating, analyzing, and managing client feedback. Build with popular tools like NextJs, React-Redux, OpenAI model, NodeJs and spicing things up with Tailwind.css for some awesome styling.",
     stack: [
       "AI Integration",
       "TypeScript",
@@ -58,7 +58,7 @@ export const projectLinks = [
       "NestJs Backend",
       "Prisma",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/survey-engine",
+    repositoryUrl: "https://github.com/geodevcodes/survey-engine",
     projectUrl: "https://app.theincite360.com/en",
     category: ["TypeScript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
     projectFeatures: [
@@ -91,7 +91,7 @@ export const projectLinks = [
       "Shadcn/UI",
       "Appwrite",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/rn-aora",
+    repositoryUrl: "https://github.com/geodevcodes/rn-aora",
     projectUrl: "https://expo.dev/artifacts/eas/qUhLQYymPhGmxce2LLbz5c.apk",
     category: [
       "TypeScript",
@@ -132,7 +132,7 @@ export const projectLinks = [
       "PayStack",
       "Unit Testing",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/geomatic-connect",
+    repositoryUrl: "https://github.com/geodevcodes/geomatic-connect",
     projectUrl: "https://www.geomaticconnect.work/",
     category: ["TypeScript", "NextJs", "AI", "Web App", "PWA"],
     projectFeatures: [
@@ -168,7 +168,7 @@ export const projectLinks = [
       "Vapi AI",
       "Unit Testing",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/prepwise",
+    repositoryUrl: "https://github.com/geodevcodes/prepwise",
     projectUrl: "https://prepwise-azure.vercel.app/",
     category: ["TypeScript", "NextJs", "AI", "Web App"],
     projectFeatures: [
@@ -201,7 +201,7 @@ export const projectLinks = [
       "Shadcn/UI",
       "Prisma",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/must",
+    repositoryUrl: "https://github.com/geodevcodes/must",
     projectUrl: "https://must-geodevcodes.vercel.app/ko",
     category: ["TypeScript", "NextJs", "Web Application"],
     projectFeatures: [
@@ -230,7 +230,7 @@ export const projectLinks = [
       "Shadcn/UI",
       "MongoDB",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/geodevcodes-microfrontend",
+    repositoryUrl: "https://github.com/geodevcodes/geodevcodes-microfrontend",
     projectUrl: "https://geodevcodes.vercel.app/",
     category: ["TypeScript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
     projectFeatures: [
@@ -261,7 +261,7 @@ export const projectLinks = [
       "Expo EAS",
       "Tailwindcss",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/rn-realestate",
+    repositoryUrl: "https://github.com/geodevcodes/rn-realestate",
     projectUrl: "https://expo.dev/artifacts/eas/eTvG9HP2uxDtr7KsLrW42Q.apk",
     category: ["TypeScript", "ReactNative", "Expo", "ReactJs", "ReactNative"],
     projectFeatures: [
@@ -292,7 +292,7 @@ export const projectLinks = [
       "AWS Amplify",
       "Tailwindcss",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/rn-aiRide",
+    repositoryUrl: "https://github.com/geodevcodes/rn-aiRide",
     projectUrl: "https://expo.dev/artifacts/eas/vxr5E8gf1q25nq9HqYBF6u.apk",
     category: ["TypeScript", "ReactNative", "Expo", "ReactJs", "ReactNative"],
     projectFeatures: [
@@ -356,7 +356,7 @@ export const projectLinks = [
       "PayStack",
       "Unit Testing",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/online-learning-app",
+    repositoryUrl: "https://github.com/geodevcodes/online-learning-app",
     projectUrl: "https://online-learning-application.vercel.app/",
     category: ["TypeScript", "NextJs", "Web App", "PWA", "ReactJs"],
     projectFeatures: [
@@ -381,7 +381,7 @@ export const projectLinks = [
     subTitle:
       "Welcome to the  NextJs GetLinked-Tech Hackathon. In this Application, we'll dive deep into the latest version of Remix.run, a cutting-edge framework for building full stack JavaScript applications.",
     stack: ["TypeScript", "NextJS", "Vercel", "Tailwind", "NodeJs"],
-    repositoryUrl: "https://github.com/olatunde1998/getlinked-tech",
+    repositoryUrl: "https://github.com/geodevcodes/getlinked-tech",
     projectUrl: "https://getlinked-tech.vercel.app/",
     category: ["Typescript", "NextJs", "Web Application", "ReactJs"],
     projectFeatures: [
@@ -412,7 +412,7 @@ export const projectLinks = [
       "Shadcn/UI",
       "Supabase",
     ],
-    repositoryUrl: "https://github.com/olatunde1998/geodevcodes-ecommerce",
+    repositoryUrl: "https://github.com/geodevcodes/geodevcodes-ecommerce",
     projectUrl: "https://geodevcodes-ecommerce.vercel.app/",
     category: ["TypeScript", "NextJs", "Web App", "ReactJs"],
     projectFeatures: [
@@ -436,7 +436,7 @@ export const projectLinks = [
   //   subTitle:
   //     "🚀 Today we are going to create a Care-Finder App using Next.js 14, Firebase-Auth, Prisma, Firebase, and Tailwind! Learn step-by-step and elevate your development skills.",
   //   stack: ["TypeScript", "NextJS", "Vercel", "Tailwind", "Firebase", "Prisma"],
-  //   repositoryUrl: "https://github.com/olatunde1998/carefinder-app",
+  //   repositoryUrl: "https://github.com/geodevcodes/carefinder-app",
   //   projectUrl: "https://carefinder-app.vercel.app/",
   //   category: ["TypeScript", "NextJs", "Web App", "ReactJs"],
   //   projectFeatures: [

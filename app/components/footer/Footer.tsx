@@ -37,7 +37,7 @@ export default function Footer() {
       <div className="flex items-center justify-center border-l border-slate border-r ">
         <a
           aria-label="geodevcodes github profile"
-          href="https://github.com/olatunde1998/"
+          href="https://github.com/geodevcodes/"
           target="_blank"
           rel="noreferrer"
           className="flex items-center justify-center p-4"

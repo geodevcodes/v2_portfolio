@@ -94,11 +94,11 @@ export default function Home() {
                 &quot;
                 <a
                   target="_blank"
-                  href="https://github.com/olatunde1998"
+                  href="https://github.com/geodevcodes"
                   rel="noreferrer"
                   className="hover:underline transition duration-300"
                 >
-                  https://github.com/olatunde1998
+                  https://github.com/geodevcodes
                 </a>
                 &quot;
               </span>

@@ -1,20 +1,19 @@
 <div align="center">
-<h1>geodevcodes web application</h1>
+<h1>geodevcodes</h1>
 <h6><i>I'm Rasheed Olatunde</i></h6>
 <hr />
 </div>
 
-Hellooooooooooo, 👋 
+Hellooooooooooo, 👋
 
-Here are some details about my Website: 👎
+I'm a Software Engineer with 4+ years of expertise in building high-performance web and mobile applications. Skilled in modern technologies and frameworks to deliver scalable, user-focused solutions. Known for strong leadership and the ability to simplify complex technical concepts for cross-functional teams.
 
-1.  [Repository of my portfolio](https://github.com/olatunde1998/geodevcodes-microfrontend)
+1.  [Repository of my portfolio](https://github.com/geodevcodes/v2_portfolio)
 2.  [Publicly hosted live URL of the portfolio](https://geodevcodes.vercel.app/)
 
 # Technologies
 
 - [NextJs,](https://nextjs.org/) [NextAuth](https://next-auth.js.org/)
-- [Shadcn UI](https://ui.shadcn.com/)
 - [React TanStack Query,](https://tanstack.com/query/latest)
 - [TailwindCss](https://tailwindcss.com/)
 - [React Hook-form](https://react-hook-form.com/)
@@ -26,14 +25,14 @@ Here are some details about my Website: 👎
 # How to Contribute
 
 1. Clone the repository
-   `git clone https://github.com/olatunde1998/geodevcodes-microfrontend.git`
+   `git clone https://github.com/geodevcodes/v2_portfolio.git`
 
 2. Change directory into the `cloned folder ` and run the setup script
-   `cd geodevcodes-microfrontend`
+   `cd v2_portfolio`
 
-3. Open your terminal and type this command `yarn install ` to add the react dependency to the app in the development mode.
+3. Open your terminal and type this command `npm install ` to add the react dependency to the app in the development mode.
 
-4. After the Successful installation of the dependency type/copy this command `yarn dev` to run the app in your local environment
+4. After the Successful installation of the dependency type/copy this command `npm run dev` to run the app in your local environment
 
 5. Copy this link [http://localhost:3000/](http://localhost:3000/) and paste it to your web browser(Chrome, safari, mozilla firefox et.c) to view it.
 
@@ -45,7 +44,7 @@ Vercel was used to deploy the app.
 
 # License
 
-The MIT License - Copyright (c) 2024 - Present, geodevcodes / Storage Service.
+The MIT License - Copyright (c) 2025 - Present, geodevcodes / Storage Service.
 
 # Author
 
