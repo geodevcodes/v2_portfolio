@@ -1,25 +1,25 @@
 "use client";
+import { KR, GB, CN, DE, SA, JP, FR } from "country-flag-icons/react/3x2";
 import { useState, useEffect, useRef, useTransition } from "react";
-import * as Flags from "country-flag-icons/react/3x2";
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { Globe } from "lucide-react";
 
 const locales = [
-  { name: "Korean", value: "ko", label: "KOR", flag: Flags.KR },
-  { name: "English", value: "en", label: "ENG", flag: Flags.GB },
-  { name: "Chinese", value: "zh-CN", label: "CHN", flag: Flags.CN },
-  { name: "Deutsch", value: "de", label: "DE", flag: Flags.DE },
-  { name: "Arabic", value: "ar", label: "AR", flag: Flags.SA },
-  { name: "Japanese", value: "ja", label: "JP", flag: Flags.JP },
-  { name: "Français", value: "fr", label: "FR", flag: Flags.FR },
+  { name: "Korean", value: "ko", label: "KOR", flag: KR },
+  { name: "English", value: "en", label: "ENG", flag: GB },
+  { name: "Chinese", value: "zh-CN", label: "CHN", flag: CN },
+  { name: "Deutsch", value: "de", label: "DE", flag: DE },
+  { name: "Arabic", value: "ar", label: "AR", flag: SA },
+  { name: "Japanese", value: "ja", label: "JP", flag: JP },
+  { name: "Français", value: "fr", label: "FR", flag: FR },
 ];
 
 export default function LanguageSwitcher() {
   const startTransition = useTransition()[1];
-  const router = useRouter();
   const localActive = useLocale();
   const pathname = usePathname();
+  const router = useRouter();
 
   const onSelectChange = (nextLocale: string) => {
     startTransition(() => {
