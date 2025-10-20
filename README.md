@@ -1,22 +1,10 @@
 <div align="center">
-<h1>geodevcodes</h1>
-<h6><i>I'm Rasheed Olatunde</i></h6>
+<h1>Rasheed Olatunde</h1>
+<h6><i>I'm Rasheed Olatunde (geodevcodes)</i></h6>
 <hr />
 </div>
 
-Hellooooooooooo, 👋
-
 I'm a Software Engineer with 4+ years of expertise in building high-performance web and mobile applications. Skilled in modern technologies and frameworks to deliver scalable, user-focused solutions. Known for strong leadership and the ability to simplify complex technical concepts for cross-functional teams.
-
-1.  [Repository of my portfolio](https://github.com/geodevcodes/v2_portfolio)
-2.  [Publicly hosted live URL of the portfolio](https://geodevcodes.vercel.app/)
-
-# Technologies
-
-- [NextJs,](https://nextjs.org/) [NextAuth](https://next-auth.js.org/)
-- [React TanStack Query,](https://tanstack.com/query/latest)
-- [TailwindCss](https://tailwindcss.com/)
-- [React Hook-form](https://react-hook-form.com/)
 
 # Prototype
 
