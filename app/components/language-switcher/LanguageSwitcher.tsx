@@ -1,19 +1,19 @@
 "use client";
 import { useState, useEffect, useRef, useTransition } from "react";
-import * as Flags from "country-flag-icons/react/3x2";
+// import * as Flags from "country-flag-icons/react/3x2";
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { Globe } from "lucide-react";
 
-const locales = [
-  { name: "Korean", value: "ko", label: "KOR", flag: Flags.KR },
-  { name: "English", value: "en", label: "ENG", flag: Flags.GB },
-  { name: "Chinese", value: "zh-CN", label: "CHN", flag: Flags.CN },
-  { name: "Deutsch", value: "de", label: "DE", flag: Flags.DE },
-  { name: "Arabic", value: "ar", label: "AR", flag: Flags.SA },
-  { name: "Japanese", value: "ja", label: "JP", flag: Flags.JP },
-  { name: "Français", value: "fr", label: "FR", flag: Flags.FR },
-];
+// const locales = [
+//   { name: "Korean", value: "ko", label: "KOR", flag: Flags.KR },
+//   { name: "English", value: "en", label: "ENG", flag: Flags.GB },
+//   { name: "Chinese", value: "zh-CN", label: "CHN", flag: Flags.CN },
+//   { name: "Deutsch", value: "de", label: "DE", flag: Flags.DE },
+//   { name: "Arabic", value: "ar", label: "AR", flag: Flags.SA },
+//   { name: "Japanese", value: "ja", label: "JP", flag: Flags.JP },
+//   { name: "Français", value: "fr", label: "FR", flag: Flags.FR },
+// ];
 
 export default function LanguageSwitcher() {
   const startTransition = useTransition()[1];
@@ -54,16 +54,16 @@ export default function LanguageSwitcher() {
         className="border-[1.3px] border-slate bg-background text-[#8CA5B5] dark:text-white rounded-3xl py-1.5 px-2.5 w-[90px] flex items-center justify-between"
       >
         <span className="flex items-center gap-4">
-          <span className="text-sm">
+          {/* <span className="text-sm">
             {locales.find((locale) => locale.value === localActive)?.label}
-          </span>
+          </span> */}
         </span>
         <Globe className="w-4 h-4 ml-3" />
       </button>
 
       {showDropdown && (
         <ul className="absolute z-[1000] -left-20 top-10 bg-white dark:bg-background border border-slate max-h-64 overflow-y-auto rounded-lg mt-1 w-[180px] shadow-lg">
-          {locales.map((locale) => {
+          {/* {locales.map((locale) => {
             const FlagComponent = locale.flag;
             return (
               <li
@@ -84,7 +84,7 @@ export default function LanguageSwitcher() {
                 <span className="ml-2">{locale.name}</span>
               </li>
             );
-          })}
+          })} */}
         </ul>
       )}
     </div>
