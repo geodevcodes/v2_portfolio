@@ -1,5 +1,6 @@
 "use client";
-import { ModeToggle } from "@/app/components/modeToggle/ModeToggle";
+import { ThemeToggle } from "@/app/components/theme-toggle/ThemeToggle";
+import RasheedImage from "@/public/rasheed-img.jpeg";
 import { sidebarRouteLinks } from "@/lib/LinkData";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
@@ -18,9 +19,11 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { signIn, signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { redirect } from "next/navigation";
 
-export default function SideBar({ session }: any) {
+export default function SideBar({ locale }: any) {
+    const { data: session } = useSession();
   const pathname = usePathname();
   const t = useTranslations("Profile");
 
@@ -39,11 +42,14 @@ export default function SideBar({ session }: any) {
             <div className="justify-between px-3 pb-6 hidden md:flex">
               <div className="flex gap-x-2">
                 <Image
-                  src="/rasheed-img.jpeg"
+                  src={RasheedImage}
                   alt="profile image"
                   width={100}
                   height={100}
                   priority
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1024px"
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
                   className="w-10 h-10 rounded-full object-cover"
                 />
 
@@ -54,7 +60,7 @@ export default function SideBar({ session }: any) {
                   </Link>
                 </div>
               </div>
-              <ModeToggle />
+              <ThemeToggle />
             </div>
 
             <div className="hidden md:relative md:flex flex-col items-start w-full border-t md:border-slate pb-1">
@@ -69,7 +75,7 @@ export default function SideBar({ session }: any) {
                       <Link
                         href={`${item.href}`}
                         className={`${
-                          pathname === item.href
+                          pathname === `/${locale}${item.href}`
                             ? "rounded-sm bg-accent dark:bg-accent w-full flex"
                             : "flex items-center"
                         }
