@@ -1,12 +1,11 @@
 "use client";
-// import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitcher";
+import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitcher";
 import { ThemeToggle } from "@/app/components/theme-toggle/ThemeToggle";
 import { proudly } from "@/app/[locale]/layout";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-// import Image from "next/image";
 
 interface NavbarProps {
   locale: string;
@@ -126,7 +125,7 @@ export default function Navbar({ locale }: NavbarProps) {
             </li>
           ))}
           <li className="flex items-center md:mr-6 px-4">
-            {/* <LanguageSwitcher /> */}
+            <LanguageSwitcher />
           </li>
         </ul>
       </div>

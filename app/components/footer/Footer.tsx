@@ -1,4 +1,3 @@
-// import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitcher";
 import {
   RiGithubFill,
   RiLinkedinFill,
@@ -15,7 +14,7 @@ export default function Footer() {
       <div className="flex items-center justify-center border-l border-slate">
         <a
           aria-label="geodevcodes linkedin profile"
-          href="http://linkedin.com/in/olatunderasheed"
+          href="http://linkedin.com/in/rasheed-olatunde"
           target="_blank"
           rel="noreferrer"
           className="flex items-center justify-center p-4"
@@ -55,15 +54,6 @@ export default function Footer() {
           <span className="mr-2 hidden sm:inline">Designed by geodevcodes</span>
           <RiDribbbleFill fill="#607B96" size={25} />
         </a>
-        {/* <div className="flex items-center justify-center">
-          <span className="mr-2 hidden sm:inline">Designed by geodevcodes</span>
-          <div className="hidden md:block">
-            <RiDribbbleFill fill="#607B96" size={25} />
-          </div>
-          <div className="md:hidden mb-8">
-            <LanguageSwitcher />
-          </div>
-        </div> */}
       </div>
     </footer>
   );
