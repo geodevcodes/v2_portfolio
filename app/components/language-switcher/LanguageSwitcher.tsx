@@ -1,25 +1,18 @@
 "use client";
-import unitedKingdom from "@/public/flags/united-kingdom-flag.png";
 import { useState, useEffect, useRef, useTransition } from "react";
-import saudiArabia from "@/public/flags/saudi-arabia-flag.png";
+import * as Flags from "country-flag-icons/react/3x2";
 import { usePathname, useRouter } from "next/navigation";
-import germany from "@/public/flags/germany-flag.png";
-import france from "@/public/flags/france-flag.png";
-import china from "@/public/flags/china-flag.png";
-import japan from "@/public/flags/japan-flag.png";
-import korea from "@/public/flags/korea-flag.png";
 import { useLocale } from "next-intl";
 import { Globe } from "lucide-react";
-import Image from "next/image";
 
 const locales = [
-  { name: "Korean", value: "ko", label: "KOR", flag: korea },
-  { name: "English", value: "en", label: "ENG", flag: unitedKingdom },
-  { name: "Chinese", value: "zh-hans", label: "CHN", flag: china },
-  { name: "Deutsch", value: "de", label: "DE", flag: germany },
-  { name: "Arabic", value: "ar", label: "AR", flag: saudiArabia },
-  { name: "Japanese", value: "ja", label: "JP", flag: japan },
-  { name: "Français", value: "fr", label: "FR", flag: france },
+  { name: "Korean", value: "ko", label: "KOR", flag: Flags.KR },
+  { name: "English", value: "en", label: "ENG", flag: Flags.GB },
+  { name: "Chinese", value: "zh-CN", label: "CHN", flag: Flags.CN },
+  { name: "Deutsch", value: "de", label: "DE", flag: Flags.DE },
+  { name: "Arabic", value: "ar", label: "AR", flag: Flags.SA },
+  { name: "Japanese", value: "ja", label: "JP", flag: Flags.JP },
+  { name: "Français", value: "fr", label: "FR", flag: Flags.FR },
 ];
 
 export default function LanguageSwitcher() {
@@ -70,28 +63,28 @@ export default function LanguageSwitcher() {
 
       {showDropdown && (
         <ul className="absolute z-[1000] -left-20 top-10 bg-white dark:bg-background border border-slate max-h-64 overflow-y-auto rounded-lg mt-1 w-[180px] shadow-lg">
-          {locales.map((locale) => (
-            <li
-              key={locale.value}
-              onClick={() => {
-                onSelectChange(locale.value);
-                setShowDropdown(false);
-              }}
-              className={`flex items-center px-4 py-2 cursor-pointer hover:bg-slate-100 dark:hover:bg-primary-foreground ${
-                localActive === locale.value
-                  ? "bg-slate-200 dark:bg-primary-foreground dark:hover:bg-primary-foreground"
-                  : ""
-              }`}
-            >
-              <Image
-                src={locale.flag}
-                width={24}
-                height={24}
-                alt={`${locale.label}'s flag`}
-              />
-              <span className="ml-2">{locale.name}</span>
-            </li>
-          ))}
+          {locales.map((locale) => {
+            const FlagComponent = locale.flag;
+            return (
+              <li
+                key={locale.value}
+                onClick={() => {
+                  onSelectChange(locale.value);
+                  setShowDropdown(false);
+                }}
+                className={`flex items-center px-4 py-2 cursor-pointer hover:bg-slate-100 dark:hover:bg-primary-foreground ${
+                  localActive === locale.value
+                    ? "bg-slate-200 dark:bg-primary-foreground dark:hover:bg-primary-foreground"
+                    : ""
+                }`}
+              >
+                {FlagComponent && (
+                  <FlagComponent className="w-6 h-4" title={locale.label} />
+                )}
+                <span className="ml-2">{locale.name}</span>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>
