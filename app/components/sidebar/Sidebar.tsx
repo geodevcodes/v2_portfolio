@@ -107,7 +107,7 @@ export default function SideBar({ locale }: any) {
           <section className="border-t border-slate pt-6 px- mt-28 hidden md:block pb-20">
             {session?.user?.email ? (
               <div
-                className="bg-accent dark:bg-accent rounded-lg text-foreground flex items-center justify-center gap-4 p-2 cursor-pointer"
+                className="mx-3 bg-accent dark:bg-accent rounded-lg text-foreground flex items-center justify-center gap-4 p-2 cursor-pointer"
                 onClick={async () => {
                   await signOut();
                   redirect("/");
