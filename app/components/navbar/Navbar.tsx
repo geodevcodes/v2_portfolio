@@ -1,6 +1,6 @@
 "use client";
 import LanguageSwitcher from "@/app/components/language-switcher/LanguageSwitcher";
-import { ModeToggle } from "@/app/components/modeToggle/ModeToggle";
+import { ThemeToggle } from "@/app/components/theme-toggle/ThemeToggle";
 import { proudly } from "@/app/[locale]/layout";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -47,7 +47,7 @@ export default function Navbar({ locale }: NavbarProps) {
 
         {/* =====Hamburger===== */}
         <div className="relative z-[2000] left-3 md:left-0 px-4 md:hidden flex items-center gap-4">
-          <ModeToggle />
+          <ThemeToggle />
           <label
             htmlFor="checkbox"
             className="flex flex-col bg-primary-background border border-slate p-2 rounded-lg"

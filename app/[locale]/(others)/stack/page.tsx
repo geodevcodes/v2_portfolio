@@ -4,7 +4,8 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Stack | geodevcodes",
-  description: "geodevcodes",
+  description:
+    "Experienced Software Developer with 4+ years of expertise in building high-performance web and mobile applications. Skilled in modern technologies and frameworks to deliver scalable, user-focused solutions. Known for strong leadership and the ability to simplify complex technical concepts for cross-functional teams.",
 };
 
 export default function Stack() {

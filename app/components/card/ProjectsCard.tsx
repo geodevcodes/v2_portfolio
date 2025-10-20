@@ -1,10 +1,9 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import { VscGithubAlt } from "react-icons/vsc";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 interface ProjectCardData {
   projectId: string;
@@ -43,6 +42,8 @@ export default function ProjectsCard({
               fill
               priority
               sizes="(max-width: 500px) 100vw, 700px"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="rounded-t-md object-cover"
             />
           </motion.div>
