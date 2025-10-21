@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectCardData {
-  projectId: string;
+  projectSlug: string;
   cardImageUrl: string;
   projectTitle: string;
   subTitle: string;
@@ -14,7 +14,7 @@ interface ProjectCardData {
 }
 
 export default function ProjectsCard({
-  projectId,
+  projectSlug,
   cardImageUrl,
   projectTitle,
   subTitle,
@@ -51,7 +51,7 @@ export default function ProjectsCard({
 
         <div className="pt-3">
           <Link
-            href={`/projects/${projectId}`}
+            href={`/projects/${projectSlug}`}
             className="font-semibold text-sm line-clamp-2 hover:underline text-white"
           >
             {projectTitle}
@@ -63,7 +63,7 @@ export default function ProjectsCard({
 
           <div className="flex items-center justify-between mt-4">
             <Button asChild className="bg-[#1c2b3a] hover:bg-[#263849]">
-              <Link href={`/projects/${projectId}`} className="text-white">
+              <Link href={`/projects/${projectSlug}`} className="text-white">
                 View Project
               </Link>
             </Button>

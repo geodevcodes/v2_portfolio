@@ -4,9 +4,9 @@ import { BiWorld } from "react-icons/bi";
 import Image from "next/image";
 
 export default function ProjectsDetailsPage({ params }: { params: any }) {
-  const projectId = params.id;
+  const projectSlug = params.slug;
   const projectArray = projectLinks || [];
-  const project = projectArray.find((item) => item?.id === projectId);
+  const project = projectArray.find((item) => item?.slug === projectSlug);
 
   return (
     <div className="px-4 p-2 mb-4 pb-20 md:p-8 md:pt-20 lg:mb-0  font-sans min-h-screen max-w-7xl">

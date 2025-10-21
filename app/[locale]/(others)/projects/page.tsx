@@ -11,7 +11,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 interface ProjectLink {
-  id: string;
+  slug: string;
   imageUrl: string;
   projectTitle: string;
   subTitle: string;
@@ -113,7 +113,7 @@ export default function Projects() {
           : filteredProjects?.map((item: any, idx: number) => (
               <div key={idx}>
                 <ProjectsCard
-                  projectId={item.id}
+                  projectSlug={item.slug}
                   projectTitle={item.projectTitle}
                   subTitle={item.subTitle}
                   cardImageUrl={item.imageUrl}
