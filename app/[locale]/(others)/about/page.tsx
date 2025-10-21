@@ -33,7 +33,7 @@ export default function About() {
                 className="object-cover rounded-lg"
               />{" "}
               <div>
-                <p className="font-semibold text-sm">@github/olatunde1998</p>
+                <p className="font-semibold text-sm">@github/geodevcodes</p>
                 <p className="text-sm text-muted-foreground">github</p>
               </div>
             </div>
@@ -49,7 +49,7 @@ export default function About() {
               />{" "}
               <div>
                 <p className="font-semibold text-sm">
-                  @linkedin/olatunderasheed
+                  @linkedin/rasheed-olatunde
                 </p>
                 <p className="text-sm text-muted-foreground">linkedin</p>
               </div>

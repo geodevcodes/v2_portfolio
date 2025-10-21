@@ -46,7 +46,7 @@ export const projectLinks = [
     imageUrl: "/project-7.png",
     projectTitle: "AI Powered Incite360",
     subTitle:
-      "🚀  AI Powered Incite360 Application: an AI survey platform for creating, analyzing, and managing client feedback. Build with popular tools like NextJs, React-Redux, OpenAI model, NodeJs and spicing things up with Tailwind.css for some awesome styling.",
+      "🚀  AI Powered Incite360 Application is a powerful, customizable survey platform designed to help businesses collect, analyze, and act on customer feedback. The platform enables organizations to create surveys, distribute them across multiple channels, analyze responses in real-time, and integrate with external platforms like Google and Facebook for comprehensive review management.",
     stack: [
       "AI Integration",
       "TypeScript",
@@ -64,7 +64,7 @@ export const projectLinks = [
     projectFeatures: [
       "🌐 Next.js App Router",
       "🔐 NextAuth Authentication",
-      "💨 Payment Service with Flutterwave",
+      "💨 Payment Service with Paystack",
       "🎨 Styling with tailwindcss",
       "✅ React TanStack Query",
       "💵 React-TanStack Table",

@@ -49,23 +49,23 @@ export default function Navbar({ locale }: NavbarProps) {
           <ThemeToggle />
           <label
             htmlFor="checkbox"
-            className="flex flex-col bg-primary-background border border-slate p-2 rounded-lg"
+            className="flex flex-col bg-primary-background border border-slate p-1.5 rounded-lg"
           >
             <span
               className={clsx(
-                "h-[3px] w-[24px] bg-[#8CA5B5] my-[2.5px] transition-all",
+                "h-[3px] w-[24px] bg-[#8CA5B5] my-[2px] transition-all",
                 visibility && "rotate-[135deg] relative top-2"
               )}
             ></span>
             <span
               className={clsx(
-                "h-[3px] w-[24px] bg-[#8CA5B5] my-[2.5px] transition-all",
+                "h-[3px] w-[24px] bg-[#8CA5B5] my-[2px] transition-all",
                 visibility && "rotate-[45deg] relative"
               )}
             ></span>
             <span
               className={clsx(
-                "h-[3px] w-[24px] bg-[#8CA5B5] my-[2.5px] transition-all",
+                "h-[3px] w-[24px] bg-[#8CA5B5] my-[2px] transition-all",
                 visibility && "rotate-[45deg] relative -top-2"
               )}
             ></span>
