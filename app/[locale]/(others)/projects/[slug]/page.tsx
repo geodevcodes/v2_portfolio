@@ -21,7 +21,7 @@ export default function ProjectsDetailsPage({ params }: { params: any }) {
               sizes="(max-width: 768px) 100vw, 700px"
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
-              className="object-cover rounded-md w-full h-[200px] md:h-[250px] xl:h-[300px]"
+              className="object-cover rounded-md w-full h-[200px] md:h-[250px] xl:h-[300px] border border-accent-primary"
             />
           </div>
           <div className="p-5 border border-accent-primary rounded-md">
