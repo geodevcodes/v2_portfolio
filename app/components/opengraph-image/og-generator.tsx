@@ -15,7 +15,7 @@ export default async function generateOgImage(type: OGImageType, props: any) {
 
   // Read the background image file
   const imageBuffer = await readFile(
-    join(process.cwd(), "public/opengraph-image2.png")
+    join(process.cwd(), "public/opengraph-image.png")
   );
   const base64Image = imageBuffer.toString("base64");
   const dataUrl = `data:image/png;base64,${base64Image}`;
