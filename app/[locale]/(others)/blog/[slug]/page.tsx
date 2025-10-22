@@ -1,6 +1,30 @@
 import BlogDetails from "@/app/components/blog/BlogDetails";
 import { redirect } from "next/navigation";
+import type { Metadata } from "next";
 import { auth } from "@/auth";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: any;
+}): Promise<Metadata> {
+  const session = await auth();
+  const blogSlug = params?.slug;
+  if (!session?.user || !blogSlug) {
+    redirect("/");
+  }
+  return {
+    title: `Blog Details - ${blogSlug} | geodevcodes`,
+    description: `Read the detailed blog post about ${blogSlug} on geodevcodes.`,
+    keywords: [
+      blogSlug,
+      "Rasheed Olatunde",
+      "geodevcodes",
+      "Software Developer",
+      "React Developer",
+    ],
+  };
+}
 
 export default async function BlogDetailsPage({ params }: { params: any }) {
   const session = await auth();

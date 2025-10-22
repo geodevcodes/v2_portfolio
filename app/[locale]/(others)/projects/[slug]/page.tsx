@@ -1,7 +1,27 @@
 import { projectLinks } from "@/lib/LinkData";
 import { FaGithub } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: any;
+}): Promise<Metadata> {
+  const projectSlug = params?.slug;
+  return {
+    title: `Project Details - ${projectSlug} | geodevcodes`,
+    description: `Explore the detailed overview of the project ${projectSlug} on geodevcodes.`,
+    keywords: [
+      projectSlug,
+      "Rasheed Olatunde",
+      "geodevcodes",
+      "Software Developer",
+      "React Developer",
+    ],
+  };
+}
 
 export default function ProjectsDetailsPage({ params }: { params: any }) {
   const projectSlug = params.slug;
