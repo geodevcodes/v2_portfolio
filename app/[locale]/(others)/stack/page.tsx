@@ -98,6 +98,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -113,6 +115,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -127,6 +131,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -141,6 +147,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -155,6 +163,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -172,6 +182,8 @@ export default function Stack() {
               width={70}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -186,6 +198,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -200,6 +214,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -214,6 +230,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -228,6 +246,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -242,6 +262,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover rounded-lg w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -263,6 +285,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -278,6 +302,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -292,6 +318,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -306,6 +334,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>
@@ -320,6 +350,8 @@ export default function Stack() {
               width={60}
               height={60}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
               className="object-cover w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
             />
             <div>

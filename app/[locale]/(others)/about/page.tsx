@@ -102,6 +102,8 @@ export default function About() {
                 height={50}
                 sizes="(max-width: 768px) 100vw, 700px"
                 priority
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
                 className="object-cover rounded-lg"
               />{" "}
               <div>
@@ -117,6 +119,8 @@ export default function About() {
                 height={50}
                 sizes="(max-width: 768px) 100vw, 700px"
                 priority
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
                 className="object-cover rounded-lg"
               />{" "}
               <div>
@@ -136,6 +140,8 @@ export default function About() {
             height={200}
             sizes="(max-width: 768px) 100vw, 700px"
             priority
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
             className="object-cover w-full  md:h-[500px] lg:h-fit rounded-3xl"
           />{" "}
         </div>
