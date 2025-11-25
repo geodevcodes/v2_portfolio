@@ -44,6 +44,8 @@ export const sidebarRouteLinks = [
 export const projectLinks = [
   {
     imageUrl: "/project-7.png",
+    videoUrl: "https://youtu.be/o9fTjNIPjpU?si=A1R10OW3E-nWadN3",
+    imageUrls: ["/project-7.png", "/project-7.png"],
     projectTitle: "AI Powered Incite360",
     subTitle:
       "🚀  AI Powered Incite360 Application is a powerful, customizable survey platform designed to help businesses collect, analyze, and act on customer feedback. The platform enables organizations to create surveys, distribute them across multiple channels, analyze responses in real-time, and integrate with external platforms like Google and Facebook for comprehensive review management.",
@@ -77,6 +79,8 @@ export const projectLinks = [
   },
   {
     imageUrl: "/aora.webp",
+    videoUrl: "",
+    imageUrls: ["/aora.webp", "/aora.webp"],
     projectTitle: "Aora Mobile APP",
     subTitle:
       "🚀  Built with React Native for seamless user experiences, Animatable for captivating animations, and integrated with the dependable backend systems of Appwrite, this app showcases impressive design and functionality, enabling seamless sharing of AI videos within the community.",
@@ -115,6 +119,9 @@ export const projectLinks = [
   },
   {
     imageUrl: "/geomatic-connect.webp",
+    videoUrl:
+      "https://res.cloudinary.com/dgfjxhoae/video/upload/v1753978858/geomatic-connect/Are_you_a_geomatic_student__3_t4pko8.mp4",
+    imageUrls: ["/geomatic-connect.webp", "/geomatic-connect.webp"],
     projectTitle: "Geomatics Connect | Job Board Platform",
     subTitle:
       "🚀 A modern SaaS Job portal connecting Geomatics students with companies for internships and training programs. Developed with Next.js 14, TailwindCSS, MongoDB, and NextAuth with OAuth (Google, GitHub), featuring Paystack payment integration, unit testing, and deployment on aws amplify. (https://www.geomaticconnect.work/)",
@@ -150,6 +157,8 @@ export const projectLinks = [
   },
   {
     imageUrl: "/afrenai.png",
+    videoUrl: "",
+    imageUrls: ["/afrenai.png", "/afrenai.png"],
     projectTitle: "Afren AI operating system",
     subTitle:
       "🚀  AI-driven operating system that transforms project ideas into shipped products by automating project scoping, team matching, and execution.",
@@ -166,7 +175,7 @@ export const projectLinks = [
       "Unit Testing",
     ],
     repositoryUrl: "https://github.com/geodevcodes",
-    projectUrl: "https://www.afren.ai/",
+    projectUrl: "https://afren-ai-frontend.vercel.app/",
     category: ["TypeScript", "NextJs", "AI", "Web App"],
     projectFeatures: [
       "🌐 Next.js App Router",
@@ -184,6 +193,8 @@ export const projectLinks = [
   },
   {
     imageUrl: "/portfolio.png",
+    videoUrl: "",
+    imageUrls: ["/portfolio.png", "/portfolio.png"],
     projectTitle: "My Portfolio Website",
     subTitle: "🚀   AI Powered Portfolio with Blogify",
     stack: [
@@ -213,7 +224,38 @@ export const projectLinks = [
     ],
   },
   {
+    imageUrl: "/clear-essence1.png",
+    videoUrl: "",
+    imageUrls: ["/clear-essence2.png", "/clear-essence3.png"],
+    projectTitle: "Virtual Menu",
+    subTitle:
+      "🚀 This application transforms Clear Essence Hotel & Spa’s guest experience by replacing traditional menus with a seamless QR-code digital menu system accessible on any mobile device. The platform ensures guests can explore restaurant and spa offerings with ease. Its scalable architecture also positions the hotel for future expansion into advanced features like real-time analytics, digital ordering, and integrated service bookings.",
+    stack: [
+      "TypeScript",
+      "NextJS",
+      "NestJs Backend",
+      "Vercel",
+      "TailwindCSS",
+      "Prisma",
+    ],
+    repositoryUrl: "https://github.com/geodevcodes",
+    projectUrl: "https://staging.menu.tezzasolutions.com/",
+    category: ["TypeScript", "NextJs", "Web Application"],
+    projectFeatures: [
+      "🌐 Next.js App Router",
+      "🎨 Styling with Tailwindcss",
+      "✅ Github Pull Request Template",
+      "💵 Github Workflow",
+      "💵 Store Projects in Sanity",
+      "🐐 Bento Layout",
+      "💽 OutStanding ReadMe",
+      "😶‍🌫️ Deployment to Godaddy",
+    ],
+  },
+  {
     imageUrl: "/must.webp",
+    videoUrl: "",
+    imageUrls: ["/must.webp", "/must.webp"],
     projectTitle: "Must Culture Share: Internationalization with i18n",
     subTitle:
       "🚀 A multilingual must-culture website supporting five languages (English, Korean, Chinese, German, Arabic) built with Next.js, next-i18n, TailwindCSS, and Shadcn UI, with Sanity CMS for content management, deployed on Vercel",
@@ -243,6 +285,8 @@ export const projectLinks = [
   },
   {
     imageUrl: "/real-estate.png",
+    videoUrl: "",
+    imageUrls: ["/real-estate.png", "/real-estate.png"],
     projectTitle: "RealEstate Mobile APP",
     subTitle:
       "🚀  Build a full-stack Real Estate application with React Native (Expo), featuring Google authentication, dynamic property listings, and user profiles. Designed with modern tools like Expo SDK 52, Tailwind CSS, and TypeScript for a seamless and scalable experience",
@@ -271,6 +315,8 @@ export const projectLinks = [
   },
   {
     imageUrl: "/airide.png",
+    videoUrl: "",
+    imageUrls: ["/airide.png", "/airide.png"],
     projectTitle: "AIRIDE Mobile APP",
     subTitle:
       "🚀  Built with React Native for handling the user interface, Google Maps for rendering maps with directions, paystack for handling payments, and styled with TailwindCSS, AI Ride is a perfect mobile app",
@@ -301,6 +347,8 @@ export const projectLinks = [
   },
   {
     imageUrl: "/scoutbeta.png",
+    videoUrl: "",
+    imageUrls: ["/scoutbeta.png", "/scoutbeta.png"],
     projectTitle: "ScoutBeta: Marketplace for Space and Location Scouting",
     subTitle:
       "🚀 No.1 Online marketplace for space and location scouting for creators just in 3 clicks.",
@@ -331,6 +379,8 @@ export const projectLinks = [
   },
   {
     imageUrl: "/lms-2.png",
+    videoUrl: "",
+    imageUrls: ["/lms-2.png", "/lms-2.png"],
     projectTitle: "Learning Management System with Next.js.14, NextAuth",
     subTitle:
       "🚀 Create a modern Learning Management System For software developers  with Next.js.14, Tailwind,  Learn step-by-step and elevate your development skills.",
@@ -364,28 +414,9 @@ export const projectLinks = [
     ],
   },
   {
-    imageUrl: "/project-3.png",
-    projectTitle:
-      "NextJS 14 | Single Page application in getLinked-tech Hackathon 1.0",
-    subTitle:
-      "Welcome to the  NextJs GetLinked-Tech Hackathon. In this Application, we'll dive deep into the latest version of Remix.run, a cutting-edge framework for building full stack JavaScript applications.",
-    stack: ["TypeScript", "NextJS", "Vercel", "Tailwind", "NodeJs"],
-    repositoryUrl: "https://github.com/geodevcodes/getlinked-tech",
-    projectUrl: "https://getlinked-tech.vercel.app/",
-    category: ["Typescript", "NextJs", "Web Application", "ReactJs"],
-    projectFeatures: [
-      "🌐 Next.js App Router",
-      "💽 NodeJs Database",
-      "🎨 Styling with tailwindcss",
-      "✅ Github Pull Request Template",
-      "💵 Github Workflow",
-      "🐐 React Hook Form",
-      "😶‍🌫️ Deployment to Vercel",
-      "💽 OutStanding ReadMe",
-    ],
-  },
-  {
     imageUrl: "/project-6.jpeg",
+    videoUrl: "",
+    imageUrls: ["/project-6.png", "/project-6.png"],
     projectTitle:
       "E-Commerce Website with Stripe, and Sanity.io | Full Stack Project",
     subTitle:
@@ -417,40 +448,6 @@ export const projectLinks = [
       "😶‍🌫️ Deployment to Vercel",
     ],
   },
-  // {
-  //   imageUrl: "/prepwise.png",
-  //   projectTitle: "Prepwise AI",
-  //   subTitle:
-  //     "🚀  Prepwise: A job interview preparation platform powered by Vapi AI Voice agents. Leverages Vercel ai-sdk, Vapi voice agent, Prisma, MongoDB for database and utilized Tailwindcss for astonishing User Interfaces.",
-  //   stack: [
-  //     "TypeScript",
-  //     "NextJS",
-  //     "NextAuth",
-  //     "React-Query",
-  //     "Vercel ai-sdk",
-  //     "Tailwindcss",
-  //     "Prisma",
-  //     "MongoDB",
-  //     "Vapi AI",
-  //     "Unit Testing",
-  //   ],
-  //   repositoryUrl: "https://github.com/geodevcodes/prepwise",
-  //   projectUrl: "https://prepwise-azure.vercel.app/",
-  //   category: ["TypeScript", "NextJs", "AI", "Web App"],
-  //   projectFeatures: [
-  //     "🌐 Next.js App Router",
-  //     "🔐 NextAuth Authentication",
-  //     "📧 Email/Password Auth",
-  //     "💽 MongoDB Database",
-  //     "🔐 Prisma ORM",
-  //     "🎨 Styling with tailwindcss",
-  //     "✅ Github Pull Request Template",
-  //     "💵 Github Workflow",
-  //     "🐐 Unit Testing",
-  //     "😶‍🌫️ Deployment to Vercel",
-  //     "💽 OutStanding ReadMe",
-  //   ],
-  // },
 ].map((project) => ({
   ...project,
   slug: slug(project.projectTitle, { lower: true }),
