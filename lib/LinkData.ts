@@ -158,7 +158,7 @@ export const projectLinks = [
   {
     imageUrl: "/afrenai.png",
     videoUrl: "",
-    imageUrls: ["/afrenai.png", "/afrenai.png"],
+    imageUrls: ["/afrenai2.png", "/afrenai2.png"],
     projectTitle: "Afren AI operating system",
     subTitle:
       "🚀  AI-driven operating system that transforms project ideas into shipped products by automating project scoping, team matching, and execution.",
