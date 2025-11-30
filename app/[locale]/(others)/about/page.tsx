@@ -83,7 +83,7 @@ export const metadata: Metadata = {
 export default function About() {
   const t = useTranslations("AboutPage");
   return (
-    <main className="px-4 p-2 pb-32 md:pt-16 md:px-6 lg:p-8 lg:pt-20 min-h-screen">
+    <main className="px-4 p-2 pb-32 md:pt-16 md:px-6 lg:p-8 lg:pt-20 min-h-screen lg:max-w-7xl mx-auto 2xl:max-w-[1440px] 2xl:mx-auto">
       <section className="flex flex-col-reverse lg:flex-row lg:flex lg:justify-between lg:space-x-5 w-full">
         <div className="font-sans text-md lg:w-[65%]">
           <p className="text-2xl md:text-3xl text-center mt-6 lg:text-left lg:mt-0 lg:text-4xl font-bold mb-2">

@@ -17,7 +17,7 @@ export default function ProjectDetails({ projectSlug }: ProjectDetailsProps) {
   const router = useRouter();
 
   return (
-    <div className="px-4 p-2 mb-4 pb-20 md:p-8 md:pt-20 lg:mb-0 font-sans min-h-screen max-w-7xl 2xl:max-w-[1440px] 2xl:mx-auto">
+    <div className="px-4 p-2 mb-4 pb-20 md:p-8 md:pt-20 lg:mb-0 font-sans min-h-screen w-full max-w-7xl 2xl:max-w-[1440px] 2xl:mx-auto">
       <div
         onClick={() => router.back()}
         className="mb-6 cursor-pointer hover:text-[#014751] dark:hover:text-muted-foreground hover:border-[#014751]  hover:border rounded-2xl flex items-center gap-2 border border-slate-300 dark:border-muted-foreground dark:border-[0.1px] w-fit p-1.5 px-3 text-sm"

@@ -102,7 +102,7 @@ export default function Projects() {
       <div
         className={`${
           showFilters && "pt-40 lg:pt-32"
-        } w-full 2xl:max-w-[1440px] 2xl:mx-auto items-center font-sans pt-20 gap-6 space-y-6 lg:space-y-0 text-sm p-2 justify-between gap-y-10 lg:grid lg:grid-cols-2 xl:grid-cols-3`}
+        } w-full lg:max-w-7xl mx-auto 2xl:max-w-[1440px] 2xl:mx-auto items-center font-sans pt-20 gap-6 space-y-6 lg:space-y-0 text-sm p-2 justify-between gap-y-10 lg:grid lg:grid-cols-2 xl:grid-cols-3`}
       >
         {isLoading
           ? Array.from({ length: 6 }).map((_, idx) => (
