@@ -48,9 +48,9 @@ export default function Projects() {
     : projectLinksData;
 
   return (
-    <main className="px-4 pb-20 md:p-8 md:pt-16 min-h-screen mb-6 w-full max-w-7xl bg-background">
-      <div className="fixed w-[95%] md:w-[60%] lg:min-w-[70%] xl:min-w-[79%] z-[10] -mt-[18px] md:-mt-[20px] pb-2 md:pb-4 mb-4  border-b border-slate bg-background">
-        <div className="flex items-center justify-between pt-2 md:pt-4 px-2.5 md:px-0">
+    <main className="px-4 pb-20 md:py-8 md:px-0 md:pt-16 min-h-screen mb-6 w-ful bg-background">
+      <div className="fixed w-full flex flex-col z-[10] -mt-[24px] md:-mt-[20px] pb-2 md:pb-4 mb-4 border-b border-slate bg-background">
+        <div className="flex items-center justify-between pt-2 md:pt-4 px-2.5 md:px-6">
           <p className="text-2xl md:text-3xl lg:text-left lg:text-4xl font-bold">
             {t("title")}
           </p>
@@ -59,7 +59,7 @@ export default function Projects() {
             className="w-[100px]"
             onClick={() => setShowFilters((prev) => !prev)}
           >
-            <Link href="#" className="flex items-center justify-center">
+            <Link href="#" className="flex items-center justify-center mr-4">
               <Filter className="size-4 mr-2" />
               <span className="text-base font-light"> {t("buttonName")}</span>
             </Link>
@@ -72,7 +72,7 @@ export default function Projects() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-3 lg:flex border-t border-slate py-3 gap-3 px-2.5 my-1.5 md:-mb-4 md:gap-4 md:mt-4"
+              className="grid grid-cols-3 lg:flex border-t border-slate py-3 gap-3 md:px-6 my-1.5 md:-mb-4 md:gap-4 md:mt-4"
             >
               {categoryOptions.map(({ label, value, icon }) => {
                 const IconComponent = icon;
@@ -102,7 +102,7 @@ export default function Projects() {
       <div
         className={`${
           showFilters && "pt-40 lg:pt-32"
-        } w-full items-center font-sans pt-20 gap-6 space-y-6 lg:space-y-0 text-sm p-2 justify-between gap-y-10 lg:grid lg:grid-cols-2 xl:grid-cols-3`}
+        } w-full 2xl:max-w-[1440px] 2xl:mx-auto items-center font-sans pt-20 gap-6 space-y-6 lg:space-y-0 text-sm p-2 justify-between gap-y-10 lg:grid lg:grid-cols-2 xl:grid-cols-3`}
       >
         {isLoading
           ? Array.from({ length: 6 }).map((_, idx) => (

@@ -23,7 +23,7 @@ export async function generateMetadata({
 export default function ProjectsDetailsPage({ params }: { params: any }) {
   const projectSlug = params.slug;
   return (
-    <div className="font-sans min-h-screen max-w-7xl">
+    <div className="font-sans min-h-screen max-w-7xl w-full 2xl:max-w-[1440px] 2xl:mx-auto">
       <ProjectDetails projectSlug={projectSlug} />
     </div>
   );

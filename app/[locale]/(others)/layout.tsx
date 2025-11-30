@@ -1,4 +1,4 @@
-import SideBar from "@/app/components/sidebar/Sidebar";
+// import SideBar from "@/app/components/sidebar/Sidebar";
 import type { Metadata } from "next";
 import "../../globals.css";
 
@@ -87,9 +87,9 @@ export default async function RootLayout({
   const { locale } = await params;
   return (
     <>
-      <SideBar locale={locale} />
+      {/* <SideBar locale={locale} /> */}
       <section className="w-full relative flex">
-        <main className="w-full pt-20 md:pt-2 max-w-[1150px] overflow-hidden mx-auto xl:max-w-full xl:overflow-x-auto md:ml-[240px] xl:ml-[240px]">
+        <main className="w-full pt-20 md:pt-2 max-w-[1150px] overflow-hidden mx-auto xl:max-w-full xl:overflow-x-auto md:ml-[240px xl:ml-[240px">
           {children}
         </main>
       </section>
