@@ -285,7 +285,7 @@ export const projectLinks = [
   },
   {
     imageUrl: "/gtworld-clone.png",
-    videoUrl: "",
+    videoUrl: "https://res.cloudinary.com/dgfjxhoae/video/upload/v1764596864/geodevcodes-portfolio/Rasheed_Olatunde_s_Video_-_Dec_1_2025-VEED_knca6f.mp4",
     imageUrls: ["/gtworld-clone2.png", "/gtworld-clone3.png"],
     projectTitle:
       "GTWorld-Clone: Manage your finances, securely and instantly.",
