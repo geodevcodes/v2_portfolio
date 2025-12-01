@@ -77,7 +77,7 @@ export default function BlogHome({ session }: any) {
               <CreateBlog setShowCreateBlog={setShowCreateBlog} />
             </div>
           ) : (
-            <section className="w-full max-w-5xl text-sm">
+            <section className="w-full max-w-5xl lg:max-w-7xl mx-auto 2xl:max-w-[1440px] 2xl:mx-auto text-sm">
               {blogsData?.data?.[0] && (
                 <Link href={`/blog/${blogsData.data[0].slug}`}>
                   <BlogCard

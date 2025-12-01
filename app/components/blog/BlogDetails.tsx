@@ -76,7 +76,7 @@ export default function BlogDetails({ blogSlug, token }: BlogDetailsProps) {
 
   return (
     <>
-      <div className="border-b border-slate pb-9 gap-3">
+      <div className="border-b border-slate pb-9 gap-3 max-w-3xl mx-auto">
         <div
           onClick={() => router.back()}
           className="cursor-pointer hover:text-primary hover:border-primary hover:border transition-colors duration-300 rounded-2xl flex items-center gap-2 border border-slate w-fit p-1.5 px-3 text-sm"
@@ -96,7 +96,7 @@ export default function BlogDetails({ blogSlug, token }: BlogDetailsProps) {
       ) : (
         <section className="mt-8">
           {/*========Blog View======= */}
-          <div className="w-full max-w-3xl p-7  border border-slate rounded-lg">
+          <div className="w-full max-w-3xl mx-auto p-7  border border-slate rounded-lg">
             <div className="flex justify-between items-center border-b border-slate pb-2 mb-5">
               <h2 className="text-3xl font-bold ">Blog View</h2>
               {pathname.includes("/admin-dashboard") && (
