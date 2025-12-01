@@ -1,9 +1,5 @@
-import {
-  RiGithubFill,
-  RiLinkedinFill,
-  RiTwitterFill,
-  RiDribbbleFill,
-} from "react-icons/ri";
+import { RiGithubFill, RiLinkedinFill, RiTwitterFill } from "react-icons/ri";
+import { ThemeToggle } from "@/app/components/theme-toggle/ThemeToggle";
 
 export default function Footer() {
   return (
@@ -51,8 +47,8 @@ export default function Footer() {
           title="Designed by geodevcodes"
           className="flex items-center justify-center"
         >
+          <ThemeToggle />
           <span className="mr-2 hidden sm:inline">Designed by geodevcodes</span>
-          <RiDribbbleFill fill="#607B96" size={25} />
         </a>
       </div>
     </footer>
