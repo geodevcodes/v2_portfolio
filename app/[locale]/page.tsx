@@ -98,7 +98,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="hover:underline transition duration-300"
                 >
-                  https://github.com/geodevcodesssss
+                  https://github.com/geodevcodes
                 </a>
                 &quot;
               </span>
