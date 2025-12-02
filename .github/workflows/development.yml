@@ -1,7 +1,7 @@
 name: Update and Deploy Development Branch
 on:
   push:
-    branches: [geodevcodes, main]
+    branches: [staging, main]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
