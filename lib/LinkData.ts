@@ -193,7 +193,8 @@ export const projectLinks = [
   },
   {
     imageUrl: "/portfolio.png",
-    videoUrl: "",
+    videoUrl:
+      "https://res.cloudinary.com/dgfjxhoae/video/upload/v1764686146/geodevcodes-portfolio/Screen_Recording_2025-12-02_at_15.32.36_zv0gvq.mov",
     imageUrls: ["/portfolio.png", "/portfolio.png"],
     projectTitle: "My Portfolio Website",
     subTitle: "🚀   AI Powered Portfolio with Blogify",
@@ -206,7 +207,7 @@ export const projectLinks = [
       "Shadcn/UI",
       "MongoDB",
     ],
-    repositoryUrl: "https://github.com/geodevcodes/geodevcodes-microfrontend",
+    repositoryUrl: "https://github.com/geodevcodes/v2_portfolio",
     projectUrl: "https://geodevcodes.vercel.app/",
     category: ["TypeScript", "NextJs", "React-Redux", "AI", "Web App", "PWA"],
     projectFeatures: [
@@ -285,7 +286,8 @@ export const projectLinks = [
   },
   {
     imageUrl: "/gtworld-clone.png",
-    videoUrl: "https://res.cloudinary.com/dgfjxhoae/video/upload/v1764596864/geodevcodes-portfolio/Rasheed_Olatunde_s_Video_-_Dec_1_2025-VEED_knca6f.mp4",
+    videoUrl:
+      "https://res.cloudinary.com/dgfjxhoae/video/upload/v1764596864/geodevcodes-portfolio/Rasheed_Olatunde_s_Video_-_Dec_1_2025-VEED_knca6f.mp4",
     imageUrls: ["/gtworld-clone2.png", "/gtworld-clone3.png"],
     projectTitle:
       "GTWorld-Clone: Manage your finances, securely and instantly.",
