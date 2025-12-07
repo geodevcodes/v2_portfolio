@@ -52,7 +52,7 @@ export default function ProjectsCard({
         <div className="pt-3">
           <Link
             href={`/projects/${projectSlug}`}
-            className="font-semibold text-sm line-clamp-2 hover:underline text-white"
+            className="font-semibold text-sm line-clamp-2 hover:underline"
           >
             {projectTitle}
           </Link>
