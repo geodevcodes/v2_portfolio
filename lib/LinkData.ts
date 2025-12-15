@@ -108,10 +108,10 @@ export const projectLinks = [
     ],
   },
   {
-    imageUrl: "/geomatic-connect.webp",
+    imageUrl: "/geomatic-connect.png",
     videoUrl:
       "https://res.cloudinary.com/dgfjxhoae/video/upload/v1753978858/geomatic-connect/Are_you_a_geomatic_student__3_t4pko8.mp4",
-    imageUrls: ["/geomatic-connect.webp", "/geomatic-connect.webp"],
+    imageUrls: ["/geomatic-connect.webp", "/geomatic-connect.png"],
     projectTitle: "Geomatic Connect",
     subTitle:
       "🚀 A modern SaaS Job portal connecting Geomatics students with companies for internships and training programs. Developed with Next.js 14, TailwindCSS, MongoDB, and NextAuth with OAuth (Google, GitHub), featuring Paystack payment integration, unit testing, and deployment on aws amplify. (https://www.geomaticconnect.work/)",
