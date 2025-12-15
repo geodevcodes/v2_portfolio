@@ -34,17 +34,18 @@ export default function ProjectsCard({
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.4 }}
-            className="w-full h-full"
+            className="w-full"
           >
             <Image
               src={cardImageUrl}
               alt="project banner image"
-              fill
               priority
-              sizes="(max-width: 500px) 100vw, 700px"
+              width={200}
+              height={200}
+              sizes="(max-width: 768px) 100vw, 700px"
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
-              className="rounded-t-md object-cover"
+              className="rounded-t-md object-cover w-full"
             />
           </motion.div>
         </div>
