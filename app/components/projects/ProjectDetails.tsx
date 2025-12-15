@@ -27,27 +27,31 @@ export default function ProjectDetails({ projectSlug }: ProjectDetailsProps) {
       </div>
       <div className="font-sans text-sm space-y-10 lg:space-x-6 lg:space-y-0 lg:grid lg:grid-cols-2">
         <div className="col-span-2/3 space-y-6">
-          {/* <div>
-            <Image
-              src={(project?.imageUrl as string) ?? undefined}
-              alt="project image"
-              width={200}
-              height={200}
-              sizes="(max-width: 768px) 100vw, 700px"
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
-              className="object-cover rounded-md w-full h-[200px] md:h-[250px] xl:h-[300px] border border-accent-primary"
-            />
-          </div> */}
-          <div className="w-full h-fi h-[250px] md:h-[300px] rounded-md">
-            <ReactPlayer
-              width="100%"
-              slot="media"
-              height="100%"
-              controls
-              src={(project?.videoUrl as string) ?? undefined}
-            />
-          </div>
+          {project?.videoUrl ? (
+            <div className="w-full h-[250px] md:h-[300px] rounded-md">
+              {" "}
+              <ReactPlayer
+                width="100%"
+                slot="media"
+                height="100%"
+                controls
+                src={(project?.videoUrl as string) ?? undefined}
+              />{" "}
+            </div>
+          ) : (
+            <div>
+              <Image
+                src={(project?.imageUrl as string) ?? undefined}
+                alt="project image"
+                width={200}
+                height={200}
+                sizes="(max-width: 768px) 100vw, 700px"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
+                className="object-cover rounded-md w-full h-[200px] md:h-[250px] xl:h-[300px] border border-accent-primary"
+              />
+            </div>
+          )}
           <div className="p-5 border border-accent-primary rounded-md">
             <h3 className="lg:text-3xl font-semibold">
               {project?.projectTitle}
@@ -72,7 +76,7 @@ export default function ProjectDetails({ projectSlug }: ProjectDetailsProps) {
             <p className="text-muted-foreground">
               Tools & Frameworks That Made It Happen. Check it out!
             </p>
-            <div className="mt-6 space-y-2.5 text-[16px]">
+            <div className="mt-6 space-y-2.5 text-[16px] text-muted-foreground">
               {project?.projectFeatures?.map((item, idx) => (
                 <div key={idx}>
                   <p>{item}</p>
