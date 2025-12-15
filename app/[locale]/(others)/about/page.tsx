@@ -90,8 +90,12 @@ export default function About() {
             {t("greetings")}
           </p>
           <div className="max-w-[700px]">
-            <p className="text-foreground leading-8 ">{t("contentOne")}</p>
-            <p className=" mt-10 leading-8">{t("contentTwo")}</p>
+            <p className="leading-8 text-muted-foreground">
+              {t("contentOne")}
+            </p>
+            <p className=" mt-10 leading-8 text-muted-foreground">
+              {t("contentTwo")}
+            </p>
           </div>
           <div className="md:flex space-y-4 md:space-y-0 gap-x-4 mt-10">
             <div className="border border-accent-primary w-full p-6 rounded-lg flex items-center gap-x-2 ">
