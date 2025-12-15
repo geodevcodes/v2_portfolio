@@ -50,19 +50,19 @@ export default function Projects() {
   return (
     <main className="px-4 pb-20 md:py-8 md:px-0 md:pt-16 min-h-screen mb-6 w-ful bg-background">
       <div className="fixed w-full flex flex-col z-[10] -mt-[26px] md:-mt-[20px] pb-2 md:pb-4 mb-4 border-b border-slate bg-background">
-        <div className="flex items-center justify-between pt-2 md:pt-4 px-2.5 md:px-6">
-          <p className="text-2xl md:text-3xl lg:text-left lg:text-4xl font-bold">
+        <div className="flex items-center justify-between pt-2 md:pt-4 pr-2.5 md:px-6">
+          <p className="text-xl md:text-2xl lg:text-left lg:text-3xl font-bold">
             {t("title")}
           </p>
           <Button
             asChild
-            className="w-[100px]"
+            className="w-[80px] h-[32px] md:w-[100px] md:h-full cursor-pointer"
             onClick={() => setShowFilters((prev) => !prev)}
           >
-            <Link href="#" className="flex items-center justify-center mr-4">
+            <span className="flex items-center justify-center mr-6 md:mr-4 cursor-pointer">
               <Filter className="size-4 mr-2" />
-              <span className="text-base font-light"> {t("buttonName")}</span>
-            </Link>
+              <span className="text-xs md:text-base font-light"> {t("buttonName")}</span>
+            </span>
           </Button>
         </div>
         <AnimatePresence>
@@ -101,8 +101,8 @@ export default function Projects() {
       </div>
       <div
         className={`${
-          showFilters && "pt-40 lg:pt-32"
-        } w-full lg:max-w-7xl mx-auto 2xl:max-w-[1440px] 2xl:mx-auto items-center font-sans pt-20 gap-6 space-y-6 lg:space-y-0 text-sm p-2 justify-between gap-y-10 lg:grid lg:grid-cols-2 xl:grid-cols-3`}
+          showFilters ? "pt-32 lg:pt-32" : "pt-10"
+        } w-full lg:max-w-7xl mx-auto 2xl:max-w-[1440px] 2xl:mx-auto items-center font-sans gap-6 space-y-6 lg:space-y-0 text-sm justify-between gap-y-10 lg:grid lg:grid-cols-2 xl:grid-cols-3`}
       >
         {isLoading
           ? Array.from({ length: 6 }).map((_, idx) => (
