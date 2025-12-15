@@ -56,7 +56,7 @@ export default function ProjectDetails({ projectSlug }: ProjectDetailsProps) {
             <h3 className="lg:text-3xl font-semibold">
               {project?.projectTitle}
             </h3>
-            <p className="text-muted-foreground text-sm mt-2">
+            <p className="text-muted-foreground text-sm mt-2 leading-7">
               {project?.subTitle}
             </p>
             <div className="mt-6 flex flex-wrap gap-x-2 gap-y-3 items-center">
@@ -76,7 +76,7 @@ export default function ProjectDetails({ projectSlug }: ProjectDetailsProps) {
             <p className="text-muted-foreground">
               Tools & Frameworks That Made It Happen. Check it out!
             </p>
-            <div className="mt-6 space-y-2.5 text-[16px] text-muted-foreground">
+            <div className="mt-6 space-y-2.5 text-sm text-muted-foreground">
               {project?.projectFeatures?.map((item, idx) => (
                 <div key={idx}>
                   <p>{item}</p>
