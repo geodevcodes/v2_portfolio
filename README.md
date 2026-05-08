@@ -4,7 +4,7 @@
 <hr />
 </div>
 
-I'm a Software Engineer with 4+ years of expertise in building high-performance web and mobile applications. Skilled in modern technologies and frameworks to deliver scalable, user-focused solutions. Known for strong leadership and the ability to simplify complex technical concepts for cross-functional teams.
+I'm a Software Engineer with 5+ years of expertise in building high-performance web and mobile applications. Skilled in modern technologies and frameworks to deliver scalable, user-focused solutions. Known for strong leadership and the ability to simplify complex technical concepts for cross-functional teams.
 
 # Prototype
 
@@ -32,7 +32,7 @@ Vercel was used to deploy the app.
 
 # License
 
-The MIT License - Copyright (c) 2025 - Present, geodevcodes / Storage Service.
+The MIT License - Copyright (c) 2026 - Present, geodevcodes / Storage Service.
 
 # Author
 
