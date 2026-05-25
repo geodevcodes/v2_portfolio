@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     "Mobile Applications",
     "Tech Blog",
   ],
-   openGraph: {
+  openGraph: {
     siteName: APP_NAME,
     locale: "en_US",
     type: "website",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     description: APP_DESCRIPTION,
     site: "@geodevcodes",
     creator: "@geodevcodes",
-    images: ["/opengraph-image"],
+    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,
