@@ -216,12 +216,12 @@ export const projectLinks = [
     ],
   },
   {
-    imageUrl: "/clear-essence1.png",
+    imageUrl: "/virtual-menu.png",
     videoUrl: "",
-    imageUrls: ["/clear-essence2.png", "/clear-essence3.png"],
+    imageUrls: ["/virtual-menu2.png", "/virtual-menu1.png"],
     projectTitle: "Virtual Menu",
     subTitle:
-      "🚀 This application transforms Clear Essence Hotel & Spa’s guest experience by replacing traditional menus with a seamless QR-code digital menu system accessible on any mobile device. The platform ensures guests can explore restaurant and spa offerings with ease. Its scalable architecture also positions the hotel for future expansion into advanced features like real-time analytics, digital ordering, and integrated service bookings.",
+      "🚀 Virtual Menu is a smart digital menu management platform built for restaurants, hotels, lounges, spas, and hospitality businesses. It enables businesses to upload and manage food, drink, spa, and accommodation menus while providing customers with seamless QR-code access to menus from any device..",
     stack: [
       "TypeScript",
       "NextJS",
@@ -230,18 +230,18 @@ export const projectLinks = [
       "TailwindCSS",
       "Prisma",
     ],
-    repositoryUrl: "https://github.com/geodevcodes",
-    projectUrl: "https://staging.menu.tezzasolutions.com/",
+    repositoryUrl: "https://github.com/geodevcodes/virtual-menu",
+    projectUrl: "https://virtual-menu-bay.vercel.app/",
     category: ["TypeScript", "NextJs", "Web Application"],
     projectFeatures: [
       "🌐 Next.js App Router",
       "🎨 Styling with Tailwindcss",
       "✅ Github Pull Request Template",
       "💵 Github Workflow",
-      "💵 Store Projects in Sanity",
+      "💵 Store Projects in MongoDB, Prisma",
       "🐐 Bento Layout",
       "💽 OutStanding ReadMe",
-      "😶‍🌫️ Deployment to Godaddy",
+      "😶‍🌫️ Deployment to Vercel",
     ],
   },
   {
