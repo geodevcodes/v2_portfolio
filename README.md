@@ -75,14 +75,21 @@ Experienced Software Developer with 5+ years of expertise in building intuitive,
   <img 
     src="https://ytcards.demolab.com/?id=d2GhAX8xjxM&title=Rasheed+Olatunde+-+Software+Developer+Portfolio+(Demo+Walkthrough)&lang=en&timestamp=2026-07-01&views=120&channel=Rasheed+Olatunde" 
     alt="Rasheed Olatunde - Software Developer Portfolio Demo Walkthrough" 
-    width="300"
+    width="250"
   />
 </a>
 <a href="https://youtu.be/o9fTjNIPjpU" target="_blank">
   <img 
     src="https://ytcards.demolab.com/?id=o9fTjNIPjpU&title=The+Incite360+Video+Guide&lang=en&timestamp=2026-07-01&views=120&channel=Rasheed+Olatunde" 
     alt="The Incite360 Video Guide" 
-    width="300"
+    width="250"
+  />
+</a>
+<a href="https://youtu.be/-cYEDv_Z6b8" target="_blank">
+  <img 
+    src="https://ytcards.demolab.com/?id=-cYEDv_Z6b8&title=Geomatic+Connect+-+Platform+Walkthrough&lang=en&timestamp=2026-07-01&views=120&channel=Rasheed+Olatunde" 
+    alt="Geomatic Connect - Platform Walkthrough" 
+    width="250"
   />
 </a>
 </div>
