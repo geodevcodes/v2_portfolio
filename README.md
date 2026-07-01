@@ -85,4 +85,11 @@ Experienced Software Developer with 5+ years of expertise in building intuitive,
     width="300"
   />
 </a>
+<a href="https://youtu.be/-cYEDv_Z6b8" target="_blank">
+  <img 
+    src="https://ytcards.demolab.com/?id=-cYEDv_Z6b8&title=Geomatic+Connect+-+Platform+Walkthrough&lang=en&timestamp=2026-07-01&views=120&channel=Rasheed+Olatunde" 
+    alt="Geomatic Connect - Platform Walkthrough" 
+    width="300"
+  />
+</a>
 </div>
